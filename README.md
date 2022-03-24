@@ -2,4 +2,4 @@
 Personal Site
 
 
-This is a frontend based project to for my personal site.
+This is a frontend based project for personal portfolio website.
