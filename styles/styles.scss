@@ -417,15 +417,20 @@ section {
         color: var(--color-grey-2);
         font-weight: 500;
         font-size: 1.2rem;
-        a {
-          &:hover {
-            color: var(--color-link);
-          }
+        &:hover {
+          color: var(--color-link);
         }
       }
     }
     p {
       color: var(--color-grey-2);
+    }
+    a {
+      display: inline-block;
+      margin: 5px;
+      &:hover {
+        color: var(--color-link);
+      }
     }
   }
 }

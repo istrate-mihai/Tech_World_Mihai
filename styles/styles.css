@@ -569,12 +569,21 @@ section {
   font-size: 1.2rem;
 }
 
-.timeline .timeline-item h5 span a:hover {
+.timeline .timeline-item h5 span:hover {
   color: var(--color-link);
 }
 
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+}
+
+.timeline .timeline-item a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.timeline .timeline-item a:hover {
+  color: var(--color-link);
 }
 
 .port-text {
