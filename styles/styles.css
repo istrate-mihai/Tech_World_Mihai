@@ -605,10 +605,9 @@ section {
   border-radius: 15px;
 }
 
-.portfolios .portfolio-item p {
+.portfolios .portfolio-item h2.item-header {
   text-align: center;
   color: var(--color-secondary);
-  font-size: larger;
 }
 
 .portfolios .portfolio-item img {

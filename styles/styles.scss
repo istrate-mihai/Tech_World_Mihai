@@ -449,10 +449,9 @@ section {
   .portfolio-item {
     position: relative;
     border-radius: 15px;
-    p {
+    h2.item-header {
       text-align: center;
       color: var(--color-secondary);
-      font-size: larger;
     }
     img {
       width: 100%;
