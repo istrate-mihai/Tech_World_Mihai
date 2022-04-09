@@ -1,3 +1,5 @@
+import {projects, skills} from './data.js'
+
 const sections = document.querySelectorAll(".section");
 const sectBtns = document.querySelectorAll(".controlls");
 const sectBtn = document.querySelectorAll(".control");
@@ -43,45 +45,12 @@ function PageTransitions() {
 
 PageTransitions();
 
-let projects = [
-  {
-    name: "Javascript Game Area",
-    img: "Javascript-Games.png",
-    github: "https://github.com/Istrate-Mihai/Javascript-Games/tree/master",
-    website: "https://javascript-game-area.netlify.app/",
-  },
-
-  {
-    name: "Lord of The Rings Area",
-    img: "Lord-Of-The-Rings-Area.png",
-    github: "https://github.com/Istrate-Mihai/Lord-Of-The-Rings-Area",
-    website: "https://lord-of-the-rings-area.netlify.app/",
-  },
-  {
-    name: "Computer History",
-    img: "Computer-History.png",
-    github: "https://github.com/Istrate-Mihai/My-First-Website",
-    website: "https://computer-history.netlify.app/",
-  },
-
-  {
-    name: "Link Academy Portfolio",
-    img: "digital_portfolio.jpg",
-    github: "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
-    website: "portfolio_and_cv/Portfolio-Istrate_Mihai_Septimius.7z",
-  },
-
-  {
-    name: "Notebook App",
-    img: "your_notebook.png",
-    github: "https://github.com/Istrate-Mihai/Notebook-App",
-    website: "https://yournotebookapp.000webhostapp.com/index.php",
-  },
-];
-
 let projectsArea = document.getElementsByClassName("portfolios")[0];
 let nrOfProjects = projects.length;
 let projectsInserted = "";
+let skillsArea = document.getElementsByClassName("progress-bars")[0];
+let nrOfSkills = skills.length;
+let skillsInserted = "";
 
 for (let i = 0; i < nrOfProjects; i++) {
   projectsInserted += `       
@@ -105,4 +74,19 @@ for (let i = 0; i < nrOfProjects; i++) {
                       `;
 }
 
+for (let i = 0; i < nrOfSkills; i++) {
+  skillsInserted += `                
+                      <div class="progress-bar">
+                        <p class="prog-title">${skills[i].skillTitle}</p>
+                        <div class="progress-con">
+                          <p class="prog text">${skills[i].skillPercentage}</p>
+                          <div class="progress">
+                            <span class="css"></span>
+                          </div>
+                        </div>
+                      </div>
+                    `;
+}
+
 projectsArea.innerHTML = projectsInserted;
+skillsArea.innerHTML = skillsInserted;
