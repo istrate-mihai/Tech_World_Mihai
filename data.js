@@ -3,7 +3,7 @@ projects = [
   {
     name: "Javascript Game Area",
     img: "Javascript-Games.png",
-    github: "https://github.com/Istrate-Mihai/Javascript-Games/tree/master",
+    github: "https://github.com/Istrate-Mihai/Javascript-Games",
     website: "https://javascript-game-area.netlify.app/",
   },
   {
