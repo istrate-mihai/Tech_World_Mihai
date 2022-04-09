@@ -1,4 +1,4 @@
-import {projects, skills} from './data.js'
+import { projects, skills } from "./data.js";
 
 const sections = document.querySelectorAll(".section");
 const sectBtns = document.querySelectorAll(".controlls");
@@ -66,7 +66,7 @@ for (let i = 0; i < nrOfProjects; i++) {
                                 <i class="fab fa-github"></i>
                               </a>
                               <a href="${projects[i].website}" target="_blank" class="icon">
-                                <i class="fa-solid fa-eye"></i>
+                                <i class='fas fa-desktop'></i>
                               </a>
                             </div>
                           </div>
