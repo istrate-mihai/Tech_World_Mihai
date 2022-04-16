@@ -1,4 +1,4 @@
-import { projects, skills } from "./data.js";
+import { projects, skills, educations, works } from "./data.js";
 
 const sections = document.querySelectorAll(".section");
 const sectBtns = document.querySelectorAll(".controlls");
@@ -51,6 +51,12 @@ let projectsInserted = "";
 let skillsArea = document.getElementsByClassName("progress-bars")[0];
 let nrOfSkills = skills.length;
 let skillsInserted = "";
+let educationsArea = document.getElementsByClassName("timeline")[1];
+let nrOfEducations = educations.length;
+let educationsInserted = "";
+let worksArea = document.getElementsByClassName("timeline")[2];
+let nrOfWorks = works.length;
+let worksInserted = "";
 
 for (let i = 0; i < nrOfProjects; i++) {
   projectsInserted += `       
@@ -88,5 +94,87 @@ for (let i = 0; i < nrOfSkills; i++) {
                     `;
 }
 
+for (let i = 0; i < nrOfEducations - 1; i++) {
+  educationsInserted += `       
+                          <div class="timeline-item">
+                            <div class="tl-icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">${educations[i].duration}</p>
+                            <h5>
+                              ${educations[i].educationTitle}
+                              <span>
+                                -
+                                <a href="${educations[i].link}" target="blank">
+                                  ${educations[i].institutionTitle}
+                                </a>
+                              </span>
+                            </h5>
+                            <p>${educations[i].institutionDescription}</p>
+                          </div>
+                        `;
+}
+
+let otherEducationLinks = "";
+let nrOfotherEducationLinks =
+  educations[nrOfEducations - 1].educationTitle.length; /*
+                                                          Accessing the last object of educations array to get 
+                                                          all the links of it's educationTitle property
+                                                        */
+for (let i = 0; i < nrOfotherEducationLinks; i++) {
+  otherEducationLinks += `
+                            <p class="otherCertificate">
+                              <a href="${
+                                educations[nrOfEducations - 1].educationTitle[i]
+                                  .otherEducationLink
+                              }" target="_blank">
+                              ${
+                                educations[nrOfEducations - 1].educationTitle[i]
+                                  .otherEducationTitle
+                              }
+                              </a>
+                            </p>
+                          `;
+}
+
+educationsInserted += `
+                        <div class="timeline-item">
+                          <div class="tl-icon">
+                            <i class="fa fa-briefcase"></i>
+                          </div>
+                          <p class="tl-duration">Other Certificates</p>
+                          ${otherEducationLinks}
+                        </div>
+                        `;
+
+for (let i = 0; i < nrOfWorks; i++) {
+  // Getting all the elements of the responsabilities array property for each work object and inserting them in the template
+  let workListItems = "";
+  let responsabilities = works[i].responsabilities;
+  let nrOfWorkListItems = responsabilities.length;
+
+  for (let j = 0; j < nrOfWorkListItems; j++) {
+    workListItems += `<li>${responsabilities[j]}</li>`;
+  }
+
+  worksInserted += `       
+                    <div class="timeline-item">
+                      <div class="tl-icon">
+                        <i class="fa fa-briefcase"></i>
+                      </div>
+                      <p class="tl-duration">${works[i].duration}</p>
+                      <h5>${works[i].title}</h5>
+                      <p>Responsibilities:</p>
+                      <p>
+                        <ul>
+                          ${workListItems}
+                        </ul>
+                      </p>
+                    </div>
+                  `;
+}
+
 projectsArea.innerHTML = projectsInserted;
 skillsArea.innerHTML = skillsInserted;
+educationsArea.innerHTML = educationsInserted;
+worksArea.innerHTML = worksInserted;
