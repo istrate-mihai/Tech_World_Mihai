@@ -66,6 +66,10 @@ skills = [
     skillTitle: "SQL",
     skillPercentage: "70%",
   },
+  {
+    skillTitle: "Git",
+    skillPercentage: "60%",
+  },
 ];
 
 educations = [
