@@ -108,6 +108,11 @@ educations = [
       },
       {
         otherEducationLink:
+          "https://www.sololearn.com/Certificate/1162-21392382/pdf/",
+        otherEducationTitle: "Solo Learn App - Responsive Web Design Course",
+      },
+      {
+        otherEducationLink:
           "https://www.sololearn.com/Certificate/1059-21392382/pdf/",
         otherEducationTitle: "Solo Learn App - PHP Course",
       },
