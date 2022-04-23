@@ -331,24 +331,32 @@ section {
             transition: all 0.4s ease-in-out;
             width: 60%;
           }
-
           .html {
-            width: 80%;
+            width: 90%;
           }
           .css {
-            width: 95%;
+            width: 80%;
           }
           .js {
-            width: 75%;
+            width: 80%;
+          }
+          .jquery {
+            width: 70%;
           }
           .react {
-            width: 60%;
+            width: 50%;
           }
-          .node {
-            width: 87%;
-          }
-          .python {
+          .nodejs {
             width: 70%;
+          }
+          .php {
+            width: 80%;
+          }
+          .sql {
+            width: 70%;
+          }
+          .git {
+            width: 60%;
           }
         }
       }

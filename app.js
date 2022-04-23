@@ -87,7 +87,7 @@ for (let i = 0; i < nrOfSkills; i++) {
                         <div class="progress-con">
                           <p class="prog text">${skills[i].skillPercentage}</p>
                           <div class="progress">
-                            <span class="css"></span>
+                            <span class="${skills[i].cls}"></span>
                           </div>
                         </div>
                       </div>

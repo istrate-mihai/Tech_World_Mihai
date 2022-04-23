@@ -37,44 +37,53 @@ skills = [
   {
     skillTitle: "HTML5",
     skillPercentage: "90%",
+    cls: "html",
   },
   {
     skillTitle: "CSS3",
     skillPercentage: "80%",
+    cls: "css",
   },
   {
     skillTitle: "Javascript",
     skillPercentage: "80%",
+    cls: "js",
   },
   {
     skillTitle: "JQuery",
     skillPercentage: "70%",
+    cls: "jquery",
   },
   {
     skillTitle: "ReactJS",
     skillPercentage: "50%",
+    cls: "react",
   },
   {
     skillTitle: "NodeJS",
     skillPercentage: "70%",
+    cls: "nodejs",
   },
   {
     skillTitle: "PHP",
     skillPercentage: "80%",
+    cls: "php",
   },
   {
     skillTitle: "SQL",
     skillPercentage: "70%",
+    cls: "sql",
   },
   {
     skillTitle: "Git",
     skillPercentage: "60%",
+    cls: "git",
   },
 ];
 
 educations = [
   {
-    duration: "01/11/2020 – 07/09/2021", // 11/01/2020 – 09/07/2021
+    duration: "01/11/2020 – 07/09/2021",
     educationTitle: "PHP WEB DEVELOPER",
     link: "https://www.link-academy.com/",
     institutionTitle: "Link Academy",
@@ -82,7 +91,7 @@ educations = [
       "Training as a PHP Web Developer through Link Academy's online platform.",
   },
   {
-    duration: "01/10/2017 – 20/01/2022", // 10/01/2017 – 01/20/2022
+    duration: "01/10/2017 – 20/01/2022",
     educationTitle: "MECHANICAL ENGINEER",
     link: "http://mecanica.ucv.ro/",
     institutionTitle: "University of Craiova - Faculty of Mechanics",
@@ -90,7 +99,7 @@ educations = [
       "Training as a mechanical engineer, field - Machine Building Technology.",
   },
   {
-    duration: "15/09/2011 – 15/06/2015", // 09/15/2011 – 06/15/2015
+    duration: "15/09/2011 – 15/06/2015",
     educationTitle: "HIGH SCHOOL GRADUATE - BACCALAUREATE DIPLOMA",
     link: "http://www.cnnt.ro/",
     institutionTitle: 'C.N. "Nicolae Titulescu" Craiova',
@@ -126,7 +135,7 @@ educations = [
 
 works = [
   {
-    duration: "14/03/2022 – current – Constanta, Romania", // 03/14/2022
+    duration: "14/03/2022 – current – Constanta, Romania",
     title: "DATA ENTRY OPERATOR<span> – TRANSUNIVERSE RO</span>",
     responsabilities: [
       "- Data entry and validation on electronic support.",
@@ -136,7 +145,7 @@ works = [
     ],
   },
   {
-    duration: "03/07/2017 – 04/11/2021 – Craiova, Romania", // 07/03/2017 – 11/04/2021
+    duration: "03/07/2017 – 04/11/2021 – Craiova, Romania",
     title: "OPERATOR - MECHANICAL LOCKSMITH<span> – FORD ROMANIA S.A</span>",
     responsabilities: [
       "- Carrying out periodic quality checks.",
@@ -145,14 +154,14 @@ works = [
     ],
   },
   {
-    duration: "10/02/2017 – 01/07/2017 – Craiova, Romania", // 02/10/2017 – 07/01/2017
+    duration: "10/02/2017 – 01/07/2017 – Craiova, Romania",
     title: "MAILMAN<span> – POST MASTER(CURRENT PINK POST)</span>",
     responsabilities: [
       "- Delivery of advertising materials, and personal envelopes, postal activity.",
     ],
   },
   {
-    duration: "14/09/2016 – 20/01/2017 – Craiova, Romania", // 09/14/2016 – 01/20/2017
+    duration: "14/09/2016 – 20/01/2017 – Craiova, Romania",
     title:
       "FLUX QUALITY OPERATOR<span> – INTEGRALE MARKETING Y CONSULTING</span>",
     responsabilities: [
