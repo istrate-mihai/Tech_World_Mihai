@@ -2,6 +2,12 @@ let skills, projects, educations, works;
 
 projects = [
   {
+    name: "Currency Converter",
+    img: "Currency-Converter.png",
+    github: "https://github.com/Istrate-Mihai/Currency-Converter",
+    website: "https://currency-converter-react-app.netlify.app/",
+  },
+  {
     name: "Javascript Game Area",
     img: "Javascript-Games.png",
     github: "https://github.com/Istrate-Mihai/Javascript-Games",
@@ -20,16 +26,16 @@ projects = [
     website: "https://computer-history.netlify.app/",
   },
   {
-    name: "Link Academy Portfolio",
-    img: "digital_portfolio.jpg",
-    github: "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
-    website: "portfolio_and_cv/Portfolio-Istrate_Mihai_Septimius.7z",
-  },
-  {
     name: "Notebook App",
     img: "your_notebook.png",
     github: "https://github.com/Istrate-Mihai/Notebook-App",
     website: "https://yournotebookapp.000webhostapp.com/index.php",
+  },
+  {
+    name: "Link Academy Portfolio",
+    img: "digital_portfolio.jpg",
+    github: "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
+    website: "portfolio_and_cv/Portfolio-Istrate_Mihai_Septimius.7z",
   },
 ];
 
