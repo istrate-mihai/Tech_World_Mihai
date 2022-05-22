@@ -122,6 +122,11 @@ educations = [
       },
       {
         otherEducationLink:
+          "https://www.sololearn.com/Certificate/1023-21392382/pdf/",
+        otherEducationTitle: "Solo Learn App - CSS Course",
+      },
+      {
+        otherEducationLink:
           "https://www.sololearn.com/certificates/course/en/21392382/1024/landscape/png",
         otherEducationTitle: "Solo Learn App - Javascript Course",
       },
