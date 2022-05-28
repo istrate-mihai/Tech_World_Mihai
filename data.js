@@ -2,6 +2,12 @@ let skills, projects, educations, works;
 
 projects = [
   {
+    name: "Phone Book",
+    img: "Phone-Book.png",
+    github: "https://github.com/Istrate-Mihai/Phone-Book-ReactJS",
+    website: "https://phone-book-react-app.netlify.app/",
+  },
+  {
     name: "Currency Converter",
     img: "Currency-Converter.png",
     github: "https://github.com/Istrate-Mihai/Currency-Converter",
