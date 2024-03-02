@@ -206,10 +206,6 @@ section {
         height: 100%;
         object-fit: cover;
         transition: all 0.4s ease-in-out;
-        filter: grayscale(100%);
-        &:hover {
-          filter: grayscale(0);
-        }
       }
     }
   }
@@ -554,7 +550,6 @@ section {
       object-fit: cover;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      filter: grayscale(100%);
       transition: all 0.4s ease-in-out;
     }
     .blog-text {

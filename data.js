@@ -31,17 +31,17 @@ projects = [
     github: "https://github.com/Istrate-Mihai/My-First-Website",
     website: "https://computer-history.netlify.app/",
   },
-  {
-    name: "Notebook App",
-    img: "your_notebook.png",
-    github: "https://github.com/Istrate-Mihai/Notebook-App",
-    website: "https://yournotebookapp.000webhostapp.com/index.php",
-  },
+  // {
+  //   name: "Notebook App",
+  //   img: "your_notebook.png",
+  //   github: "https://github.com/Istrate-Mihai/Notebook-App",
+  //   website: "https://yournotebookapp.000webhostapp.com/index.php",
+  // },
   {
     name: "Link Academy Portfolio",
     img: "digital_portfolio.jpg",
     github: "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
-    website: "portfolio_and_cv/Portfolio-Istrate_Mihai_Septimius.7z",
+    website: "cv/Portfolio-Istrate_Mihai_Septimius.7z",
   },
 ];
 
@@ -162,7 +162,18 @@ educations = [
 
 works = [
   {
-    duration: "14/03/2022 – current – Constanta, Romania",
+    duration: "18/06/2022 – Current – Constanta, Romania",
+    title: "FULL-STACK WEB DEVELOPER <span> – AC WEBCONNECTING N.V. / SHOSHORO N.V</span>",
+    responsabilities: [
+      "- Develop and maintain web services or features for the company's main platforms.",
+      "- Contribute to front-end and back-end development processes.",
+      "- Fixing bugs and adding new features to CRM & back office systems for platform statistics.",
+      "- Identifying and reporting Issues to the different software products.",
+      "- Participating in IT / Marketing meetings to discuss further developments.",
+    ],
+  },
+  {
+    duration: "14/03/2022 – 02/06/2022 – Constanta, Romania",
     title: "DATA ENTRY OPERATOR<span> – TRANSUNIVERSE RO</span>",
     responsabilities: [
       "- Data entry and validation on electronic support.",
