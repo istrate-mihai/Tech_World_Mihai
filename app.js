@@ -5,7 +5,33 @@ const sectBtns = document.querySelectorAll(".controlls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 
-function PageTransitions() {
+let isLightMode = false;
+
+function setMainPhotoPopup() {
+  // Get the modal
+  let modal = document.getElementById("mainPhotoModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  let img = document.getElementById("main-photo");
+  let modalImg = document.getElementById("modal-image");
+  let captionText = document.getElementById("caption");
+
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = '';
+  }
+
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+}
+
+function setPageTransitions() {
   //Button click active class
   for (let i = 0; i < sectBtn.length; i++) {
     sectBtn[i].addEventListener("click", function () {
@@ -40,10 +66,19 @@ function PageTransitions() {
   themeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
+    isLightMode = !isLightMode;
+
+    if (isLightMode) {
+      themeBtn.setAttribute('title', 'Dark Mode');
+    }
+    else {
+      themeBtn.setAttribute('title', 'Light Mode');
+    }
   });
 }
 
-PageTransitions();
+setPageTransitions();
+setMainPhotoPopup();
 
 let projectsArea = document.getElementsByClassName("portfolios")[0];
 let nrOfProjects = projects.length;
@@ -59,7 +94,7 @@ let nrOfWorks = works.length;
 let worksInserted = "";
 
 for (let i = 0; i < nrOfProjects; i++) {
-  projectsInserted += `       
+  projectsInserted += `
                         <div class="portfolio-item">
                           <h2 class="item-header">${projects[i].name}</h2>
                           <div class="image">
@@ -81,7 +116,7 @@ for (let i = 0; i < nrOfProjects; i++) {
 }
 
 for (let i = 0; i < nrOfSkills; i++) {
-  skillsInserted += `                
+  skillsInserted += `
                       <div class="progress-bar">
                         <p class="prog-title">${skills[i].skillTitle}</p>
                         <div class="progress-con">
@@ -95,7 +130,7 @@ for (let i = 0; i < nrOfSkills; i++) {
 }
 
 for (let i = 0; i < nrOfEducations - 1; i++) {
-  educationsInserted += `       
+  educationsInserted += `
                           <div class="timeline-item">
                             <div class="tl-icon">
                               <i class="fa fa-briefcase"></i>
@@ -118,7 +153,7 @@ for (let i = 0; i < nrOfEducations - 1; i++) {
 let otherEducationLinks = "";
 let nrOfotherEducationLinks =
   educations[nrOfEducations - 1].educationTitle.length; /*
-                                                          Accessing the last object of educations array to get 
+                                                          Accessing the last object of educations array to get
                                                           all the links of it's educationTitle property
                                                         */
 for (let i = 0; i < nrOfotherEducationLinks; i++) {
@@ -157,7 +192,7 @@ for (let i = 0; i < nrOfWorks; i++) {
     workListItems += `<li>${responsabilities[j]}</li>`;
   }
 
-  worksInserted += `       
+  worksInserted += `
                     <div class="timeline-item">
                       <div class="tl-icon">
                         <i class="fa fa-briefcase"></i>

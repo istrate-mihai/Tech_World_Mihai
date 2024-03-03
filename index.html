@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio - Istrate Mihai</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,13 +32,14 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body class="main-content">
     <header class="section sec1 header active" id="home">
       <div class="header-content">
         <div class="left-header">
           <div class="h-shape"></div>
           <div class="image">
-            <img src="images/Istrate_Mihai_Septimius.jpg" alt="No Main Photo" />
+            <img id="main-photo" src="images/Istrate_Mihai_Septimius.jpg" alt="No Main Photo" />
           </div>
         </div>
         <div class="right-header">
@@ -141,9 +142,10 @@
             </p>
           </div>
         </div>
-        <h4 class="stat-title">My Work Experience</h4>
-        <div class="timeline"></div>
         <h4 class="stat-title">My Education</h4>
+        <div class="timeline"></div>
+
+        <h4 class="stat-title">My Work Experience</h4>
         <div class="timeline"></div>
       </section>
       <section class="section sec3" id="portfolio">
@@ -257,25 +259,33 @@
       </section>
     </main>
     <div class="controlls">
-      <div class="control control-1 active-btn" data-id="home">
+      <div class="control control-1 active-btn" data-id="home" title="Home">
         <i class="fas fa-home"></i>
       </div>
-      <div class="control control-2" data-id="about">
+      <div class="control control-2" data-id="about" title="About">
         <i class="fas fa-user"></i>
       </div>
-      <div class="control control-3" data-id="portfolio">
+      <div class="control control-3" data-id="portfolio" title="Portfolio">
         <i class="fas fa-briefcase"></i>
       </div>
-      <div class="control control-4" data-id="blogs">
+      <div class="control control-4" data-id="blogs" title="Blogs">
         <i class="far fa-newspaper"></i>
       </div>
-      <div class="control control-5" data-id="contact">
+      <div class="control control-5" data-id="contact" title="Contact">
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
-    <div class="theme-btn">
+    <div class="theme-btn" title="Light Mode">
       <i class="fas fa-adjust"></i>
     </div>
+
+    <!-- Main Photo Modal -->
+    <div id="mainPhotoModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-image">
+      <div id="caption"></div>
+    </div>
+
     <script type="module" src="app.js"></script>
     <script src="https://use.fontawesome.com/1cccff0e97.js"></script>
   </body>

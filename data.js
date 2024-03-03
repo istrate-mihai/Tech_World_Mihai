@@ -163,7 +163,7 @@ educations = [
 works = [
   {
     duration: "18/06/2022 – Current – Constanta, Romania",
-    title: "FULL-STACK WEB DEVELOPER <span> – AC WEBCONNECTING N.V. / SHOSHORO N.V</span>",
+    title: "FULL-STACK WEB DEVELOPER <span><a href=\"https://www.acwebconnecting.com/\" target=\"_blank\">– AC WEBCONNECTING N.V. / SHOSHORO N.V</a></span>",
     responsabilities: [
       "- Develop and maintain web services or features for the company's main platforms.",
       "- Contribute to front-end and back-end development processes.",
@@ -174,7 +174,7 @@ works = [
   },
   {
     duration: "14/03/2022 – 02/06/2022 – Constanta, Romania",
-    title: "DATA ENTRY OPERATOR<span> – TRANSUNIVERSE RO</span>",
+    title: "DATA ENTRY OPERATOR <span><a href=\"https://www.transuniverse.be/destination/romania/\" target=\"_blank\">– TRANSUNIVERSE RO</a></span>",
     responsabilities: [
       "- Data entry and validation on electronic support.",
       "- Data processing, performing calculations based on the data entered.",
@@ -184,7 +184,7 @@ works = [
   },
   {
     duration: "03/07/2017 – 04/11/2021 – Craiova, Romania",
-    title: "OPERATOR - MECHANICAL LOCKSMITH<span> – FORD ROMANIA S.A</span>",
+    title: "OPERATOR - MECHANICAL LOCKSMITH <span><a href=\"https://www.ford.ro/\" target=\"_blank\">– FORD ROMANIA S.A</a></span>",
     responsabilities: [
       "- Carrying out periodic quality checks.",
       "- Adjusting the machine as needed for changes, different functions or other requirements of the production process.",
@@ -193,15 +193,14 @@ works = [
   },
   {
     duration: "10/02/2017 – 01/07/2017 – Craiova, Romania",
-    title: "MAILMAN<span> – POST MASTER(CURRENT PINK POST)</span>",
+    title: "MAILMAN <span><a href=\"https://www.pinkpost.ro/\" target=\"_blank\">– POST MASTER (CURRENT PINK POST)</a></span>",
     responsabilities: [
       "- Delivery of advertising materials, and personal envelopes, postal activity.",
     ],
   },
   {
     duration: "14/09/2016 – 20/01/2017 – Craiova, Romania",
-    title:
-      "FLUX QUALITY OPERATOR<span> – INTEGRALE MARKETING Y CONSULTING</span>",
+    title: "FLUX QUALITY OPERATOR <span><a href=\"http://www.integraleconsulting.es/\" target=\"_blank\">– INTEGRALE MARKETING Y CONSULTING</a></span>",
     responsabilities: [
       "- Performing visual quality inspections on parts and components of small sizes of the Fox Classic heat engine such as: water pumps, clutches etc.",
       "- Recording the corresponding data in the IQOS computer program.",
