@@ -1415,3 +1415,24 @@ section {
   }
 }
 /*# sourceMappingURL=styles.css.map */
+.tab {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tab a {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid var(--color-secondary);
+}
+
+.tabcontent {
+  display: none;
+}

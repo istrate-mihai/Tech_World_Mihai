@@ -1,12 +1,14 @@
-import { projects, skills, educations, works } from "./data.js";
+import { projects, skills, educations, works, mechanicalProjectList } from "./data.js";
 
 $(document).ready(function() {
     const sections    = $(".section");
     const sectBtns    = $(".controlls");
     const sectBtn     = $(".control");
     const allSections = $(".main-content");
+    const tabLinks    = $(".tablinks");
 
     let isLightMode   = false;
+
     function setMainPhotoPopup() {
       let modal       = $("#mainPhotoModal");
       let img         = $("#main-photo");
@@ -22,7 +24,6 @@ $(document).ready(function() {
       });
 
       let span = $(".close").eq(0);
-
       span.click(function() {
           modal.css("display", "none");
           sectBtns.css("display", "flex");
@@ -30,14 +31,14 @@ $(document).ready(function() {
     }
 
     function setPageTransitions() {
-      //Button click active class
+      // Button click active class
       sectBtn.click(function() {
           let currentBtn = $(".active-btn");
           currentBtn.removeClass("active-btn");
           $(this).addClass("active-btn");
       });
 
-      //Sections Active
+      // Sections Active
       allSections.on("click", (e) => {
           const id = $(e.target).data("id");
           if (id) {
@@ -50,42 +51,62 @@ $(document).ready(function() {
           }
       });
 
-      //Toggle theme
+      // Toggle theme
       const themeBtn = $(".theme-btn");
       themeBtn.click(function() {
-          $("body").toggleClass("light-mode");
-          isLightMode = !isLightMode;
+        $("body").toggleClass("light-mode");
+        isLightMode = !isLightMode;
 
-          if (isLightMode) {
-              $(this).attr('title', 'Dark Mode');
-          } else {
-              $(this).attr('title', 'Light Mode');
-          }
+        if (isLightMode) {
+            $(this).attr('title', 'Dark Mode');
+        } else {
+            $(this).attr('title', 'Light Mode');
+        }
+
+        tabLinks.first().click();
       });
-  }
+    }
 
     setPageTransitions();
     setMainPhotoPopup();
 
-    let projectsArea       = $(".portfolios").eq(0);
-    let nrOfProjects       = projects.length;
-    let projectsInserted   = "";
-    let skillsArea         = $(".progress-bars").eq(0);
-    let nrOfSkills         = skills.length;
-    let skillsInserted     = "";
-    let educationsArea     = $(".timeline").eq(1);
-    let nrOfEducations     = educations.length;
-    let educationsInserted = "";
-    let worksArea          = $(".timeline").eq(2);
-    let nrOfWorks          = works.length;
-    let worksInserted      = "";
+    tabLinks.on('click', function(event) {
+      event.preventDefault();
+      let tabId = $(this).data("tab");
+      $(".tabcontent").css("display", "none");
+      $(".tablinks").css("background-color", "");
+      $("#" + tabId).css("display", "grid");
+      if (isLightMode) {
+        $(event.currentTarget).css("background-color", "rgb(30, 144, 255)");
+      }
+      else {
+        $(event.currentTarget).css("background-color", "rgb(39, 174, 96)");
+      }
+    });
+    tabLinks.first().click();
+
+    let projectsArea              = $("#web-development");
+    let nrOfProjects              = projects.length;
+    let projectsInserted          = "";
+    let skillsArea                = $(".progress-bars").eq(0);
+    let nrOfSkills                = skills.length;
+    let skillsInserted            = "";
+    let educationsArea            = $(".timeline").eq(1);
+    let nrOfEducations            = educations.length;
+    let educationsInserted        = "";
+    let worksArea                 = $(".timeline").eq(2);
+    let nrOfWorks                 = works.length;
+    let worksInserted             = "";
+    let mechanicalProjectArea     = $("#cad-cam-technical-drawing");
+    let nrOfMechanicalProjects    = mechanicalProjectList.length;
+    let mechanicalProjecsInserted = "";
 
     for (let i = 0; i < nrOfProjects; i++) {
       projectsInserted += `
           <div class="portfolio-item">
             <h2 class="item-header">${projects[i].name}</h2>
             <div class="image">
-              <img src="./images/${projects[i].img}" alt="portfolioImage" />
+              <img src="${projects[i].img}" alt="portfolioImage" />
             </div>
             <div class="hover-items">
               <h3>Project Source</h3>
@@ -95,6 +116,25 @@ $(document).ready(function() {
                 </a>
                 <a href="${projects[i].website}" target="_blank" class="icon">
                   <i class='fas fa-desktop'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+    }
+
+    for (let i = 0; i < nrOfMechanicalProjects; i++) {
+      mechanicalProjecsInserted += `
+          <div class="portfolio-item">
+            <h2 class="item-header">${mechanicalProjectList[i].name}</h2>
+            <div class="image">
+              <img src="${mechanicalProjectList[i].img}" alt="portfolioImage" />
+            </div>
+            <div class="hover-items">
+              <h3>Project Source</h3>
+              <div class="icons">
+                <a href="${mechanicalProjectList[i].download}" target="_blank" class="icon" download>
+                  <i class="fas fa-download"></i>
                 </a>
               </div>
             </div>
@@ -196,7 +236,10 @@ $(document).ready(function() {
         `;
     }
 
+    console.dir(mechanicalProjecsInserted)
+
     projectsArea.html(projectsInserted);
+    mechanicalProjectArea.html(mechanicalProjecsInserted);
     skillsArea.html(skillsInserted);
     educationsArea.html(educationsInserted);
     worksArea.html(worksInserted);

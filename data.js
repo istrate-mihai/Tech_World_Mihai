@@ -1,33 +1,33 @@
-let skills, projects, educations, works;
+let skills, projects, educations, works, mechanicalProjectList;
 
 projects = [
   {
     name: "Phone Book",
-    img: "Phone-Book.png",
+    img: "resources/images/Phone-Book.png",
     github: "https://github.com/Istrate-Mihai/Phone-Book-ReactJS",
     website: "https://phone-book-react-app.netlify.app/",
   },
   {
     name: "Currency Converter",
-    img: "Currency-Converter.png",
+    img: "resources/images/Currency-Converter.png",
     github: "https://github.com/Istrate-Mihai/Currency-Converter",
     website: "https://currency-converter-react-app.netlify.app/",
   },
   {
     name: "Javascript Game Area",
-    img: "Javascript-Games.png",
+    img: "resources/images/Javascript-Games.png",
     github: "https://github.com/Istrate-Mihai/Javascript-Games",
     website: "https://javascript-game-area.netlify.app/",
   },
   {
     name: "Lord of The Rings Area",
-    img: "Lord-Of-The-Rings-Area.png",
+    img: "resources/images/Lord-Of-The-Rings-Area.png",
     github: "https://github.com/Istrate-Mihai/Lord-Of-The-Rings-Area",
     website: "https://lord-of-the-rings-area.netlify.app/",
   },
   {
     name: "Computer History",
-    img: "Computer-History.png",
+    img: "resources/images/Computer-History.png",
     github: "https://github.com/Istrate-Mihai/My-First-Website",
     website: "https://computer-history.netlify.app/",
   },
@@ -39,9 +39,22 @@ projects = [
   // },
   {
     name: "Link Academy Portfolio",
-    img: "digital_portfolio.jpg",
+    img: "resources/images/digital_portfolio.jpg",
     github: "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
     website: "cv/Portfolio-Istrate_Mihai_Septimius.7z",
+  },
+];
+
+mechanicalProjectList = [
+  {
+    name: "206 Develop Cabinet Model",
+    img: "resources/images/Cabinet_1.png",
+    download: "resources/CAD_docs/Cabinet_Istrate Mihai.skp"
+  },
+  {
+    name: "305 Develop House Model",
+    img: "resources/images/House_Model_1.png",
+    download: "resources/CAD_docs/305 Develop House Model.skp"
   },
 ];
 
@@ -208,4 +221,4 @@ works = [
   },
 ];
 
-export { skills, projects, educations, works };
+export { skills, projects, educations, works, mechanicalProjectList };
