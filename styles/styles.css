@@ -461,35 +461,35 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 90%;
+  width: 100%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 80%;
+  width: 90%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 80%;
+  width: 90%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .jquery {
-  width: 70%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 50%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .nodejs {
-  width: 70%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .php {
   width: 80%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .nodejs {
+  width: 30%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .php {
+  width: 90%;
+}
+
 .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
-  width: 70%;
+  width: 60%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .git {
@@ -1420,6 +1420,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+
+.tab > div {
+  margin: 0 10px;
 }
 
 .tab a {

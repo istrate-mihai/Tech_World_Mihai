@@ -8,29 +8,11 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/c89d3d412f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/c89d3d412f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
@@ -43,6 +25,7 @@
             <img id="main-photo" src="resources/images/Istrate_Mihai_Septimius.jpg" alt="No Main Photo" />
           </div>
         </div>
+
         <div class="right-header">
           <h1 class="name">
             Hi, I'm <span>Istrate Mihai Septimius</span>
@@ -67,11 +50,13 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="section sec2 about" id="about">
         <div class="main-title">
           <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
         </div>
+
         <div class="about-container">
           <div class="left-about">
             <h4>Statement</h4>
@@ -92,6 +77,7 @@
               </a>
             </div>
           </div>
+
           <div class="right-about">
             <div class="about-item">
               <div class="abt-text">
@@ -113,62 +99,52 @@
             </div>
           </div>
         </div>
-        <div class="about-stats">
-          <h4 class="stat-title">My Skills</h4>
-          <div class="progress-bars"></div>
-        </div>
-        <h4 class="stat-title">My Awards</h4>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fa fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">27/09/2021</p>
-            <h5>
-              Zend PHP Certified Engineer
-              <span>
-                –
-                <a
-                  href="https://www.zend-zce.com/en/yellow-pages/ZEND033057"
-                  target="blank"
-                >
-                  Zend</a
-                ></span
-              >
-            </h5>
-            <p>
-              Online testing through the Pearson Vue platform, on the 27 of
-              September 2021, concluded with the successful passage of the
-              200-710: Zend Certified Engineer exam.
-            </p>
-          </div>
-        </div>
-        <h4 class="stat-title">My Education</h4>
-        <div class="timeline"></div>
 
-        <h4 class="stat-title">My Work Experience</h4>
-        <div class="timeline"></div>
+        <h4 class="stat-title">Education</h4>
+        <div id="educationList" class="timeline"></div>
+
+        <h4 class="stat-title">Awards</h4>
+        <div id="awardList" class="timeline"></div>
+
+        <h4 class="stat-title">Work Experience</h4>
+        <div id="workList" class="timeline"></div>
+
+        <div class="about-stats">
+          <h4 class="stat-title">Skills</h4>
+          <div id="skillList" class="progress-bars"></div>
+        </div>
       </section>
+
       <section class="section sec3" id="portfolio">
         <div class="main-title">
-          <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+          <h2><span>Portfolio</span><span class="bg-text">My Work</span></h2>
         </div>
 
         <div class="tab">
           <div>
-            <a href="#" class="main-btn tablinks" data-tab="web-development">
-              <span class="btn-text">
-                Web Development
-              </span>
-            </a>
-          </div>
-          <div>
-            <a href="#" class="main-btn tablinks" data-tab="cad-cam-technical-drawing">
+            <a href="#" class="main-btn tablinks" data-tab="designList">
               <span class="btn-text">
                 CAD / CAM / Technical Drawing
               </span>
             </a>
           </div>
+
+          <div>
+            <a href="#" class="main-btn tablinks" data-tab="electronics">
+              <span class="btn-text">
+                Electronics Applications
+              </span>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="main-btn tablinks" data-tab="webDevelopmentList">
+              <span class="btn-text">
+                Web Development
+              </span>
+            </a>
+          </div>
+
           <div>
             <a href="#" class="main-btn tablinks" data-tab="ai-applications">
               <span class="btn-text">
@@ -178,10 +154,19 @@
           </div>
         </div>
 
-        <div id="web-development" class="portfolios tabcontent"></div>
-        <div id="cad-cam-technical-drawing" class="portfolios tabcontent"></div>
-        <div id="ai-applications" class="portfolios tabcontent">Coming Soon</div>
+        <div id="designList" class="portfolios tabcontent"></div>
+
+        <div id="electronics" class="portfolios tabcontent">
+          <h2>Coming Soon</h2>
+        </div>
+
+        <div id="webDevelopmentList" class="portfolios tabcontent"></div>
+
+        <div id="ai-applications" class="portfolios tabcontent">
+          <h2>Coming Soon</h2>
+        </div>
       </section>
+
       <section class="section sec4" id="blogs">
         <div class="blogs-content">
           <div class="main-title">
@@ -198,6 +183,7 @@
           </div>
         </div>
       </section>
+
       <section class="section sec5 contact" id="contact">
         <div class="contact-container">
           <div class="main-title">
@@ -261,19 +247,15 @@
               </div>
               <div class="contact-icons">
                 <div class="contact-icon">
-                  <a
-                    href="https://www.facebook.com/i.mihai9960/"
-                    target="_blank"
-                  >
+                  <a href="https://www.facebook.com/i.mihai9960/" target="_blank" title="Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://github.com/Istrate-Mihai" target="_blank">
+
+                  <a href="https://github.com/Istrate-Mihai" target="_blank" title="Github">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a
-                    href="https://www.linkedin.com/in/mihai-septimius-istrate"
-                    target="_blank"
-                  >
+
+                  <a href="https://www.linkedin.com/in/mihai-septimius-istrate" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
@@ -283,6 +265,7 @@
         </div>
       </section>
     </main>
+
     <div class="controlls">
       <div class="control control-1 active-btn" data-id="home" title="Home">
         <i class="fas fa-home"></i>
@@ -300,6 +283,7 @@
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
+
     <div class="theme-btn" title="Light Mode">
       <i class="fas fa-adjust"></i>
     </div>
