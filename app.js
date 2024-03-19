@@ -47,26 +47,55 @@ $(document).ready(function() {
     setMainPhotoPopup();
     setTabLinks();
     createSectionList();
+    setToggleSection();
+    setTechnicalDrawingModal();
 });
 
 function setMainPhotoPopup() {
-  let modal       = $("#mainPhotoModal");
-  let img         = $("#main-photo");
-  let modalImg    = $("#modal-image");
-  let captionText = $("#caption");
-  let sectBtns    = $(".controlls");
+  let modal    = $("#mainPhotoModal");
+  let overlay  = $(".overlay");
+  let img      = $("#main-photo");
+  let modalImg = modal.find('img');
+  let closeBtn = $(".btn-close");
+  let sectBtns = $(".controlls");
 
   img.click(function() {
-      modal.css("display", "block");
+      overlay.removeClass("isHidden");
+      modal.removeClass("isHidden");
       modalImg.attr("src", this.src);
-      captionText.html('');
-      sectBtns.css("display", "none");
+      sectBtns.addClass("isHidden");
   });
 
-  let span = $(".close").eq(0);
-  span.click(function() {
-      modal.css("display", "none");
-      sectBtns.css("display", "flex");
+  closeBtn.click(function() {
+      modal.addClass("isHidden");
+      overlay.addClass("isHidden");
+      sectBtns.removeClass("isHidden");
+  });
+}
+
+function setTechnicalDrawingModal() {
+  let itemList = $("#designList .portfolio-item");
+
+  itemList.on('click', function() {
+    let modal        = $("#cadCamTechnicalDrawingModal");
+    let overlay      = $(".overlay");
+    let imgContainer = $(this).find('img')
+    let modalImg     = modal.find('img');
+    let closeBtn     = $(".btn-close");
+    let sectBtns     = $(".controlls");
+
+    imgContainer.click(function() {
+        overlay.removeClass("isHidden");
+        modal.removeClass("isHidden");
+        modalImg.attr("src", imgContainer.attr('src'));
+        sectBtns.addClass("isHidden");
+    });
+
+    closeBtn.click(function() {
+        modal.addClass("isHidden");
+        overlay.addClass("isHidden");
+        sectBtns.removeClass("isHidden");
+    });
   });
 }
 
@@ -287,16 +316,14 @@ function getSkillTemplate(skillData) {
 
 function getDesignTemplate(designData) {
   return `
-          <div class="portfolio-item">
+          <div class="portfolio-item design-item">
             <h2 class="item-header">${designData.name}</h2>
 
             <div class="image">
               <img src="${designData.img}" alt="portfolioImage" />
             </div>
 
-            <div class="hover-items">
-              <h3>Project Source</h3>
-
+            <div>
               <div class="icons">
                 <a href="${designData.download}" target="_blank" class="icon" download>
                   <i class="fas fa-download"></i>
@@ -331,4 +358,37 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
             </div>
           </div>
         `;
+}
+
+function setToggleSection() {
+  let statementToggle = $("#toggle-statement");
+  let educationToggle = $("#toggle-education");
+  let awardToggle     = $("#toggle-award");
+  let workToggle      = $("#toggle-work-experience");
+  let skillToggle     = $("#toggle-skills");
+
+  statementToggle.on('click', function () {
+    $("#statement").toggleClass('isHidden');
+    $(this).find('.toggle-label').toggleClass('isHidden');
+  });
+
+  educationToggle.on('click', function() {
+    $("#educationList").toggle();
+    $(this).find('.toggle-label').toggleClass('isHidden');
+  });
+
+  awardToggle.on('click', function() {
+    $("#awardList").toggle();
+    $(this).find('.toggle-label').toggleClass('isHidden');
+  });
+
+  workToggle.on('click', function() {
+    $("#workList").toggle();
+    $(this).find('.toggle-label').toggleClass('isHidden');
+  });
+
+  skillToggle.on('click', function() {
+    $("#skillList").toggle();
+    $(this).find('.toggle-label').toggleClass('isHidden');
+  });
 }

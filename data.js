@@ -166,13 +166,18 @@ skillList = [
 designList = [
   {
     name: "206 Develop Cabinet Model",
-    img: "resources/images/Cabinet_1.png",
+    img: "resources/images/Cabinet.png",
     download: "resources/CAD_docs/Cabinet_Istrate Mihai.skp"
   },
   {
     name: "305 Develop House Model",
-    img: "resources/images/House_Model_1.png",
+    img: "resources/images/House_Model.png",
     download: "resources/CAD_docs/305 Develop House Model.skp"
+  },
+  {
+    name: "406 Develop a Wheel Model",
+    img: "resources/images/Wheel_Model.png",
+    download: "resources/CAD_docs/Wheel_Istrate Mihai.skp"
   },
 ];
 

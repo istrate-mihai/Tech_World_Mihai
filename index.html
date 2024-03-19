@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Istrate Mihai</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/tab.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -49,18 +50,19 @@
           </a>
         </div>
       </div>
+
     </header>
 
     <main>
       <section class="section sec2 about" id="about">
         <div class="main-title">
-          <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+          <h2>About <span>me</span><span class="bg-text">stats</span></h2>
         </div>
 
         <div class="about-container">
           <div class="left-about">
-            <h4>Statement</h4>
-            <p>
+            <h4 id="toggle-statement" class="toggle-control">Statement <sup><span class="isHidden toggle-label">(section hidden)</span></sup></h4>
+            <p id="statement">
               <br /><br />
               I am a person eager for self-improvement through continuous learning, I believe that consistent work can change
               the world for the better. As a Mechanical Engineer and Software Developer, I would like to contribute to great
@@ -100,24 +102,24 @@
           </div>
         </div>
 
-        <h4 class="stat-title">Education</h4>
+        <h4 id="toggle-education" class="toggle-control stat-title">Education <sup><span class="isHidden toggle-label">(section hidden)</span></sup></h4>
         <div id="educationList" class="timeline"></div>
 
-        <h4 class="stat-title">Awards</h4>
+        <h4 id="toggle-award" class="toggle-control stat-title">Awards <sup><span class="isHidden toggle-label">(section hidden)</span></sup></h4>
         <div id="awardList" class="timeline"></div>
 
-        <h4 class="stat-title">Work Experience</h4>
+        <h4 id="toggle-work-experience" class="toggle-control stat-title">Work Experience <sup><span class="isHidden toggle-label">(section hidden)</span></sup></h4>
         <div id="workList" class="timeline"></div>
 
         <div class="about-stats">
-          <h4 class="stat-title">Skills</h4>
+          <h4 id="toggle-skills"  class="toggle-control stat-title">Skills <sup><span class="isHidden toggle-label">(section hidden)</span></sup></h4>
           <div id="skillList" class="progress-bars"></div>
         </div>
       </section>
 
       <section class="section sec3" id="portfolio">
         <div class="main-title">
-          <h2><span>Portfolio</span><span class="bg-text">My Work</span></h2>
+          <h2>My<span> Portfolio</span><span class="bg-text">Work</span></h2>
         </div>
 
         <div class="tab">
@@ -157,20 +159,20 @@
         <div id="designList" class="portfolios tabcontent"></div>
 
         <div id="electronics" class="portfolios tabcontent">
-          <h2>Coming Soon</h2>
+          <h2>No content yet</h2>
         </div>
 
         <div id="webDevelopmentList" class="portfolios tabcontent"></div>
 
         <div id="ai-applications" class="portfolios tabcontent">
-          <h2>Coming Soon</h2>
+          <h2>No content yet</h2>
         </div>
       </section>
 
       <section class="section sec4" id="blogs">
         <div class="blogs-content">
           <div class="main-title">
-            <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+            <h2><span>Blogs</span><span class="bg-text">Blogs</span></h2>
           </div>
           <div class="blogs">
             <div class="blog">
@@ -187,7 +189,7 @@
       <section class="section sec5 contact" id="contact">
         <div class="contact-container">
           <div class="main-title">
-            <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+            <h2><span>Contact</span><span class="bg-text">Contact</span></h2>
           </div>
           <div class="contact-content-con">
             <div class="left-contact">
@@ -289,11 +291,22 @@
     </div>
 
     <!-- Main Photo Modal -->
-    <div id="mainPhotoModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modal-image">
-      <div id="caption"></div>
-    </div>
+    <section id="mainPhotoModal" class="modal isHidden">
+      <div class="modal-content">
+        <button class="btn-close">⨉</button>
+        <img src="#" alt="Modal Photo" />
+      </div>
+    </section>
+
+    <!-- CAD / CAM / Technical Drawing Modal -->
+    <section id="cadCamTechnicalDrawingModal" class="modal isHidden">
+      <div class="modal-content">
+        <button class="btn-close">⨉</button>
+        <img src="#" alt="Modal Photo" />
+      </div>
+    </section>
+
+    <div class="overlay isHidden"></div>
 
     <script type="module" src="app.js"></script>
     <script src="https://use.fontawesome.com/1cccff0e97.js"></script>

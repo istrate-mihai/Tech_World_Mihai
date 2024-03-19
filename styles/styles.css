@@ -1061,5 +1061,13 @@ section {
 #cadCamTechnicalDrawingModal .modal-content img {
   width: 100%;
 }
+@media only screen and (max-width: 700px) {
+  #cadCamTechnicalDrawingModal .modal-content {
+    width: 100%;
+  }
+  #cadCamTechnicalDrawingModal .modal-content img {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
