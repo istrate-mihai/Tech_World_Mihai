@@ -33,210 +33,253 @@
 //   `;
 
 
-import { educationList, awardList, workList, skillList, designList, webDevelopmentList } from "./data.js";
+import { educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList } from "./data.js";
 
-let sections     = $(".section");
-let sectBtns     = $(".controlls");
-let sectBtn      = $(".control");
-let allSections  = $(".main-content");
-let tabLinks     = $(".tablinks");
-let isLightMode  = false;
+let sections             = $(".section");
+let sectBtns             = $(".controlls");
+let sectBtn              = $(".control");
+let allSections          = $(".main-content");
+let tabLinks             = $(".tablinks");
+let isLightMode = false;
 
-$(document).ready(function() {
+$(document).ready(function () {
     setPageTransitions();
     setMainPhotoPopup();
     setTabLinks();
     createSectionList();
+    setTabLinkOnSectionOpen();
     setToggleSection();
     setTechnicalDrawingModal();
 });
 
 function setMainPhotoPopup() {
-  let modal    = $("#mainPhotoModal");
-  let overlay  = $(".overlay");
-  let img      = $("#main-photo");
-  let modalImg = modal.find('img');
-  let closeBtn = $(".btn-close");
-  let sectBtns = $(".controlls");
+    let modal = $("#mainPhotoModal");
+    let overlay = $(".overlay");
+    let img = $("#main-photo");
+    let modalImg = modal.find('img');
+    let closeBtn = $(".btn-close");
+    let sectBtns = $(".controlls");
 
-  img.click(function() {
-      overlay.removeClass("isHidden");
-      modal.removeClass("isHidden");
-      modalImg.attr("src", this.src);
-      sectBtns.addClass("isHidden");
-  });
-
-  closeBtn.click(function() {
-      modal.addClass("isHidden");
-      overlay.addClass("isHidden");
-      sectBtns.removeClass("isHidden");
-  });
-}
-
-function setTechnicalDrawingModal() {
-  let itemList = $("#designList .portfolio-item");
-
-  itemList.on('click', function() {
-    let modal        = $("#cadCamTechnicalDrawingModal");
-    let overlay      = $(".overlay");
-    let imgContainer = $(this).find('img')
-    let modalImg     = modal.find('img');
-    let closeBtn     = $(".btn-close");
-    let sectBtns     = $(".controlls");
-
-    imgContainer.click(function() {
+    img.click(function () {
         overlay.removeClass("isHidden");
         modal.removeClass("isHidden");
-        modalImg.attr("src", imgContainer.attr('src'));
+        modalImg.attr("src", this.src);
         sectBtns.addClass("isHidden");
     });
 
-    closeBtn.click(function() {
+    closeBtn.click(function () {
         modal.addClass("isHidden");
         overlay.addClass("isHidden");
         sectBtns.removeClass("isHidden");
     });
-  });
+}
+
+function setTechnicalDrawingModal() {
+    let itemList = $("#designList .portfolio-item");
+
+    itemList.on('click', function () {
+        let modal = $("#cadCamTechnicalDrawingModal");
+        let overlay = $(".overlay");
+        let imgContainer = $(this).find('img')
+        let modalImg = modal.find('img');
+        let closeBtn = $(".btn-close");
+        let sectBtns = $(".controlls");
+
+        imgContainer.click(function () {
+            overlay.removeClass("isHidden");
+            modal.removeClass("isHidden");
+            modalImg.attr("src", imgContainer.attr('src'));
+            sectBtns.addClass("isHidden");
+        });
+
+        closeBtn.click(function () {
+            modal.addClass("isHidden");
+            overlay.addClass("isHidden");
+            sectBtns.removeClass("isHidden");
+        });
+    });
 }
 
 function setPageTransitions() {
-  // Button click active class
-  sectBtn.click(function() {
-      let currentBtn = $(".active-btn");
-      currentBtn.removeClass("active-btn");
-      $(this).addClass("active-btn");
-  });
+    // Button click active class
+    sectBtn.click(function () {
+        let currentBtn = $(".active-btn");
+        currentBtn.removeClass("active-btn");
+        $(this).addClass("active-btn");
+    });
 
-  // Sections Active
-  allSections.on("click", (e) => {
-      const id = $(e.target).data("id");
-      if (id) {
-          //remove selected from the other btns
-          sectBtns.removeClass("active");
-          $(e.target).addClass("active");
-          //hide other sections
-          sections.removeClass("active");
-          $("#" + id).addClass("active");
-      }
-  });
+    // Sections Active
+    allSections.on("click", (e) => {
+        const id = $(e.target).data("id");
+        if (id) {
+            //remove selected from the other btns
+            sectBtns.removeClass("active");
+            $(e.target).addClass("active");
+            //hide other sections
+            sections.removeClass("active");
+            $("#" + id).addClass("active");
+        }
+    });
 
-  // Toggle theme
-  const themeBtn = $(".theme-btn");
-  themeBtn.click(function() {
-    $("body").toggleClass("light-mode");
-    isLightMode = !isLightMode;
+    // Toggle theme
+    const themeBtn = $(".theme-btn");
+    themeBtn.click(function () {
+        $("body").toggleClass("light-mode");
+        isLightMode = !isLightMode;
 
-    if (isLightMode) {
-        $(this).attr('title', 'Dark Mode');
-    } else {
-        $(this).attr('title', 'Light Mode');
-    }
-
-    tabLinks.first().click();
-  });
+        if (isLightMode) {
+            $(this).attr('title', 'Dark Mode');
+        } else {
+            $(this).attr('title', 'Light Mode');
+        }
+    });
 }
 
 function setTabLinks() {
-  tabLinks.on('click', function(event) {
-    event.preventDefault();
-    let tabId = $(this).data("tab");
-    $(".tabcontent").css("display", "none");
-    $(".tablinks").css("background-color", "");
-    $("#" + tabId).css("display", "grid");
-    if (isLightMode) {
-      $(event.currentTarget).css("background-color", "rgb(30, 144, 255)");
-    }
-    else {
-      $(event.currentTarget).css("background-color", "rgb(39, 174, 96)");
-    }
-  });
-  tabLinks.first().click();
+    tabLinks.on('click', function (event) {
+        event.preventDefault();
+        let tabId = $(this).data("tab");
+        $(".tabcontent").css("display", "none");
+        $(".tablinks").css("background-color", "");
+        $("#" + tabId).css("display", "grid");
+        if (isLightMode) {
+            $(event.currentTarget).css("background-color", "rgb(30, 144, 255)");
+        } else {
+            $(event.currentTarget).css("background-color", "rgb(39, 174, 96)");
+        }
+    });
 };
 
-function createSectionList() {
-  let sectionList = [
-    {
-      selector: $('#educationList'),
-      content: getSectionTemplate('Education')
-    },
-    {
-      selector: $('#awardList'),
-      content: getSectionTemplate('Award')
-    },
-    {
-      selector: $("#workList"),
-      content: getSectionTemplate('Work')
-    },
-    {
-      selector: $("#skillList"),
-      content: getSectionTemplate('Skill')
-    },
-    {
-      selector: $("#designList"),
-      content: getSectionTemplate('Design')
-    },
-    {
-      selector: $("#webDevelopmentList"),
-      content: getSectionTemplate('Web Development')
-    },
-  ];
+function setTabLinkOnSectionOpen() {
+    let tabPuzzleList      = $("#tab-puzzleList")
+    let tabPuzzleTitleList = $(".puzzleTab");
 
-  for (let i = 0; i < sectionList.length; i++) {
-    sectionList[i].selector.html(sectionList[i].content);
-  }
+    $('#portfolio-control').on('click', function (event) {
+        $("#tab-designList").click();
+    });
+    // $('#tab-artisticDrawingList').on('click', function () {
+    //     $('#puzzle-gallery-list').remove();
+    // });
+    $('#hobbys-control').on('click', function (event) {
+        tabPuzzleList.on('click', function () {
+            $(".puzzleTab").on('click', function (e) {
+                let currentPuzzleTitleLink = $(e.currentTarget);
+                let puzzleId               = currentPuzzleTitleLink.data('tab');
+
+                tabPuzzleTitleList.removeClass('active-puzzle-tab active-puzzle-tab-light');
+
+                if (isLightMode) {
+                    currentPuzzleTitleLink.addClass('active-puzzle-tab-light');
+                }
+                else {
+                    currentPuzzleTitleLink.addClass('active-puzzle-tab');
+                }
+                $('#puzzle-gallery-list').html(getPuzzleImgList(puzzleId));
+            });
+        });
+        tabPuzzleList.click();
+    });
+}
+
+function createSectionList() {
+    let sectionList = [
+        {
+            selector: $('#educationList'),
+            content: getSectionTemplate('Education')
+        },
+        {
+            selector: $('#awardList'),
+            content: getSectionTemplate('Award')
+        },
+        {
+            selector: $("#workList"),
+            content: getSectionTemplate('Work')
+        },
+        {
+            selector: $("#skillList"),
+            content: getSectionTemplate('Skill')
+        },
+        {
+            selector: $("#designList"),
+            content: getSectionTemplate('Design')
+        },
+        {
+            selector: $("#webDevelopmentList"),
+            content: getSectionTemplate('Web Development')
+        },
+        {
+            selector: $("#blogList"),
+            content: getSectionTemplate('Blog')
+        },
+        {
+            selector: $("#puzzleList"),
+            content: getSectionTemplate('Puzzle List')
+        },
+    ];
+
+    for (let i = 0; i < sectionList.length; i++) {
+        sectionList[i].selector.html(sectionList[i].content);
+    }
 }
 
 function getSectionTemplate(name) {
-  let sectionTemplate  = '';
+    let sectionTemplate = '';
 
-  switch(name) {
-    case 'Education':
+    switch (name) {
+        case 'Education':
+            for (let i = 0; i < educationList.length; i++) {
+                sectionTemplate += getEducationTemplate(educationList[i]);
+            }
+            break;
 
-      for (let i = 0; i < educationList.length; i++) {
-        sectionTemplate += getEducationTemplate(educationList[i]);
-      }
-      break;
+        case 'Award':
+            for (let i = 0; i < awardList.length; i++) {
+                sectionTemplate += getAwardTemplate(awardList[i]);
+            }
+            break;
 
-    case 'Award':
-      for (let i = 0; i < awardList.length; i++) {
-        sectionTemplate += getAwardTemplate(awardList[i]);
-      }
-      break;
+        case 'Work':
+            for (let i = 0; i < workList.length; i++) {
+                sectionTemplate += getWorkTemplate(workList[i]);
+            }
+            break;
 
-    case 'Work':
+        case 'Skill':
+            for (let i = 0; i < skillList.length; i++) {
+                sectionTemplate += getSkillTemplate(skillList[i]);
+            }
+            break;
 
-      for (let i = 0; i < workList.length; i++) {
-        sectionTemplate += getWorkTemplate(workList[i]);
-      }
-      break;
+        case 'Design':
+            for (let i = 0; i < designList.length; i++) {
+                sectionTemplate += getDesignTemplate(designList[i]);
+            }
+            break;
 
-    case 'Skill':
+        case 'Web Development':
+            for (let i = 0; i < webDevelopmentList.length; i++) {
+                sectionTemplate += getWebDevelopmentTemplate(webDevelopmentList[i]);
+            }
+            break;
 
-      for (let i = 0; i < skillList.length; i++) {
-        sectionTemplate += getSkillTemplate(skillList[i]);
-      }
-      break;
+        case 'Blog':
+            for (let i = 0; i < blogList.length; i++) {
+                sectionTemplate += getBlogListTemplate(blogList[i]);
+            }
+            break;
 
-    case 'Design':
+        case 'Puzzle List':
+            for (let i = 0; i < puzzleList.length; i++) {
+                sectionTemplate += getPuzzleListTemplate(puzzleList[i]);
+            }
+            break;
+    }
 
-      for (let i = 0; i < designList.length; i++) {
-        sectionTemplate += getDesignTemplate(designList[i]);
-      }
-    break;
-
-    case 'Web Development':
-
-      for (let i = 0; i < webDevelopmentList.length; i++) {
-        sectionTemplate += getWebDevelopmentTemplate(webDevelopmentList[i]);
-      }
-    break;
-  }
-
-  return sectionTemplate;
+    return sectionTemplate;
 }
 
 function getEducationTemplate(educationData) {
-  return  `
+    return `
             <div class="timeline-item">
               <div class="tl-icon">
                 <i class="fa fa-briefcase"></i>
@@ -257,7 +300,7 @@ function getEducationTemplate(educationData) {
 }
 
 function getAwardTemplate(awardData) {
-  return `
+    return `
           <div class="timeline-item">
             <div class="tl-icon">
               <i class="fa fa-briefcase"></i>
@@ -272,13 +315,13 @@ function getAwardTemplate(awardData) {
 }
 
 function getWorkTemplate(workData) {
-  let taskList = '';
+    let taskList = '';
 
-  for (let i = 0; i < workData.taskList.length; i++) {
-    taskList += `<li>${workData.taskList[i]}</li>`;
-  }
+    for (let i = 0; i < workData.taskList.length; i++) {
+        taskList += `<li>${workData.taskList[i]}</li>`;
+    }
 
-  return `
+    return `
           <div class="timeline-item">
             <div class="tl-icon">
               <i class="fa fa-briefcase"></i>
@@ -299,7 +342,7 @@ function getWorkTemplate(workData) {
 }
 
 function getSkillTemplate(skillData) {
-  return `
+    return `
           <div class="progress-bar">
             <p class="prog-title">${skillData.title}</p>
 
@@ -315,7 +358,7 @@ function getSkillTemplate(skillData) {
 }
 
 function getDesignTemplate(designData) {
-  return `
+    return `
           <div class="portfolio-item design-item">
             <h2 class="item-header">${designData.name}</h2>
 
@@ -335,7 +378,7 @@ function getDesignTemplate(designData) {
 }
 
 function getWebDevelopmentTemplate(webDevelopmentData) {
-  return `
+    return `
           <div class="portfolio-item">
             <h2 class="item-header">${webDevelopmentData.name}</h2>
 
@@ -360,35 +403,76 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
         `;
 }
 
+function getBlogListTemplate(blogData) {
+    return `
+            <div class="blog">
+                <img src="${blogData.imgSrc}" alt="No Note"/>
+                <div class="blog-text">
+                    <h4>${blogData.title}</h4>
+                    <p>${blogData.description}</p>
+                </div>
+            </div>
+            `;
+}
+
+function getPuzzleListTemplate(puzzleData) {
+    return `
+            <div>
+              <a href="#" class="main-btn puzzleTab" id="tab-${puzzleData.id}" data-tab="${puzzleData.id}">
+                  <span class="btn-text">
+                    ${puzzleData.title}
+                  </span>
+              </a>
+            </div>
+            `;
+}
+
 function setToggleSection() {
-  let statementToggle = $("#toggle-statement");
-  let educationToggle = $("#toggle-education");
-  let awardToggle     = $("#toggle-award");
-  let workToggle      = $("#toggle-work-experience");
-  let skillToggle     = $("#toggle-skills");
+    let statementToggle = $("#toggle-statement");
+    let educationToggle = $("#toggle-education");
+    let awardToggle = $("#toggle-award");
+    let workToggle = $("#toggle-work-experience");
+    let skillToggle = $("#toggle-skills");
 
-  statementToggle.on('click', function () {
-    $("#statement").toggleClass('isHidden');
-    $(this).find('.toggle-label').toggleClass('isHidden');
-  });
+    statementToggle.on('click', function () {
+        $("#statement").toggleClass('isHidden');
+        $(this).find('.toggle-label').toggleClass('isHidden');
+    });
 
-  educationToggle.on('click', function() {
-    $("#educationList").toggle();
-    $(this).find('.toggle-label').toggleClass('isHidden');
-  });
+    educationToggle.on('click', function () {
+        $("#educationList").toggle();
+        $(this).find('.toggle-label').toggleClass('isHidden');
+    });
 
-  awardToggle.on('click', function() {
-    $("#awardList").toggle();
-    $(this).find('.toggle-label').toggleClass('isHidden');
-  });
+    awardToggle.on('click', function () {
+        $("#awardList").toggle();
+        $(this).find('.toggle-label').toggleClass('isHidden');
+    });
 
-  workToggle.on('click', function() {
-    $("#workList").toggle();
-    $(this).find('.toggle-label').toggleClass('isHidden');
-  });
+    workToggle.on('click', function () {
+        $("#workList").toggle();
+        $(this).find('.toggle-label').toggleClass('isHidden');
+    });
 
-  skillToggle.on('click', function() {
-    $("#skillList").toggle();
-    $(this).find('.toggle-label').toggleClass('isHidden');
-  });
+    skillToggle.on('click', function () {
+        $("#skillList").toggle();
+        $(this).find('.toggle-label').toggleClass('isHidden');
+    });
+}
+
+function getPuzzleImgList(puzzleId) {
+    let currentPuzzle = puzzleList.find(puzzle => puzzle.id === puzzleId);
+    let imgList       = currentPuzzle.imgList;
+    let content       = '';
+    let imgListLength = imgList.length;
+
+    for (let i = 0; i < imgListLength; i++) {
+        content += `
+          <div class="puzzle-gallery">
+            <img src="${imgList[i]}" />
+          </div>
+        `;
+    }
+
+    return content;
 }

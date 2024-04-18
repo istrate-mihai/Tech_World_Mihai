@@ -1,6 +1,6 @@
-let educationList, awardList, workList, skillList, designList, webDevelopmentList;
+let educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList;
 
-educationList = [
+educationList      = [
   {
     duration: "01/11/2020 – 07/09/2021",
     educationTitle: "PHP WEB DEVELOPER",
@@ -58,16 +58,14 @@ educationList = [
     // ],
   // },
 ];
-
-awardList = [
+awardList          = [
   {
     date: '27/09/2021',
     name: 'Zend PHP Certified Engineer <span> – <a href="https://www.zend-zce.com/en/yellow-pages/ZEND033057" target="blank">Zend</a></span>',
     description: 'Online testing through the Pearson Vue platform, on the 27 of September 2021, concluded with the successful passage of the 200-710: Zend Certified Engineer exam.'
   }
 ];
-
-workList = [
+workList           = [
   {
     duration: "18/06/2022 – Current – Constanta, Romania",
     title: "FULL-STACK WEB DEVELOPER <span><a href=\"https://www.acwebconnecting.com/\" target=\"_blank\">– AC WEBCONNECTING N.V. / SHOSHORO N.V</a></span>",
@@ -114,8 +112,7 @@ workList = [
     ],
   },
 ];
-
-skillList = [
+skillList          = [
   {
     title: "HTML5",
     percentage: "100%",
@@ -162,8 +159,7 @@ skillList = [
     class: "git",
   },
 ];
-
-designList = [
+designList         = [
   {
     name: "206 Develop Cabinet Model",
     img: "resources/images/Cabinet.png",
@@ -180,7 +176,6 @@ designList = [
     download: "resources/CAD_docs/Wheel_Istrate Mihai.skp"
   },
 ];
-
 webDevelopmentList = [
   {
     name: "Phone Book",
@@ -225,5 +220,64 @@ webDevelopmentList = [
     website: "cv/Portfolio-Istrate_Mihai_Septimius.7z",
   },
 ];
+blogList           = [
+  {
+    'title': 'Publication',
+    'imgSrc': 'resources/images/note1.jpg',
+    'description': 'This website was published on 02.04.2022!'
+  }
+];
+puzzleList         = [
+  {
+    'id': 'gearbox',
+    'title': '3D puzzle - Gearbox',
+    'imgList': [
+      'resources/images/puzzles/gearbox-1.jpg',
+      'resources/images/puzzles/gearbox-2.jpg',
+      'resources/images/puzzles/gearbox-3.jpg',
+      'resources/images/puzzles/gearbox-4.jpg',
+    ]
+  },
+  {
+    'id': 'steampunkClock',
+    'title': '3D Puzzle - Steampunk Clock',
+    'imgList': [
+      'resources/images/puzzles/steamClock-1.jpg',
+      'resources/images/puzzles/steamClock-2.jpg',
+      'resources/images/puzzles/steamClock-3.jpg',
+      'resources/images/puzzles/steamClock-4.jpg',
+    ]
+  },
+  {
+    'id': 'vintageAlarmClock',
+    'title': '3D Puzzle - Vintage Alarm Clock',
+    'imgList': [
+      'resources/images/puzzles/alarmClock-1.jpg',
+      'resources/images/puzzles/alarmClock-2.jpg',
+      'resources/images/puzzles/alarmClock-3.jpg',
+      'resources/images/puzzles/alarmClock-4.jpg',
+    ]
+  },
+  {
+    'id': 'theOldClockTower',
+    'title': '3D Puzzle - The Old Clock Tower',
+    'imgList': [
+      'resources/images/puzzles/towerClock-1.jpg',
+      'resources/images/puzzles/towerClock-2.jpg',
+      'resources/images/puzzles/towerClock-3.jpg',
+      'resources/images/puzzles/towerClock-4.jpg',
+    ]
+  },
+  {
+    'id': 'primeSteamExpress',
+    'title': 'Mechanical Puzzle - Prime Steam Express',
+    'imgList': [
+      'resources/images/puzzles/steamExpress-1.jpg',
+      'resources/images/puzzles/steamExpress-2.jpg',
+      'resources/images/puzzles/steamExpress-3.jpg',
+      'resources/images/puzzles/steamExpress-4.jpg',
+    ]
+  },
+];
 
-export { educationList, awardList, workList, skillList, designList, webDevelopmentList };
+export { educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList };

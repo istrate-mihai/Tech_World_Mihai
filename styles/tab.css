@@ -35,5 +35,33 @@
     padding: 0;
   }
 }
+#puzzleList {
+  margin: 25px;
+}
+#puzzleList div {
+  margin: 5px;
+  width: fit-content;
+}
+#puzzleList div a.active-puzzle-tab {
+  background-color: rgb(39, 174, 96);
+}
+#puzzleList div a.active-puzzle-tab-light {
+  background-color: rgb(30, 144, 255);
+}
+#puzzleList div .puzzleTab {
+  padding: 5px;
+}
+
+#puzzle-gallery-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#puzzle-gallery-list div {
+  margin: 0 15px;
+}
+#puzzle-gallery-list div img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=tab.css.map */

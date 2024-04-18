@@ -47,3 +47,39 @@
       }
   }
 }
+
+#puzzleList {
+  margin: 25px;
+
+  div {
+    a {
+      &.active-puzzle-tab {
+        background-color: rgb(39, 174, 96);
+      }
+
+      &.active-puzzle-tab-light {
+        background-color: rgb(30, 144, 255);
+      }
+    }
+
+    margin: 5px;
+    width: fit-content;
+
+    .puzzleTab {
+      padding: 5px;
+    }
+  }
+}
+
+#puzzle-gallery-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+    div {
+      margin: 0 15px;
+
+      img {
+        width: 100%;
+      }
+    }
+}

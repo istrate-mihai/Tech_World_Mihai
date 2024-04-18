@@ -124,69 +124,97 @@
 
         <div class="tab">
           <div>
-            <a href="#" class="main-btn tablinks" data-tab="designList">
+            <a href="#" class="main-btn tablinks" id="tab-designList" data-tab="designList">
               <span class="btn-text">
                 CAD / CAM / Technical Drawing
               </span>
             </a>
           </div>
 
-          <div>
-            <a href="#" class="main-btn tablinks" data-tab="electronics">
-              <span class="btn-text">
-                Electronics Applications
-              </span>
-            </a>
-          </div>
+<!--          <div>-->
+<!--            <a href="#" class="main-btn tablinks" id="tab-electronics" data-tab="electronics">-->
+<!--              <span class="btn-text">-->
+<!--                Electronics Applications-->
+<!--              </span>-->
+<!--            </a>-->
+<!--          </div>-->
 
           <div>
-            <a href="#" class="main-btn tablinks" data-tab="webDevelopmentList">
+            <a href="#" class="main-btn tablinks" id="tab-webDevelopmentList" data-tab="webDevelopmentList">
               <span class="btn-text">
                 Web Development
               </span>
             </a>
           </div>
 
-          <div>
-            <a href="#" class="main-btn tablinks" data-tab="ai-applications">
-              <span class="btn-text">
-                AI Applications
-              </span>
-            </a>
-          </div>
+<!--          <div>-->
+<!--            <a href="#" class="main-btn tablinks" id="tab-ai-applications" data-tab="ai-applications">-->
+<!--              <span class="btn-text">-->
+<!--                AI Applications-->
+<!--              </span>-->
+<!--            </a>-->
+<!--          </div>-->
         </div>
 
         <div id="designList" class="portfolios tabcontent"></div>
 
-        <div id="electronics" class="portfolios tabcontent">
-          <h2>No content yet</h2>
-        </div>
+<!--        <div id="electronics" class="portfolios tabcontent">-->
+<!--          <h2>No content yet</h2>-->
+<!--        </div>-->
 
         <div id="webDevelopmentList" class="portfolios tabcontent"></div>
 
-        <div id="ai-applications" class="portfolios tabcontent">
-          <h2>No content yet</h2>
-        </div>
+<!--        <div id="ai-applications" class="portfolios tabcontent">-->
+<!--          <h2>No content yet</h2>-->
+<!--        </div>-->
       </section>
 
-      <section class="section sec4" id="blogs">
+      <section class="section sec4" id="hobbys">
+        <div class="hobbys-content">
+          <div class="main-title">
+            <h2><span>Hobbys</span><span class="bg-text">Hobbys</span></h2>
+          </div>
+
+          <div class="tab">
+            <div>
+              <a href="#" class="main-btn tablinks" id="tab-puzzleList" data-tab="puzzleList">
+              <span class="btn-text">
+                3D Puzzles / Models
+              </span>
+              </a>
+            </div>
+
+<!--            <div>-->
+<!--              <a href="#" class="main-btn tablinks" id="tab-artisticDrawingList" data-tab="artisticDrawingList">-->
+<!--              <span class="btn-text">-->
+<!--                Artistic Drawing-->
+<!--              </span>-->
+<!--              </a>-->
+<!--            </div>-->
+          </div>
+
+          <div id="puzzleList" class="tabcontent"></div>
+
+          <div id="artisticDrawingList" class="tabcontent">
+            <h2 style="margin: 5px;">No content yet</h2>
+          </div>
+        </div>
+
+        <div id="puzzle-gallery-list"></div>
+      </section>
+
+      <section class="section sec5" id="blogs">
         <div class="blogs-content">
           <div class="main-title">
             <h2><span>Blogs</span><span class="bg-text">Blogs</span></h2>
           </div>
-          <div class="blogs">
-            <div class="blog">
-              <img src="resources/images/note1.jpg" alt="No Note" />
-              <div class="blog-text">
-                <h4>Publication</h4>
-                <p>This website was published on 02.04.2022!</p>
-              </div>
-            </div>
+
+          <div id="blogList" class="blogs">
           </div>
         </div>
       </section>
 
-      <section class="section sec5 contact" id="contact">
+      <section class="section sec6" id="contact">
         <div class="contact-container">
           <div class="main-title">
             <h2><span>Contact</span><span class="bg-text">Contact</span></h2>
@@ -269,19 +297,22 @@
     </main>
 
     <div class="controlls">
-      <div class="control control-1 active-btn" data-id="home" title="Home">
+      <div class="control control-1 active-btn" id="home-control" data-id="home" title="Home">
         <i class="fas fa-home"></i>
       </div>
-      <div class="control control-2" data-id="about" title="About">
+      <div class="control control-2" id="about-control" data-id="about" title="About">
         <i class="fas fa-user"></i>
       </div>
-      <div class="control control-3" data-id="portfolio" title="Portfolio">
+      <div class="control control-3" id="portfolio-control" data-id="portfolio" title="Portfolio">
         <i class="fas fa-briefcase"></i>
       </div>
-      <div class="control control-4" data-id="blogs" title="Blogs">
+      <div class="control control-4" id="hobbys-control" data-id="hobbys" title="Hobbys">
+        <i class="fas fa-drafting-compass"></i>
+      </div>
+      <div class="control control-5" id="blogs-control" data-id="blogs" title="Blogs">
         <i class="far fa-newspaper"></i>
       </div>
-      <div class="control control-5" data-id="contact" title="Contact">
+      <div class="control control-6" id="contact-control" data-id="contact" title="Contact">
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
