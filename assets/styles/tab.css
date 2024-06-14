@@ -40,6 +40,7 @@
 }
 #puzzleList div {
   margin: 5px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #puzzleList div a.active-puzzle-tab {
@@ -62,6 +63,4 @@
 }
 #puzzle-gallery-list div img {
   width: 100%;
-}
-
-/*# sourceMappingURL=tab.css.map */
+}/*# sourceMappingURL=tab.css.map */

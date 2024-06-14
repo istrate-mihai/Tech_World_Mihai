@@ -17,46 +17,6 @@ educationList      = [
     institutionDescription:
       "Training as a mechanical engineer, field - Machine Building Technology.",
   },
-  // {
-    // duration: "Other Certificates",
-    // educationTitle: [
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/Certificate/1014-21392382/pdf/",
-    //     otherEducationTitle: "Solo Learn App - HTML Course",
-    //   },
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/Certificate/1023-21392382/pdf/",
-    //     otherEducationTitle: "Solo Learn App - CSS Course",
-    //   },
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/certificates/course/en/21392382/1024/landscape/png",
-    //     otherEducationTitle: "Solo Learn App - Javascript Course",
-    //   },
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/Certificate/1082-21392382/pdf/",
-    //     otherEducationTitle: "Solo Learn App - jQuery Course",
-    //   },
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/Certificate/1162-21392382/pdf/",
-    //     otherEducationTitle: "Solo Learn App - Responsive Web Design Course",
-    //   },
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/Certificate/1059-21392382/pdf/",
-    //     otherEducationTitle: "Solo Learn App - PHP Course",
-    //   },
-    //   {
-    //     otherEducationLink:
-    //       "https://www.sololearn.com/Certificate/1097-21392382/pdf/",
-    //     otherEducationTitle: "Solo Learn App - React + Redux Course",
-    //   },
-    // ],
-  // },
 ];
 awardList          = [
   {
@@ -162,68 +122,62 @@ skillList          = [
 designList         = [
   {
     name: "206 Develop Cabinet Model",
-    img: "resources/images/Cabinet.png",
-    download: "resources/CAD_docs/Cabinet_Istrate Mihai.skp"
+    img: "assets/images/cabinet.png",
+    download: "docs/Cabinet_Istrate_Mihai.skp"
   },
   {
     name: "305 Develop House Model",
-    img: "resources/images/House_Model.png",
-    download: "resources/CAD_docs/305 Develop House Model.skp"
+    img: "assets/images/houseModel.png",
+    download: "docs/305_Develop_House_Model.skp"
   },
   {
     name: "406 Develop a Wheel Model",
-    img: "resources/images/Wheel_Model.png",
-    download: "resources/CAD_docs/Wheel_Istrate Mihai.skp"
+    img: "assets/images/wheelModel.png",
+    download: "docs/Wheel_Istrate_Mihai.skp"
   },
 ];
 webDevelopmentList = [
   {
     name: "Phone Book",
-    img: "resources/images/Phone-Book.png",
+    img: "assets/images/phoneBook.png",
     github: "https://github.com/Istrate-Mihai/Phone-Book-ReactJS",
     website: "https://phone-book-react-app.netlify.app/",
   },
   {
     name: "Currency Converter",
-    img: "resources/images/Currency-Converter.png",
+    img: "assets/images/currencyConverter.png",
     github: "https://github.com/Istrate-Mihai/Currency-Converter",
     website: "https://currency-converter-react-app.netlify.app/",
   },
   {
     name: "Javascript Game Area",
-    img: "resources/images/Javascript-Games.png",
+    img: "assets/images/javascriptGames.png",
     github: "https://github.com/Istrate-Mihai/Javascript-Games",
     website: "https://javascript-game-area.netlify.app/",
   },
   {
     name: "Lord of The Rings Area",
-    img: "resources/images/Lord-Of-The-Rings-Area.png",
+    img: "assets/images/lordOfTheRingsArea.png",
     github: "https://github.com/Istrate-Mihai/Lord-Of-The-Rings-Area",
     website: "https://lord-of-the-rings-area.netlify.app/",
   },
   {
     name: "Computer History",
-    img: "resources/images/Computer-History.png",
+    img: "assets/images/computerHistory.png",
     github: "https://github.com/Istrate-Mihai/My-First-Website",
     website: "https://computer-history.netlify.app/",
   },
-  // {
-  //   name: "Notebook App",
-  //   img: "your_notebook.png",
-  //   github: "https://github.com/Istrate-Mihai/Notebook-App",
-  //   website: "https://yournotebookapp.000webhostapp.com/index.php",
-  // },
   {
     name: "Link Academy Portfolio",
-    img: "resources/images/digital_portfolio.jpg",
+    img: "assets/images/digitalPortfolio.jpg",
     github: "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
-    website: "cv/Portfolio-Istrate_Mihai_Septimius.7z",
+    website: "assets/cv/Portfolio-Istrate_Mihai_Septimius.7z",
   },
 ];
 blogList           = [
   {
     'title': 'Publication',
-    'imgSrc': 'resources/images/note1.jpg',
+    'imgSrc': 'assets/images/note1.jpg',
     'description': 'This website was published on 02.04.2022!'
   }
 ];
@@ -232,50 +186,50 @@ puzzleList         = [
     'id': 'gearbox',
     'title': '3D puzzle - Gearbox',
     'imgList': [
-      'resources/images/puzzles/gearbox-1.jpg',
-      'resources/images/puzzles/gearbox-2.jpg',
-      'resources/images/puzzles/gearbox-3.jpg',
-      'resources/images/puzzles/gearbox-4.jpg',
+      'assets/images/puzzles/gearbox-1.jpg',
+      'assets/images/puzzles/gearbox-2.jpg',
+      'assets/images/puzzles/gearbox-3.jpg',
+      'assets/images/puzzles/gearbox-4.jpg',
     ]
   },
   {
     'id': 'steampunkClock',
     'title': '3D Puzzle - Steampunk Clock',
     'imgList': [
-      'resources/images/puzzles/steamClock-1.jpg',
-      'resources/images/puzzles/steamClock-2.jpg',
-      'resources/images/puzzles/steamClock-3.jpg',
-      'resources/images/puzzles/steamClock-4.jpg',
+      'assets/images/puzzles/steamClock-1.jpg',
+      'assets/images/puzzles/steamClock-2.jpg',
+      'assets/images/puzzles/steamClock-3.jpg',
+      'assets/images/puzzles/steamClock-4.jpg',
     ]
   },
   {
     'id': 'vintageAlarmClock',
     'title': '3D Puzzle - Vintage Alarm Clock',
     'imgList': [
-      'resources/images/puzzles/alarmClock-1.jpg',
-      'resources/images/puzzles/alarmClock-2.jpg',
-      'resources/images/puzzles/alarmClock-3.jpg',
-      'resources/images/puzzles/alarmClock-4.jpg',
+      'assets/images/puzzles/alarmClock-1.jpg',
+      'assets/images/puzzles/alarmClock-2.jpg',
+      'assets/images/puzzles/alarmClock-3.jpg',
+      'assets/images/puzzles/alarmClock-4.jpg',
     ]
   },
   {
     'id': 'theOldClockTower',
     'title': '3D Puzzle - The Old Clock Tower',
     'imgList': [
-      'resources/images/puzzles/towerClock-1.jpg',
-      'resources/images/puzzles/towerClock-2.jpg',
-      'resources/images/puzzles/towerClock-3.jpg',
-      'resources/images/puzzles/towerClock-4.jpg',
+      'assets/images/puzzles/towerClock-1.jpg',
+      'assets/images/puzzles/towerClock-2.jpg',
+      'assets/images/puzzles/towerClock-3.jpg',
+      'assets/images/puzzles/towerClock-4.jpg',
     ]
   },
   {
     'id': 'primeSteamExpress',
     'title': 'Mechanical Puzzle - Prime Steam Express',
     'imgList': [
-      'resources/images/puzzles/steamExpress-1.jpg',
-      'resources/images/puzzles/steamExpress-2.jpg',
-      'resources/images/puzzles/steamExpress-3.jpg',
-      'resources/images/puzzles/steamExpress-4.jpg',
+      'assets/images/puzzles/steamExpress-1.jpg',
+      'assets/images/puzzles/steamExpress-2.jpg',
+      'assets/images/puzzles/steamExpress-3.jpg',
+      'assets/images/puzzles/steamExpress-4.jpg',
     ]
   },
 ];

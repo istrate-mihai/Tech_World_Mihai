@@ -1,38 +1,3 @@
-// TODO
-
-// let otherEducationLinks = "";
-// let nrOfotherEducationLinks =
-//   educations[nrOfEducations - 1].educationTitle.length; /*
-//                                                           Accessing the last object of educations array to get
-//                                                           all the links of it's educationTitle property
-//                                                         */
-// for (let i = 0; i < nrOfotherEducationLinks; i++) {
-//   otherEducationLinks += `
-//                       <p class="otherCertificate">
-//                         <a href="${
-//   educations[nrOfEducations - 1].educationTitle[i]
-//       .otherEducationLink
-//   }" target="_blank">
-//                         ${
-//   educations[nrOfEducations - 1].educationTitle[i]
-//       .otherEducationTitle
-//   }
-//                         </a>
-//                       </p>
-//                     `;
-// }
-
-// educationsInserted += `
-//   <div class="timeline-item">
-//     <div class="tl-icon">
-//       <i class="fa fa-briefcase"></i>
-//     </div>
-//     <p class="tl-duration">Other Certificates</p>
-//     ${otherEducationLinks}
-//   </div>
-//   `;
-
-
 import { educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList } from "./data.js";
 
 let sections             = $(".section");
@@ -118,19 +83,6 @@ function setPageTransitions() {
             //hide other sections
             sections.removeClass("active");
             $("#" + id).addClass("active");
-        }
-    });
-
-    // Toggle theme
-    const themeBtn = $(".theme-btn");
-    themeBtn.click(function () {
-        $("body").toggleClass("light-mode");
-        isLightMode = !isLightMode;
-
-        if (isLightMode) {
-            $(this).attr('title', 'Dark Mode');
-        } else {
-            $(this).attr('title', 'Light Mode');
         }
     });
 }
