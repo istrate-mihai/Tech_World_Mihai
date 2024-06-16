@@ -123,17 +123,17 @@ designList         = [
   {
     name: "206 Develop Cabinet Model",
     img: "assets/images/cabinet.png",
-    download: "docs/Cabinet_Istrate_Mihai.skp"
+    download: "assets/docs/Cabinet_Istrate_Mihai.skp"
   },
   {
     name: "305 Develop House Model",
     img: "assets/images/houseModel.png",
-    download: "docs/305_Develop_House_Model.skp"
+    download: "assets/docs/305_Develop_House_Model.skp"
   },
   {
     name: "406 Develop a Wheel Model",
     img: "assets/images/wheelModel.png",
-    download: "docs/Wheel_Istrate_Mihai.skp"
+    download: "assets/docs/Wheel_Istrate_Mihai.skp"
   },
 ];
 webDevelopmentList = [

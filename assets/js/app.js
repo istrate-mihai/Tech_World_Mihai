@@ -1,10 +1,10 @@
 import { educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList } from "./data.js";
 
-let sections             = $(".section");
-let sectBtns             = $(".controlls");
-let sectBtn              = $(".control");
-let allSections          = $(".main-content");
-let tabLinks             = $(".tablinks");
+let sections    = $(".section");
+let sectBtns    = $(".controlls");
+let sectBtn     = $(".control");
+let allSections = $(".main-content");
+let tabLinks    = $(".tablinks");
 let isLightMode = false;
 
 $(document).ready(function () {
@@ -40,22 +40,18 @@ function setMainPhotoPopup() {
 }
 
 function setTechnicalDrawingModal() {
-    let itemList = $("#designList .portfolio-item");
+    let designItemList = $(".design-item img");
 
-    itemList.on('click', function () {
-        let modal = $("#cadCamTechnicalDrawingModal");
-        let overlay = $(".overlay");
-        let imgContainer = $(this).find('img')
-        let modalImg = modal.find('img');
+    designItemList.click(function () {
+        let modal      = $("#cadCamTechnicalDrawingModal");
+        let modalImage = modal.find('img');
+        let overlay    = $(".overlay");
         let closeBtn = $(".btn-close");
-        let sectBtns = $(".controlls");
 
-        imgContainer.click(function () {
-            overlay.removeClass("isHidden");
-            modal.removeClass("isHidden");
-            modalImg.attr("src", imgContainer.attr('src'));
-            sectBtns.addClass("isHidden");
-        });
+        overlay.removeClass("isHidden");
+        modal.removeClass("isHidden");
+        modalImage.attr("src", $(this).attr('src'));
+        sectBtns.addClass("isHidden");
 
         closeBtn.click(function () {
             modal.addClass("isHidden");
@@ -109,9 +105,6 @@ function setTabLinkOnSectionOpen() {
     $('#portfolio-control').on('click', function (event) {
         $("#tab-designList").click();
     });
-    // $('#tab-artisticDrawingList').on('click', function () {
-    //     $('#puzzle-gallery-list').remove();
-    // });
     $('#hobbys-control').on('click', function (event) {
         tabPuzzleList.on('click', function () {
             $(".puzzleTab").on('click', function (e) {

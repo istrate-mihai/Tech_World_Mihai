@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-weight: 700;
 }
 
 :root {
@@ -49,11 +50,10 @@ body {
   justify-content: center;
   position: relative;
   min-height: 100vh;
-  background-image: url(../images/mainBackground.png);
+  background-image: url(../images/mainBackground.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right bottom;
-  background-size: 30%;
+  background-size: cover;
 }
 
 a {
@@ -499,7 +499,7 @@ section {
   background-color: var(--color-white);
 }
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
-  color: var(--color-primary);
+  color: var(--color-black);
 }
 
 .portfolio-item:hover .hover-items {
@@ -625,6 +625,11 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
+}
+@media only screen and (max-width: 700px) {
+  .contact-content-con .left-contact .contact-icon {
+    justify-content: center;
+  }
 }
 .contact-content-con .right-contact {
   flex: 3;
@@ -763,8 +768,7 @@ section {
     top: auto;
     bottom: 0;
     justify-content: center;
-    left: 40%;
-    width: 100%;
+    width: 10%;
   }
   .controlls .control {
     margin: 1rem 0.3rem;
@@ -948,10 +952,9 @@ section {
 .modal {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
+  justify-content: space-evenly;
   padding: 1.3rem;
-  min-height: 250px;
+  min-height: 500px;
   position: absolute;
   top: 20%;
   border-radius: 15px;
@@ -984,6 +987,9 @@ section {
   float: right;
 }
 @media only screen and (max-width: 700px) {
+  .modal {
+    top: 50%;
+  }
   .modal .modal-content {
     width: inherit;
   }
