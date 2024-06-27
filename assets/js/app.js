@@ -378,42 +378,29 @@ function getPuzzleListTemplate(puzzleData) {
 }
 
 function setToggleSection() {
-    let toggleSpeed     = 400;
-    let statementToggle = $("#toggle-statement");
-    let educationToggle = $("#toggle-education");
-    let awardToggle     = $("#toggle-award");
-    let workToggle      = $("#toggle-work-experience");
-    let skillToggle     = $("#toggle-skills");
+    let toggleSpeed       = 400;
+    let statementToggle   = $("#toggle-statement");
+    let educationToggle   = $("#toggle-education");
+    let workToggle        = $("#toggle-work-experience");
+    let awardToggle       = $("#toggle-award");
+    let certificateToggle = $("#toggle-certificate");
+    let skillToggle       = $("#toggle-skills");
+    let toggleList        = [
+      [statementToggle, $("#statement")],
+      [educationToggle, $("#educationList")],
+      [workToggle, $("#workList")],
+      [awardToggle, $("#awardList")],
+      [certificateToggle, $("#certificateList")],
+      [skillToggle, $("#skillList")]
+    ];
 
-    statementToggle.on('click', function () {
-        $("#statement").slideToggle(toggleSpeed, "linear", function() {
-            statementToggle.find('.toggle-label').toggleClass('isHidden');
+    for (let index in toggleList) {
+      toggleList[index][0].on('click', function () {
+        toggleList[index][1].slideToggle(toggleSpeed, "linear", function() {
+          toggleList[index][0].find('.toggle-label').toggleClass('isHidden');
         });
-    });
-
-    educationToggle.on('click', function () {
-        $("#educationList").slideToggle(toggleSpeed, "linear", function() {
-            educationToggle.find('.toggle-label').toggleClass('isHidden');
-        });
-    });
-
-    awardToggle.on('click', function () {
-        $("#awardList").slideToggle(toggleSpeed, "linear", function() {
-            awardToggle.find('.toggle-label').toggleClass('isHidden');
-        });
-    });
-
-    workToggle.on('click', function () {
-        $("#workList").slideToggle(toggleSpeed, "linear", function() {
-            workToggle.find('.toggle-label').toggleClass('isHidden');
-        });
-    });
-
-    skillToggle.on('click', function () {
-        $("#skillList").slideToggle(toggleSpeed, "linear", function() {
-            skillToggle.find('.toggle-label').toggleClass('isHidden');
-        });
-    });
+      });
+    }
 }
 
 function getPuzzleImgList(puzzleId) {
