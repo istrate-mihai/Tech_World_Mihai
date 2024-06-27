@@ -1,10 +1,12 @@
-let educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList;
+let educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, puzzleList;
 
-educationList      = [
+// About Me Page Data
+educationList        = [
   {
     duration: "01/11/2020 – 07/09/2021",
     educationTitle: "PHP WEB DEVELOPER",
     link: "https://www.link-academy.com/",
+    icon: "fas fa-book",
     institutionTitle: "Link Academy",
     institutionDescription:
       "Training as a PHP Web Developer through Link Academy's online platform.",
@@ -13,22 +15,18 @@ educationList      = [
     duration: "01/10/2017 – 20/01/2022",
     educationTitle: "MECHANICAL ENGINEER",
     link: "http://mecanica.ucv.ro/",
+    icon: "fas fa-book",
     institutionTitle: "University of Craiova - Faculty of Mechanics",
     institutionDescription:
       "Training as a mechanical engineer, field - Machine Building Technology.",
   },
 ];
-awardList          = [
-  {
-    date: '27/09/2021',
-    name: 'Zend PHP Certified Engineer <span> – <a href="https://www.zend-zce.com/en/yellow-pages/ZEND033057" target="blank">Zend</a></span>',
-    description: 'Online testing through the Pearson Vue platform, on the 27 of September 2021, concluded with the successful passage of the 200-710: Zend Certified Engineer exam.'
-  }
-];
-workList           = [
+
+workList             = [
   {
     duration: "18/06/2022 – Current – Constanta, Romania",
     title: "FULL-STACK WEB DEVELOPER <span><a href=\"https://www.acwebconnecting.com/\" target=\"_blank\">– AC WEBCONNECTING N.V. / SHOSHORO N.V</a></span>",
+    icon: "fa fa-briefcase",
     taskList: [
       "- Develop and maintain web services or features for the company's main platforms.",
       "- Contribute to front-end and back-end development processes.",
@@ -40,6 +38,7 @@ workList           = [
   {
     duration: "14/03/2022 – 02/06/2022 – Constanta, Romania",
     title: "DATA ENTRY OPERATOR <span><a href=\"https://www.transuniverse.be/destination/romania/\" target=\"_blank\">– TRANSUNIVERSE RO</a></span>",
+    icon: "fa fa-briefcase",
     taskList: [
       "- Data entry and validation on electronic support.",
       "- Data processing, performing calculations based on the data entered.",
@@ -50,6 +49,7 @@ workList           = [
   {
     duration: "03/07/2017 – 04/11/2021 – Craiova, Romania",
     title: "OPERATOR - MECHANICAL LOCKSMITH <span><a href=\"https://www.ford.ro/\" target=\"_blank\">– FORD ROMANIA S.A</a></span>",
+    icon: "fa fa-briefcase",
     taskList: [
       "- Carrying out periodic quality checks.",
       "- Adjusting the machine as needed for changes, different functions or other requirements of the production process.",
@@ -59,6 +59,7 @@ workList           = [
   {
     duration: "10/02/2017 – 01/07/2017 – Craiova, Romania",
     title: "MAILMAN <span><a href=\"https://www.pinkpost.ro/\" target=\"_blank\">– POST MASTER (CURRENT PINK POST)</a></span>",
+    icon: "fa fa-briefcase",
     taskList: [
       "- Delivery of advertising materials, and personal envelopes, postal activity.",
     ],
@@ -66,13 +67,55 @@ workList           = [
   {
     duration: "14/09/2016 – 20/01/2017 – Craiova, Romania",
     title: "FLUX QUALITY OPERATOR <span><a href=\"http://www.integraleconsulting.es/\" target=\"_blank\">– INTEGRALE MARKETING Y CONSULTING</a></span>",
+    icon: "fa fa-briefcase",
     taskList: [
       "- Performing visual quality inspections on parts and components of small sizes of the Fox Classic heat engine such as: water pumps, clutches etc.",
       "- Recording the corresponding data in the IQOS computer program.",
     ],
   },
 ];
-skillList          = [
+
+awardList            = [
+  {
+    date: '27/09/2021',
+    name: 'Zend PHP Certified Engineer <span> – <a href="https://www.zend-zce.com/en/yellow-pages/ZEND033057" target="blank">Zend</a></span>',
+    icon: "fas fa-trophy",
+    description: 'Online testing through the Pearson Vue platform, on the 27 of September 2021, concluded with the successful passage of the 200-710: Zend Certified Engineer exam.'
+  }
+];
+
+certificateList      = [
+  {
+    date: '26/06/2024',
+    name: 'Arduino Step by Step: Getting Started <span> – <a href="https://www.udemy.com/certificate/UC-51a64853-30f6-4a19-b9e2-e3099763d770/" target="blank">Udemy</a></span>',
+    icon: "fas fa-award",
+    type: "Certificate of Completion",
+    description:
+                `
+                  This certificate above verifies that Istrate Mihai successfully completed the course Arduino Step by Step: Getting Started
+                  on 06/26/2024 as taught by Dr. Peter Dalmaris on Udemy. The certificate indicates the entire course was completed as validated by
+                  the student. The course duration represents the total video hours of the course at time of most recent completion.
+                `
+  },
+  {
+    date: '27/12/2023',
+    name: 'Python for Everybody <span> – <a href="https://www.coursera.org/account/accomplishments/specialization/GX3FJS5Y7Y6U" target="blank">Coursera</a></span>',
+    icon: "fas fa-award",
+    type: "Certificate of Completion",
+    description:
+                `
+                  This Specialization builds on the success of the Python for Everybody
+                  course and will introduce fundamental programming concepts
+                  including data structures, networked application program interfaces,
+                  and databases, using the Python programming language. In the
+                  Capstone Project, you’ll use the technologies learned throughout the
+                  Specialization to design and create your own applications for data
+                  retrieval, processing, and visualization.
+                `
+  }
+];
+
+skillList            = [
   {
     title: "HTML5",
     percentage: "100%",
@@ -119,6 +162,9 @@ skillList          = [
     class: "git",
   },
 ];
+// End About Me Page Data
+
+// Portfolio Page Data
 designList         = [
   {
     name: "206 Develop Cabinet Model",
@@ -136,6 +182,7 @@ designList         = [
     download: "assets/docs/Wheel_Istrate_Mihai.skp"
   },
 ];
+
 webDevelopmentList = [
   {
     name: "Phone Book",
@@ -174,13 +221,7 @@ webDevelopmentList = [
     website: "assets/cv/Portfolio-Istrate_Mihai_Septimius.7z",
   },
 ];
-blogList           = [
-  {
-    'title': 'Publication',
-    'imgSrc': 'assets/images/note1.jpg',
-    'description': 'This website was published on 02.04.2022!'
-  }
-];
+
 puzzleList         = [
   {
     'id': 'gearbox',
@@ -233,5 +274,6 @@ puzzleList         = [
     ]
   },
 ];
+// End Portfolio Page Data
 
-export { educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList };
+export { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, puzzleList };

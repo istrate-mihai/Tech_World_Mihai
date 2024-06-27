@@ -1,4 +1,4 @@
-import { educationList, awardList, workList, skillList, designList, webDevelopmentList, blogList, puzzleList } from "./data.js";
+import { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, puzzleList } from "./data.js";
 
 let sections    = $(".section");
 let sectBtns    = $(".controlls");
@@ -133,12 +133,16 @@ function createSectionList() {
             content: getSectionTemplate('Education')
         },
         {
+            selector: $("#workList"),
+            content: getSectionTemplate('Work')
+        },
+        {
             selector: $('#awardList'),
             content: getSectionTemplate('Award')
         },
         {
-            selector: $("#workList"),
-            content: getSectionTemplate('Work')
+            selector: $('#certificateList'),
+            content: getSectionTemplate('Certificate')
         },
         {
             selector: $("#skillList"),
@@ -151,10 +155,6 @@ function createSectionList() {
         {
             selector: $("#webDevelopmentList"),
             content: getSectionTemplate('Web Development')
-        },
-        {
-            selector: $("#blogList"),
-            content: getSectionTemplate('Blog')
         },
         {
             selector: $("#puzzleList"),
@@ -177,15 +177,21 @@ function getSectionTemplate(name) {
             }
             break;
 
+        case 'Work':
+            for (let i = 0; i < workList.length; i++) {
+                sectionTemplate += getWorkTemplate(workList[i]);
+            }
+            break;
+
         case 'Award':
             for (let i = 0; i < awardList.length; i++) {
                 sectionTemplate += getAwardTemplate(awardList[i]);
             }
             break;
 
-        case 'Work':
-            for (let i = 0; i < workList.length; i++) {
-                sectionTemplate += getWorkTemplate(workList[i]);
+        case 'Certificate':
+            for (let i = 0; i < certificateList.length; i++) {
+                sectionTemplate += getCertificateTemplate(certificateList[i]);
             }
             break;
 
@@ -207,12 +213,6 @@ function getSectionTemplate(name) {
             }
             break;
 
-        case 'Blog':
-            for (let i = 0; i < blogList.length; i++) {
-                sectionTemplate += getBlogListTemplate(blogList[i]);
-            }
-            break;
-
         case 'Puzzle List':
             for (let i = 0; i < puzzleList.length; i++) {
                 sectionTemplate += getPuzzleListTemplate(puzzleList[i]);
@@ -227,7 +227,7 @@ function getEducationTemplate(educationData) {
     return `
             <div class="timeline-item">
               <div class="tl-icon">
-                <i class="fa fa-briefcase"></i>
+                <i class="${educationData.icon}"></i>
               </div>
               <p class="tl-duration">${educationData.duration}</p>
               <h5>
@@ -248,13 +248,30 @@ function getAwardTemplate(awardData) {
     return `
           <div class="timeline-item">
             <div class="tl-icon">
-              <i class="fa fa-briefcase"></i>
+              <i class="${awardData.icon}"></i>
             </div>
 
             <p class="tl-duration">${awardData.date}</p>
             <h5>${awardData.name}</h5>
 
             <p>${awardData.description}</p>
+          </div>
+        `;
+}
+
+function getCertificateTemplate(certificateData) {
+    return `
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="${certificateData.icon}"></i>
+            </div>
+
+            <p class="tl-duration">${certificateData.date}</p>
+            <h5>${certificateData.name}</h5>
+
+            <h5>${certificateData.type}</h5>
+
+            <p>${certificateData.description}</p>
           </div>
         `;
 }
@@ -269,7 +286,7 @@ function getWorkTemplate(workData) {
     return `
           <div class="timeline-item">
             <div class="tl-icon">
-              <i class="fa fa-briefcase"></i>
+              <i class="${workData.icon}"></i>
             </div>
 
             <p class="tl-duration">${workData.duration}</p>
@@ -348,18 +365,6 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
         `;
 }
 
-function getBlogListTemplate(blogData) {
-    return `
-            <div class="blog">
-                <img src="${blogData.imgSrc}" alt="No Note"/>
-                <div class="blog-text">
-                    <h4>${blogData.title}</h4>
-                    <p>${blogData.description}</p>
-                </div>
-            </div>
-            `;
-}
-
 function getPuzzleListTemplate(puzzleData) {
     return `
             <div>
@@ -373,35 +378,41 @@ function getPuzzleListTemplate(puzzleData) {
 }
 
 function setToggleSection() {
+    let toggleSpeed     = 400;
     let statementToggle = $("#toggle-statement");
     let educationToggle = $("#toggle-education");
-    let awardToggle = $("#toggle-award");
-    let workToggle = $("#toggle-work-experience");
-    let skillToggle = $("#toggle-skills");
+    let awardToggle     = $("#toggle-award");
+    let workToggle      = $("#toggle-work-experience");
+    let skillToggle     = $("#toggle-skills");
 
     statementToggle.on('click', function () {
-        $("#statement").toggleClass('isHidden');
-        $(this).find('.toggle-label').toggleClass('isHidden');
+        $("#statement").slideToggle(toggleSpeed, "linear", function() {
+            statementToggle.find('.toggle-label').toggleClass('isHidden');
+        });
     });
 
     educationToggle.on('click', function () {
-        $("#educationList").toggle();
-        $(this).find('.toggle-label').toggleClass('isHidden');
+        $("#educationList").slideToggle(toggleSpeed, "linear", function() {
+            educationToggle.find('.toggle-label').toggleClass('isHidden');
+        });
     });
 
     awardToggle.on('click', function () {
-        $("#awardList").toggle();
-        $(this).find('.toggle-label').toggleClass('isHidden');
+        $("#awardList").slideToggle(toggleSpeed, "linear", function() {
+            awardToggle.find('.toggle-label').toggleClass('isHidden');
+        });
     });
 
     workToggle.on('click', function () {
-        $("#workList").toggle();
-        $(this).find('.toggle-label').toggleClass('isHidden');
+        $("#workList").slideToggle(toggleSpeed, "linear", function() {
+            workToggle.find('.toggle-label').toggleClass('isHidden');
+        });
     });
 
     skillToggle.on('click', function () {
-        $("#skillList").toggle();
-        $(this).find('.toggle-label').toggleClass('isHidden');
+        $("#skillList").slideToggle(toggleSpeed, "linear", function() {
+            skillToggle.find('.toggle-label').toggleClass('isHidden');
+        });
     });
 }
 

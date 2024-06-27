@@ -372,12 +372,12 @@ section {
 }
 .timeline .timeline-item {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 4rem;
   border-left: 1px solid var(--color-grey-5);
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
-  left: -27px;
+  left: 6px;
   top: 0;
   background-color: var(--color-secondary);
   width: 50px;
@@ -424,6 +424,13 @@ section {
 }
 .timeline .timeline-item a:hover {
   color: var(--color-link);
+}
+@media only screen and (min-width: 600px) {
+  .timeline#awardList {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+  }
 }
 
 .port-text {
