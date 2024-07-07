@@ -1,4 +1,4 @@
-let educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, puzzleList;
+let educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList;
 
 // About Me Page Data
 educationList        = [
@@ -222,6 +222,14 @@ webDevelopmentList = [
   },
 ];
 
+AIApplicationList  = [
+  {
+    name: "Salary Dataset - Simple linear regression",
+    img: "assets/images/salaryDatasetSimpleLinearRegression.png",
+    link: "https://colab.research.google.com/drive/1U8aUVV6pXJ8RsDTTXLfsvFM6DtlyX2i3",
+  }
+];
+
 puzzleList         = [
   {
     'id': 'gearbox',
@@ -276,4 +284,4 @@ puzzleList         = [
 ];
 // End Portfolio Page Data
 
-export { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, puzzleList };
+export { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList };

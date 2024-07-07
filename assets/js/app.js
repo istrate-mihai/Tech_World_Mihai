@@ -1,4 +1,4 @@
-import { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, puzzleList } from "./data.js";
+import { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList } from "./data.js";
 
 let sections    = $(".section");
 let sectBtns    = $(".controlls");
@@ -157,6 +157,10 @@ function createSectionList() {
             content: getSectionTemplate('Web Development')
         },
         {
+          selector: $("#ai-applications"),
+          content: getSectionTemplate('AI Applications')
+        },
+        {
             selector: $("#puzzleList"),
             content: getSectionTemplate('Puzzle List')
         },
@@ -212,6 +216,12 @@ function getSectionTemplate(name) {
                 sectionTemplate += getWebDevelopmentTemplate(webDevelopmentList[i]);
             }
             break;
+
+        case 'AI Applications':
+          for (let i = 0; i < AIApplicationList.length; i++) {
+              sectionTemplate += getAIApplicationListTemplate(AIApplicationList[i]);
+          }
+          break;
 
         case 'Puzzle List':
             for (let i = 0; i < puzzleList.length; i++) {
@@ -364,6 +374,21 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
           </div>
         `;
 }
+
+function getAIApplicationListTemplate(aiApplicationData) {
+    return `
+            <div class="portfolio-item">
+              <h2 class="item-header">${aiApplicationData.name}</h2>
+
+              <div class="image">
+                <a href="${aiApplicationData.link}" target="_blank">
+                  <img src="${aiApplicationData.img}" alt="portfolioImage" />
+                </a>
+              </div>
+            </div>
+          `;
+}
+
 
 function getPuzzleListTemplate(puzzleData) {
     return `
