@@ -3,7 +3,7 @@ let educationList, workList, awardList, certificateList, skillList, designList, 
 // About Me Page Data
 educationList        = [
   {
-    duration: "01/11/2020 – 07/09/2021",
+    duration: "01.11.2020 – 07.09.2021",
     educationTitle: "PHP WEB DEVELOPER",
     link: "https://www.link-academy.com/",
     icon: "fas fa-book",
@@ -12,7 +12,7 @@ educationList        = [
       "Training as a PHP Web Developer through Link Academy's online platform.",
   },
   {
-    duration: "01/10/2017 – 20/01/2022",
+    duration: "01.10.2017 – 20.01.2022",
     educationTitle: "MECHANICAL ENGINEER",
     link: "http://mecanica.ucv.ro/",
     icon: "fas fa-book",
@@ -24,7 +24,7 @@ educationList        = [
 
 workList             = [
   {
-    duration: "18/06/2022 – Current – Constanta, Romania",
+    duration: "18.07.2022 – Current – Constanta, Romania",
     title: "FULL-STACK WEB DEVELOPER <span><a href=\"https://www.acwebconnecting.com/\" target=\"_blank\">– AC WEBCONNECTING N.V. / SHOSHORO N.V</a></span>",
     icon: "fa fa-briefcase",
     taskList: [
@@ -36,7 +36,7 @@ workList             = [
     ],
   },
   {
-    duration: "14/03/2022 – 02/06/2022 – Constanta, Romania",
+    duration: "14.03.2022 – 02.06.2022 – Constanta, Romania",
     title: "DATA ENTRY OPERATOR <span><a href=\"https://www.transuniverse.be/destination/romania/\" target=\"_blank\">– TRANSUNIVERSE RO</a></span>",
     icon: "fa fa-briefcase",
     taskList: [
@@ -47,7 +47,7 @@ workList             = [
     ],
   },
   {
-    duration: "03/07/2017 – 04/11/2021 – Craiova, Romania",
+    duration: "03.07.2017 – 04.11.2021 – Craiova, Romania",
     title: "OPERATOR - MECHANICAL LOCKSMITH <span><a href=\"https://www.ford.ro/\" target=\"_blank\">– FORD ROMANIA S.A</a></span>",
     icon: "fa fa-briefcase",
     taskList: [
@@ -57,7 +57,7 @@ workList             = [
     ],
   },
   {
-    duration: "10/02/2017 – 01/07/2017 – Craiova, Romania",
+    duration: "10.02.2017 – 01.07.2017 – Craiova, Romania",
     title: "MAILMAN <span><a href=\"https://www.pinkpost.ro/\" target=\"_blank\">– POST MASTER (CURRENT PINK POST)</a></span>",
     icon: "fa fa-briefcase",
     taskList: [
@@ -65,7 +65,7 @@ workList             = [
     ],
   },
   {
-    duration: "14/09/2016 – 20/01/2017 – Craiova, Romania",
+    duration: "14.09.2016 – 20.01.2017 – Craiova, Romania",
     title: "FLUX QUALITY OPERATOR <span><a href=\"http://www.integraleconsulting.es/\" target=\"_blank\">– INTEGRALE MARKETING Y CONSULTING</a></span>",
     icon: "fa fa-briefcase",
     taskList: [
@@ -77,8 +77,8 @@ workList             = [
 
 awardList            = [
   {
-    date: '27/09/2021',
-    name: 'Zend PHP Certified Engineer <span> – <a href="https://www.zend-zce.com/en/yellow-pages/ZEND033057" target="blank">Zend</a></span>',
+    date: '27.09.2021',
+    name: 'Zend PHP Certified Engineer <span> – <a href="https://www.zend-zce.com/en/yellow-pages/ZEND033057" target="_blank">Zend</a></span>',
     icon: "fas fa-trophy",
     description: 'Online testing through the Pearson Vue platform, on the 27 of September 2021, concluded with the successful passage of the 200-710: Zend Certified Engineer exam.'
   }
@@ -86,22 +86,24 @@ awardList            = [
 
 certificateList      = [
   {
-    date: '26/06/2024',
-    name: 'Arduino Step by Step: Getting Started <span> – <a href="https://www.udemy.com/certificate/UC-51a64853-30f6-4a19-b9e2-e3099763d770/" target="blank">Udemy</a></span>',
+    date: '26.06.2024',
+    name: 'Arduino Step by Step: Getting Started <span> – <a href="https://www.udemy.com/certificate/UC-51a64853-30f6-4a19-b9e2-e3099763d770/" _blank">Udemy</a></span>',
     icon: "fas fa-award",
     type: "Certificate of Completion",
+    certificateId: 'cert1',
     description:
                 `
                   This certificate above verifies that Istrate Mihai successfully completed the course Arduino Step by Step: Getting Started
                   on 06/26/2024 as taught by Dr. Peter Dalmaris on Udemy. The certificate indicates the entire course was completed as validated by
-                  the student. The course duration represents the total video hours of the course at time of most recent completion.
+                  the student. The course duration represents the total video hours of the course at time of most recent completion. <span class="truncateText" textId="cert1">(hide text)</span>
                 `
   },
   {
-    date: '27/12/2023',
-    name: 'Python for Everybody <span> – <a href="https://www.coursera.org/account/accomplishments/specialization/GX3FJS5Y7Y6U" target="blank">Coursera</a></span>',
+    date: '27.12.2023',
+    name: 'Python for Everybody <span> – <a href="https://www.coursera.org/account/accomplishments/specialization/GX3FJS5Y7Y6U" target="_blank">Coursera</a></span>',
     icon: "fas fa-award",
     type: "Certificate of Completion",
+    certificateId: 'cert2',
     description:
                 `
                   This Specialization builds on the success of the Python for Everybody
@@ -110,57 +112,44 @@ certificateList      = [
                   and databases, using the Python programming language. In the
                   Capstone Project, you’ll use the technologies learned throughout the
                   Specialization to design and create your own applications for data
-                  retrieval, processing, and visualization.
+                  retrieval, processing, and visualization. <span class="truncateText" textId="cert2">(hide text)</span>
                 `
+  },
+  {
+    date: '13.07.2024',
+    name: '3D CAD Fundamental <span> – <a href="https://www.coursera.org/account/accomplishments/verify/9VDXPKC9D73X" target="_blank">Coursera</a></span>',
+    icon: "fas fa-award",
+    type: "Certificate of Completion",
+    certificateId: 'cert3',
+    description:
+                  `
+                    An online non-credit course authorized by National Taiwan University and offered
+                    through Coursera. <span class="truncateText" textId="cert3">(hide text)</span>
+                  `
   }
 ];
 
 skillList            = [
   {
-    title: "HTML5",
-    percentage: "100%",
-    class: "html",
+    title: "CAD",
+    percentage: "10%",
+    class: "30",
   },
   {
-    title: "CSS3",
-    percentage: "90%",
-    class: "css",
+    title: "Electronics",
+    percentage: "25%",
+    class: "electronics",
   },
   {
-    title: "Javascript",
-    percentage: "90%",
-    class: "js",
-  },
-  {
-    title: "JQuery",
-    percentage: "80%",
-    class: "jquery",
-  },
-  {
-    title: "ReactJS",
+    title: "Web Development",
     percentage: "40%",
-    class: "react",
+    class: "webDevelopment",
   },
   {
-    title: "NodeJS",
-    percentage: "30%",
-    class: "nodejs",
-  },
-  {
-    title: "PHP",
-    percentage: "90%",
-    class: "php",
-  },
-  {
-    title: "SQL",
-    percentage: "60%",
-    class: "sql",
-  },
-  {
-    title: "Git",
-    percentage: "60%",
-    class: "git",
-  },
+    title: "AI Applications",
+    percentage: "5%",
+    class: "aIApplications",
+  }
 ];
 // End About Me Page Data
 
@@ -181,6 +170,16 @@ designList         = [
     img: "assets/images/wheelModel.png",
     download: "assets/docs/Wheel_Istrate_Mihai.skp"
   },
+  {
+    name: "505 Develop Taipei 101 Model",
+    img: "assets/images/taipeiModel.png",
+    download: "assets/docs/Taipei_101_Istrate_Mihai.skp"
+  },
+  {
+    name: "603 Develop Tee Pipe Model",
+    img: "assets/images/teePipeModel.png",
+    download: "assets/docs/Tee_Pipe_Istrate_Mihai.skp"
+  }
 ];
 
 webDevelopmentList = [

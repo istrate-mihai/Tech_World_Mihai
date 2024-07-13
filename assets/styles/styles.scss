@@ -59,7 +59,7 @@ body {
 a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: chocolate;
   font-family: inherit;
 }
 
@@ -405,7 +405,7 @@ section {
       text-transform: uppercase;
       font-size: 1.3rem;
       font-weight: 600;
-      color: var(--color-secondary);
+      color: chocolate;
       span {
         color: var(--color-grey-2);
         font-weight: 500;
@@ -753,6 +753,15 @@ section {
 
 .toggle-label {
   font-size: small;
+}
+
+.showFullText, .truncateText {
+  color: chocolate;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color-link);
+  }
 }
 
 @import "./media";

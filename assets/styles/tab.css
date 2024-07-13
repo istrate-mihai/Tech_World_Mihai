@@ -63,4 +63,9 @@
 }
 #puzzle-gallery-list div img {
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  #puzzle-gallery-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }/*# sourceMappingURL=tab.css.map */

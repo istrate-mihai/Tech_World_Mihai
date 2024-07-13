@@ -75,11 +75,15 @@
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-    div {
-      margin: 0 15px;
 
-      img {
-        width: 100%;
-      }
+  div {
+    margin: 0 15px;
+
+    img {
+      width: 100%;
     }
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+  }
 }

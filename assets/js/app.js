@@ -15,6 +15,8 @@ $(document).ready(function () {
     setTabLinkOnSectionOpen();
     setToggleSection();
     setTechnicalDrawingModal();
+    setFullTextToggle();
+    setTruncateTextToggle();
 });
 
 function setMainPhotoPopup() {
@@ -270,6 +272,8 @@ function getAwardTemplate(awardData) {
 }
 
 function getCertificateTemplate(certificateData) {
+    let descriptionTruncated = truncateText(certificateData.description, 100, '...read more', certificateData.certificateId);
+
     return `
           <div class="timeline-item">
             <div class="tl-icon">
@@ -281,7 +285,9 @@ function getCertificateTemplate(certificateData) {
 
             <h5>${certificateData.type}</h5>
 
-            <p>${certificateData.description}</p>
+            <p id="shortText${certificateData.certificateId}">${descriptionTruncated}</p>
+
+            <p class="isHidden" id="fullText${certificateData.certificateId}">${certificateData.description}</p>
           </div>
         `;
 }
@@ -443,4 +449,31 @@ function getPuzzleImgList(puzzleId) {
     }
 
     return content;
+}
+
+function setFullTextToggle() {
+  $(".showFullText").on("click", function(ev) {
+    let currentTarget  = $(ev.currentTarget);
+    let textId         = currentTarget.attr("textId");
+    let shortparagraph = currentTarget.parent();
+    let fullParagraph  = $("#fullText" + textId);
+    shortparagraph.toggleClass("isHidden");
+    fullParagraph.toggleClass("isHidden");
+  });
+}
+
+function setTruncateTextToggle() {
+  $(".truncateText").on("click", function(ev) {
+    let currentTarget  = $(ev.currentTarget);
+    let textId         = currentTarget.attr("textId");
+    let fullparagraph  = currentTarget.parent();
+    let shortParagraph = $("#shortText" + textId);
+    fullparagraph.toggleClass("isHidden");
+    shortParagraph.toggleClass("isHidden");
+  });
+}
+
+function truncateText(text, length, ending, textId) {
+  if (text.length <= length) return text;
+  return text.substring(0, length - ending.length) + ' <span class="showFullText" textId="' + textId + '">' + ending + '</span>';
 }

@@ -59,7 +59,7 @@ body {
 a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: chocolate;
   font-family: inherit;
 }
 
@@ -405,7 +405,7 @@ section {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: chocolate;
 }
 .timeline .timeline-item h5 span {
   color: var(--color-grey-2);
@@ -739,6 +739,14 @@ section {
 
 .toggle-label {
   font-size: small;
+}
+
+.showFullText, .truncateText {
+  color: chocolate;
+}
+.showFullText:hover, .truncateText:hover {
+  cursor: pointer;
+  color: var(--color-link);
 }
 
 .about-container .left-about p {
