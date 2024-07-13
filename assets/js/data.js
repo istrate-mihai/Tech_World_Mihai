@@ -132,8 +132,8 @@ certificateList      = [
 skillList            = [
   {
     title: "CAD",
-    percentage: "10%",
-    class: "30",
+    percentage: "30%",
+    class: "cad",
   },
   {
     title: "Electronics",
