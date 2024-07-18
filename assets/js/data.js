@@ -86,46 +86,70 @@ awardList            = [
 
 certificateList      = [
   {
-    date: '26.06.2024',
-    name: 'Arduino Step by Step: Getting Started <span> – <a href="https://www.udemy.com/certificate/UC-51a64853-30f6-4a19-b9e2-e3099763d770/" _blank">Udemy</a></span>',
-    icon: "fas fa-award",
-    type: "Certificate of Completion",
-    certificateId: 'cert1',
-    description:
-                `
-                  This certificate above verifies that Istrate Mihai successfully completed the course Arduino Step by Step: Getting Started
-                  on 06/26/2024 as taught by Dr. Peter Dalmaris on Udemy. The certificate indicates the entire course was completed as validated by
-                  the student. The course duration represents the total video hours of the course at time of most recent completion. <span class="truncateText" textId="cert1">(hide text)</span>
-                `
+    date:          '17.07.2024',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/YFY223AYJ7FK" target="_blank">Generative AI: Introduction and Applications</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
   },
   {
-    date: '27.12.2023',
-    name: 'Python for Everybody <span> – <a href="https://www.coursera.org/account/accomplishments/specialization/GX3FJS5Y7Y6U" target="_blank">Coursera</a></span>',
-    icon: "fas fa-award",
-    type: "Certificate of Completion",
-    certificateId: 'cert2',
-    description:
-                `
-                  This Specialization builds on the success of the Python for Everybody
-                  course and will introduce fundamental programming concepts
-                  including data structures, networked application program interfaces,
-                  and databases, using the Python programming language. In the
-                  Capstone Project, you’ll use the technologies learned throughout the
-                  Specialization to design and create your own applications for data
-                  retrieval, processing, and visualization. <span class="truncateText" textId="cert2">(hide text)</span>
-                `
+    date:          '13.07.2024',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/9VDXPKC9D73X" target="_blank">3D CAD Fundamental</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera'
   },
   {
-    date: '13.07.2024',
-    name: '3D CAD Fundamental <span> – <a href="https://www.coursera.org/account/accomplishments/verify/9VDXPKC9D73X" target="_blank">Coursera</a></span>',
-    icon: "fas fa-award",
-    type: "Certificate of Completion",
-    certificateId: 'cert3',
-    description:
-                  `
-                    An online non-credit course authorized by National Taiwan University and offered
-                    through Coursera. <span class="truncateText" textId="cert3">(hide text)</span>
-                  `
+    date:          '26.06.2024',
+    name:          '<a href="https://www.udemy.com/certificate/UC-51a64853-30f6-4a19-b9e2-e3099763d770/" target="_blank">Arduino Step by Step: Getting Started</a>',
+    icon:          'fas fa-award',
+    provider:      'Udemy',
+  },
+  {
+    date:          '27.12.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/specialization/GX3FJS5Y7Y6U" target="_blank">Python for Everybody</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera'
+  },
+  {
+    date:          '02.12.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/YPRAZ7JLXLJE" target="_blank">Linux Fundamentals</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera'
+  },
+  {
+    date:          '02.12.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/443NX3CCEQQA" target="_blank">Internet History, Technology, and Security</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
+  },
+  {
+    date:          '14.11.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/FS2GULMY2U5W" target="_blank">Introduction to Git and GitHub</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
+  },
+  {
+    date:          '12.11.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/M7L7L9LRTLTD" target="_blank">Using Python to Interact with the Operating System</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
+  },
+  {
+    date:          '21.10.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/3LYGW72VEH8Q" target="_blank">Crash Course on Python</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
+  },
+  {
+    date:          '21.03.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/8HDCE53SBM86" target="_blank">Introduction to Artificial Intelligence (AI)</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
+  },
+  {
+    date:          '09.02.2023',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/QJVGXKKFY626" target="_blank">Introduction to Calculus</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
   }
 ];
 
