@@ -88,16 +88,11 @@ function setTabLinks() {
         event.preventDefault();
         let tabId = $(this).data("tab");
         $(".tabcontent").css("display", "none");
-
         if (tabId === 'artisticDrawingList') {
           $('#puzzle-gallery-list').css("display", "none");
         }
-
-
         $(".tablinks").css("background-color", "");
         $("#" + tabId).css("display", "grid");
-        console.log('setTabLinks');
-        console.dir(tabId);
     });
 };
 
