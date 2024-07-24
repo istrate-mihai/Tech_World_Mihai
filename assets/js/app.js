@@ -5,7 +5,6 @@ let sectBtns    = $(".controlls");
 let sectBtn     = $(".control");
 let allSections = $(".main-content");
 let tabLinks    = $(".tablinks");
-let isLightMode = false;
 
 $(document).ready(function () {
     setPageTransitions();
@@ -89,13 +88,16 @@ function setTabLinks() {
         event.preventDefault();
         let tabId = $(this).data("tab");
         $(".tabcontent").css("display", "none");
+
+        if (tabId === 'artisticDrawingList') {
+          $('#puzzle-gallery-list').css("display", "none");
+        }
+
+
         $(".tablinks").css("background-color", "");
         $("#" + tabId).css("display", "grid");
-        if (isLightMode) {
-            $(event.currentTarget).css("background-color", "rgb(30, 144, 255)");
-        } else {
-            $(event.currentTarget).css("background-color", "rgb(39, 174, 96)");
-        }
+        console.log('setTabLinks');
+        console.dir(tabId);
     });
 };
 
@@ -111,16 +113,14 @@ function setTabLinkOnSectionOpen() {
             $(".puzzleTab").on('click', function (e) {
                 let currentPuzzleTitleLink = $(e.currentTarget);
                 let puzzleId               = currentPuzzleTitleLink.data('tab');
+                let puzzleGallerySelector  = $('#puzzle-gallery-list');
 
                 tabPuzzleTitleList.removeClass('active-puzzle-tab active-puzzle-tab-light');
-
-                if (isLightMode) {
-                    currentPuzzleTitleLink.addClass('active-puzzle-tab-light');
+                let puzzleGalleryDisplay = puzzleGallerySelector.css('display');
+                if (puzzleGalleryDisplay === 'none') {
+                  puzzleGallerySelector.css('display', 'grid');
                 }
-                else {
-                    currentPuzzleTitleLink.addClass('active-puzzle-tab');
-                }
-                $('#puzzle-gallery-list').html(getPuzzleImgList(puzzleId));
+                puzzleGallerySelector.html(getPuzzleImgList(puzzleId));
             });
         });
         tabPuzzleList.click();

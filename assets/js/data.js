@@ -86,6 +86,12 @@ awardList            = [
 
 certificateList      = [
   {
+    date:          '22.07.2024',
+    name:          '<a href="https://www.coursera.org/account/accomplishments/verify/YK74RY39H5AN" target="_blank">Automotive Industrial Engineering</a>',
+    icon:          'fas fa-award',
+    provider:      'Coursera',
+  },
+  {
     date:          '17.07.2024',
     name:          '<a href="https://www.coursera.org/account/accomplishments/verify/YFY223AYJ7FK" target="_blank">Generative AI: Introduction and Applications</a>',
     icon:          'fas fa-award',
@@ -247,7 +253,7 @@ webDevelopmentList = [
 
 AIApplicationList  = [
   {
-    name: "Salary Dataset - Simple linear regression",
+    name: "Salary Dataset - Simple Linear Regression",
     img: "assets/images/salaryDatasetSimpleLinearRegression.png",
     link: "https://colab.research.google.com/drive/1U8aUVV6pXJ8RsDTTXLfsvFM6DtlyX2i3",
   }
