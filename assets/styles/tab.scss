@@ -87,3 +87,18 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
   }
 }
+
+#artisticDrawingList {
+  margin: 25px;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  .drawingContainer {
+    max-width: 500px;
+    img {
+      width: 100%;
+    }
+  }
+}

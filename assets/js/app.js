@@ -1,4 +1,4 @@
-import { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList } from "./data.js";
+import { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList, drawingList } from "./data.js";
 
 let sections    = $(".section");
 let sectBtns    = $(".controlls");
@@ -88,11 +88,11 @@ function setTabLinks() {
         event.preventDefault();
         let tabId = $(this).data("tab");
         $(".tabcontent").css("display", "none");
+        $(".tablinks").css("background-color", "");
+        $("#" + tabId).css("display", "grid");
         if (tabId === 'artisticDrawingList') {
           $('#puzzle-gallery-list').css("display", "none");
         }
-        $(".tablinks").css("background-color", "");
-        $("#" + tabId).css("display", "grid");
     });
 };
 
@@ -124,42 +124,46 @@ function setTabLinkOnSectionOpen() {
 
 function createSectionList() {
     let sectionList = [
-        {
-            selector: $('#educationList'),
-            content: getSectionTemplate('Education')
-        },
-        {
-            selector: $("#workList"),
-            content: getSectionTemplate('Work')
-        },
-        {
-            selector: $('#awardList'),
-            content: getSectionTemplate('Award')
-        },
-        {
-            selector: $('#certificateList'),
-            content: getSectionTemplate('Certificate')
-        },
-        {
-            selector: $("#skillList"),
-            content: getSectionTemplate('Skill')
-        },
-        {
-            selector: $("#designList"),
-            content: getSectionTemplate('Design')
-        },
-        {
-            selector: $("#webDevelopmentList"),
-            content: getSectionTemplate('Web Development')
-        },
-        {
-          selector: $("#ai-applications"),
-          content: getSectionTemplate('AI Applications')
-        },
-        {
-            selector: $("#puzzleList"),
-            content: getSectionTemplate('Puzzle List')
-        },
+      {
+        selector: $('#educationList'),
+        content:  getSectionTemplate('Education')
+      },
+      {
+        selector: $("#workList"),
+        content:  getSectionTemplate('Work')
+      },
+      {
+        selector: $('#awardList'),
+        content:  getSectionTemplate('Award')
+      },
+      {
+        selector: $('#certificateList'),
+        content:  getSectionTemplate('Certificate')
+      },
+      {
+        selector: $("#skillList"),
+        content:  getSectionTemplate('Skill')
+      },
+      {
+        selector: $("#designList"),
+        content: getSectionTemplate('Design')
+      },
+      {
+        selector: $("#webDevelopmentList"),
+        content:  getSectionTemplate('Web Development')
+      },
+      {
+        selector: $("#ai-applications"),
+        content:  getSectionTemplate('AI Applications')
+      },
+      {
+        selector: $("#puzzleList"),
+        content:  getSectionTemplate('Puzzle List')
+      },
+      {
+        selector: $("#artisticDrawingList"),
+        content:  getSectionTemplate('Drawing List')
+      },
     ];
 
     for (let i = 0; i < sectionList.length; i++) {
@@ -172,46 +176,46 @@ function getSectionTemplate(name) {
 
     switch (name) {
         case 'Education':
-            for (let i = 0; i < educationList.length; i++) {
-                sectionTemplate += getEducationTemplate(educationList[i]);
-            }
-            break;
+          for (let i = 0; i < educationList.length; i++) {
+              sectionTemplate += getEducationTemplate(educationList[i]);
+          }
+          break;
 
         case 'Work':
-            for (let i = 0; i < workList.length; i++) {
-                sectionTemplate += getWorkTemplate(workList[i]);
-            }
-            break;
+          for (let i = 0; i < workList.length; i++) {
+              sectionTemplate += getWorkTemplate(workList[i]);
+          }
+          break;
 
         case 'Award':
-            for (let i = 0; i < awardList.length; i++) {
-                sectionTemplate += getAwardTemplate(awardList[i]);
-            }
-            break;
+          for (let i = 0; i < awardList.length; i++) {
+              sectionTemplate += getAwardTemplate(awardList[i]);
+          }
+          break;
 
         case 'Certificate':
-            for (let i = 0; i < certificateList.length; i++) {
-                sectionTemplate += getCertificateTemplate(certificateList[i]);
-            }
-            break;
+          for (let i = 0; i < certificateList.length; i++) {
+              sectionTemplate += getCertificateTemplate(certificateList[i]);
+          }
+          break;
 
         case 'Skill':
-            for (let i = 0; i < skillList.length; i++) {
-                sectionTemplate += getSkillTemplate(skillList[i]);
-            }
-            break;
+          for (let i = 0; i < skillList.length; i++) {
+              sectionTemplate += getSkillTemplate(skillList[i]);
+          }
+          break;
 
         case 'Design':
-            for (let i = 0; i < designList.length; i++) {
-                sectionTemplate += getDesignTemplate(designList[i]);
-            }
-            break;
+          for (let i = 0; i < designList.length; i++) {
+              sectionTemplate += getDesignTemplate(designList[i]);
+          }
+          break;
 
         case 'Web Development':
-            for (let i = 0; i < webDevelopmentList.length; i++) {
-                sectionTemplate += getWebDevelopmentTemplate(webDevelopmentList[i]);
-            }
-            break;
+          for (let i = 0; i < webDevelopmentList.length; i++) {
+              sectionTemplate += getWebDevelopmentTemplate(webDevelopmentList[i]);
+          }
+          break;
 
         case 'AI Applications':
           for (let i = 0; i < AIApplicationList.length; i++) {
@@ -220,10 +224,16 @@ function getSectionTemplate(name) {
           break;
 
         case 'Puzzle List':
-            for (let i = 0; i < puzzleList.length; i++) {
-                sectionTemplate += getPuzzleListTemplate(puzzleList[i]);
-            }
-            break;
+          for (let i = 0; i < puzzleList.length; i++) {
+              sectionTemplate += getPuzzleListTemplate(puzzleList[i]);
+          }
+          break;
+
+        case 'Drawing List':
+          for (let i = 0; i < drawingList.length; i++) {
+              sectionTemplate += getDrawingListTemplate(drawingList[i]);
+          }
+          break;
     }
 
     return sectionTemplate;
@@ -393,6 +403,17 @@ function getPuzzleListTemplate(puzzleData) {
               </a>
             </div>
             `;
+}
+
+function getDrawingListTemplate(drawingData) {
+  return   `
+            <div class="drawingContainer">
+              <h3>${drawingData.name}</h3>
+              <a href="${drawingData.download}" target="_blank" download="${drawingData.name}.jpg" title="Download ${drawingData.name}">
+                <img src="${drawingData.img}" />
+              </a>
+            </div>
+          `;
 }
 
 function setToggleSection() {
