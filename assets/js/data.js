@@ -277,6 +277,16 @@ puzzleList         = [
     ]
   },
   {
+    "id":       "differential",
+    "title":    "Differential",
+    "imgList": [
+                "assets/images/puzzles/differential-1.jpg",
+                "assets/images/puzzles/differential-2.jpg",
+                "assets/images/puzzles/differential-3.jpg",
+                "assets/images/puzzles/differential-4.jpg",
+    ]
+  },
+  {
     "id":       "steampunkClock",
     "title":    "Steampunk Clock",
     "imgList": [
