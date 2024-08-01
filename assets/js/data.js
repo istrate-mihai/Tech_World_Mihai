@@ -83,6 +83,12 @@ awardList            = [
 ];
 certificateList      = [
   {
+    date:          "01.08.2024",
+    name:          "<a href=\"https://www.coursera.org/account/accomplishments/verify/HFLAMBZR2TRF\" target=\"_blank\">How to Get Into Robotics</a>",
+    icon:          "fas fa-award",
+    provider:      "Coursera",
+  },
+  {
     date:          "22.07.2024",
     name:          "<a href=\"https://www.coursera.org/account/accomplishments/verify/YK74RY39H5AN\" target=\"_blank\">Automotive Industrial Engineering</a>",
     icon:          "fas fa-award",
