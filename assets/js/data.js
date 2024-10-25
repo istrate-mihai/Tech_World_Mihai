@@ -1,4 +1,4 @@
-let educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList, drawingList;
+let educationList, workList, awardList, certificateList, skillList, designList, electronicList, webDevelopmentList, AIApplicationList, puzzleList, drawingList;
 
 // About Me Page Data --------------------------------------------------------------
 educationList        = [
@@ -12,7 +12,7 @@ educationList        = [
                             "Training as a PHP Web Developer through Link Academy's online platform.",
   },
   {
-    duration:               "01.10.2017 – 20.01.2022",
+    duration:               "01.10.2017 – 09.09.2022",
     educationTitle:         "MECHANICAL ENGINEER",
     link:                   "http://mecanica.ucv.ro/",
     icon:                   "fas fa-book",
@@ -21,6 +21,7 @@ educationList        = [
                             "Training as a mechanical engineer, field - Machine Building Technology.",
   },
 ];
+
 workList             = [
   {
     duration: "18.07.2022 – Current – Constanta, Romania",
@@ -73,6 +74,7 @@ workList             = [
     ],
   },
 ];
+
 awardList            = [
   {
     date:        "27.09.2021",
@@ -81,7 +83,44 @@ awardList            = [
     description: "Online testing through the Pearson Vue platform, on the 27 of September 2021, concluded with the successful passage of the 200-710: Zend Certified Engineer exam."
   }
 ];
+
 certificateList      = [
+  {
+    date:          "07.10.2024",
+    name:          "<a href=\"https://www.linkedin.com/learning/certificates/89809720a6afccb5b0a8e0964f3fb7b17eca222a0cfc18056b3eb9e88321c738?trk=share_certificate\" target=\"_blank\">Machine Learning with Scikit-Learn</a>",
+    icon:          "fas fa-award",
+    provider:      "LinkedIn",
+  },
+  {
+    date:          "29.09.2024",
+    name:          "<a href=\"https://www.linkedin.com/learning/certificates/2a17019530e8f863dad23e91f039c011b53fa479d13d745ef04c6235005c95f0?trk=share_certificate\" target=\"_blank\">Transitioning into Machine Learning Engineering</a>",
+    icon:          "fas fa-award",
+    provider:      "LinkedIn",
+  },
+  {
+    date:          "29.09.2024",
+    name:          "<a href=\"https://www.linkedin.com/learning/certificates/f235b8c6d7da0ad562a537445f29ff30887f9171db3ceb74f24c89b9d24aa2c3?trk=share_certificate\" target=\"_blank\">Mechanical Systems: Reading HVAC, Plumbing, and Other Drawings and Schematics</a>",
+    icon:          "fas fa-award",
+    provider:      "LinkedIn",
+  },
+  {
+    date:          "27.09.2024",
+    name:          "<a href=\"https://www.linkedin.com/learning/certificates/4876f16ffe8b3051a26ef6400c80b2f7d4a2a29aca829ed3d5d844e75a5b3a76?trk=share_certificate\" target=\"_blank\">Python for Data Visualization</a>",
+    icon:          "fas fa-award",
+    provider:      "LinkedIn",
+  },
+  {
+    date:          "22.09.2024",
+    name:          "<a href=\"https://www.linkedin.com/learning/certificates/49aecc31f45b93af9526607d6c7f5c1f8c16212169b9c9c0df2f66be27e8f3d9?trk=share_certificate\" target=\"_blank\">Programming Foundations: Artificial Intelligence</a>",
+    icon:          "fas fa-award",
+    provider:      "LinkedIn",
+  },
+  {
+    date:          "21.09.2024",
+    name:          "<a href=\"https://www.linkedin.com/learning/certificates/5a4408da3383782102724211ab9c2b88ab0550e4d0630b5aeac0a2ffa0d0d041?trk=share_certificate\" target=\"_blank\">Introduction to PLC and Industrial Automation</a>",
+    icon:          "fas fa-award",
+    provider:      "LinkedIn",
+  },
   {
     date:          "01.08.2024",
     name:          "<a href=\"https://www.coursera.org/account/accomplishments/verify/HFLAMBZR2TRF\" target=\"_blank\">How to Get Into Robotics</a>",
@@ -161,6 +200,7 @@ certificateList      = [
     provider:      "Coursera",
   }
 ];
+
 skillList            = [
   {
     title:      "CAD",
@@ -213,6 +253,25 @@ designList         = [
     download: "assets/docs/Tee_Pipe_Istrate_Mihai.skp"
   }
 ];
+
+electronicList     = [
+  {
+    name: 'Robo Spider (Boby)',
+    img: 'assets/images/roboSpider.jpeg',
+    link: 'assets/pages/robots/boby.html'
+  },
+  {
+    name: 'D2-1 Line Follower',
+    img: 'assets/images/D2LineFollower.jpeg',
+    link: 'assets/pages/robots/d2.html',
+  },
+  {
+    name: 'Arduino Robot',
+    img: 'assets/images/arduinoObstacleAvoidingRobot.jpeg',
+    link: 'assets/pages/robots/arduino.html',
+  },
+];
+
 webDevelopmentList = [
   {
     name:    "Phone Book",
@@ -251,6 +310,7 @@ webDevelopmentList = [
     website: "assets/cv/Portfolio-Istrate_Mihai_Septimius.7z",
   },
 ];
+
 AIApplicationList  = [
   {
     name: "Salary Dataset - Simple Linear Regression",
@@ -353,4 +413,4 @@ drawingList        = [
 ];
 // End Hobbys Page Data --------------------------------------------------------------
 
-export { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList, drawingList };
+export { educationList, workList, awardList, certificateList, skillList, designList, electronicList, webDevelopmentList, AIApplicationList, puzzleList, drawingList };

@@ -1,10 +1,11 @@
-import { educationList, workList, awardList, certificateList, skillList, designList, webDevelopmentList, AIApplicationList, puzzleList, drawingList } from "./data.js";
+import { educationList, workList, awardList, certificateList, skillList, designList, electronicList, webDevelopmentList, AIApplicationList, puzzleList, drawingList } from "./data.js";
 
-let sections    = $(".section");
-let sectBtns    = $(".controlls");
-let sectBtn     = $(".control");
-let allSections = $(".main-content");
-let tabLinks    = $(".tablinks");
+let sections       = $(".section");
+let sectBtns       = $(".controlls");
+let sectBtn        = $(".control");
+let allSections    = $(".main-content");
+let tabLinks       = $(".tablinks");
+let downloadCVLink = $(".download-CV");
 
 $(document).ready(function () {
     setPageTransitions();
@@ -15,6 +16,7 @@ $(document).ready(function () {
     setToggleSection();
     setTechnicalDrawingModal();
     setFullTextToggle();
+    setDownloadCVLink();
 });
 
 function setMainPhotoPopup() {
@@ -103,6 +105,7 @@ function setTabLinkOnSectionOpen() {
     $('#portfolio-control').on('click', function (event) {
         $("#tab-designList").click();
     });
+
     $('#hobbys-control').on('click', function (event) {
         tabPuzzleList.on('click', function () {
             $(".puzzleTab").on('click', function (e) {
@@ -147,6 +150,10 @@ function createSectionList() {
       {
         selector: $("#designList"),
         content: getSectionTemplate('Design')
+      },
+      {
+        selector: $("#electronics"),
+        content: getSectionTemplate('Electronics')
       },
       {
         selector: $("#webDevelopmentList"),
@@ -208,6 +215,12 @@ function getSectionTemplate(name) {
         case 'Design':
           for (let i = 0; i < designList.length; i++) {
               sectionTemplate += getDesignTemplate(designList[i]);
+          }
+          break;
+          
+        case 'Electronics':
+          for (let i = 0; i < electronicList.length; i++) {
+              sectionTemplate += getElectronicTemplate(electronicList[i]);
           }
           break;
 
@@ -352,6 +365,20 @@ function getDesignTemplate(designData) {
         `;
 }
 
+function getElectronicTemplate(electronicData) {
+    return  `
+              <div class="portfolio-item">
+                <h2 class="item-header">${electronicData.name}</h2>
+
+                <div class="image">
+                  <a href="${electronicData.link}">
+                    <img src="${electronicData.img}" alt="portfolioImage" />
+                  </a>
+                </div>
+              </div>
+            `;
+}
+
 function getWebDevelopmentTemplate(webDevelopmentData) {
     return `
           <div class="portfolio-item">
@@ -391,7 +418,6 @@ function getAIApplicationListTemplate(aiApplicationData) {
             </div>
           `;
 }
-
 
 function getPuzzleListTemplate(puzzleData) {
     return `
@@ -468,4 +494,8 @@ function setFullTextToggle() {
     shortparagraph.toggleClass("isHidden");
     fullParagraph.toggleClass("isHidden");
   });
+}
+
+function setDownloadCVLink() {
+  downloadCVLink.attr('href', 'assets/cv/CV_EN_Istrate_Mihai_Septimius.pdf')
 }
