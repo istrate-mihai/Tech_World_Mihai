@@ -3,14 +3,16 @@ body {
 }
 
 .container {
-  margin: 10px;
   width: 100%;
   /* Create four equal columns that sits next to each other */
   /* Responsive layout - makes a two column-layout instead of four columns */
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 }
-.container nav {
+.container .nav-container {
   background-color: rgba(0, 128, 0, 0.5);
+  overflow: auto;
+}
+.container nav {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,15 @@ body {
 }
 .container .logo {
   font-size: 1.5rem;
+}
+.container .logo-container {
+  width: 200px;
+  height: 100px;
+  background-image: url(../images/robots-collection.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
 }
 .container ul {
   display: flex;

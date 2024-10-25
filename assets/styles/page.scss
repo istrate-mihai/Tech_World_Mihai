@@ -3,22 +3,35 @@ body {
 }
 
 .container {
-  margin: 10px;
   width: 100%;
 
-  nav {
+  .nav-container {
     background-color: rgba(0, 128, 0, 0.5);
+    overflow: auto;
+  }
+
+  nav {
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
   }
-  
+
   .logo {
     font-size: 1.5rem;
   }
   
+  .logo-container {
+    width: 200px;
+    height: 100px;
+    background-image: url(../images/robots-collection.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+  }
+
   ul {
     display: flex;
     list-style: none;
