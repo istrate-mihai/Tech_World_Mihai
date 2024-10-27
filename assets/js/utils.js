@@ -450,7 +450,7 @@ function getDrawingListTemplate(drawingData) {
   return   `
             <div class="drawingContainer">
               <h3>${drawingData.name[langKey]}</h3>
-              <a href="${drawingData.download}" target="_blank" download="${drawingData.name}.jpg" title="Download ${drawingData.name}">
+              <a href="${drawingData.download}" target="_blank" download="${drawingData.name[langKey]}.jpg" title="Download ${drawingData.name}">
                 <img src="${drawingData.img}" />
               </a>
             </div>

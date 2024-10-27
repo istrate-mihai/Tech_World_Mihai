@@ -466,6 +466,15 @@ electronicList     = [
 webDevelopmentList = [
   {
     name:    {
+      "english": "Shopping Cart",
+      "german": "Einkaufswagen",
+    },
+    img:     "assets/images/onlineShoppingCartVueJs.png",
+    github:  "https://github.com/istrate-mihai/online-shopping-cart-with-vue-js",
+    website: "https://online-shopping-cart-vue-js.netlify.app/",
+  },
+  {
+    name:    {
       "english": "Phone Book",
       "german": "Telefonbuch",
     },
