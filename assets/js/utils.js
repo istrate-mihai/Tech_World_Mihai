@@ -268,8 +268,6 @@ function getSectionTemplate(name) {
 }
 
 function getEducationTemplate(educationData) {
-  console.dir(educationData.educationTitle[langKey]);
-
     return `
             <div class="timeline-item">
               <div class="tl-icon">
@@ -612,6 +610,7 @@ function setWebsiteLanguage() {
 
   // Update dynamic sections with content
   createSectionList();
+  setTechnicalDrawingModal();
   setDownloadCVLink();
 }
 
