@@ -371,7 +371,7 @@ function getDesignTemplate(designData) {
 
             <div>
               <div class="icons">
-                <a href="${designData.download}" target="_blank" class="icon" download>
+                <a href="${designData.href}" target="_blank" class="icon" download="${designData.download[langKey]}">
                   <i class="fas fa-download"></i>
                 </a>
               </div>

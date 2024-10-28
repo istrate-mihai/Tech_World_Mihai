@@ -399,40 +399,60 @@ designList         = [
       "english": "206 Develop Cabinet Model",
       "german": "206 Schrankmodell entwickeln",
     },
-    img:      "assets/images/cabinet.png",
-    download: "assets/docs/Cabinet_Istrate_Mihai.skp"
+    img: "assets/images/cabinet.png",
+    href: "assets/docs/Cabinet_Istrate_Mihai.skp",
+    download: {
+      english: "Cabinet_Istrate_Mihai.skp",
+      german: "Schrank_Istrate_Mihai.skp",
+    },
   },
   {
     name: {
       "english": "305 Develop House Model",
       "german": "305 Hausmodell entwickeln",
     },     
-    img:      "assets/images/houseModel.png",
-    download: "assets/docs/305_Develop_House_Model.skp"
+    img: "assets/images/houseModel.png",
+    href: "assets/docs/305_Develop_House_Model.skp",
+    download: {
+      english: "305_Develop_House_Model.skp",
+      german: "305_Entwickle_Haus_Modell.skp",
+    },
   },
   {
     name: {
       "english": "406 Develop a Wheel Model",
       "german": "406 Radmodell entwickeln",
     },
-    img:      "assets/images/wheelModel.png",
-    download: "assets/docs/Wheel_Istrate_Mihai.skp"
+    img: "assets/images/wheelModel.png",
+    href: "assets/docs/Wheel_Istrate_Mihai.skp",
+    download: {
+      english: "Wheel_Istrate_Mihai.skp",
+      german: "Rad_Istrate_Mihai.skp",
+    },
   },
   {
     name: {
       "english": "505 Develop Taipei 101 Model",
       "german": "505 Taipei 101 Modell entwickeln",
     }, 
-    img:      "assets/images/taipeiModel.png",
-    download: "assets/docs/Taipei_101_Istrate_Mihai.skp"
+    img: "assets/images/taipeiModel.png",
+    href: "assets/docs/Taipei_101_Istrate_Mihai.skp",
+    download: {
+      english: "Taipei_101_Istrate_Mihai.skp",
+      german: "Taipei_101_Istrate_Mihai.skp",
+    },
   },
   {
     name: {
       "english": "603 Develop Tee Pipe Model",
       "german": "603 T-Stück-Modell entwickeln",
     },
-    img:      "assets/images/teePipeModel.png",
-    download: "assets/docs/Tee_Pipe_Istrate_Mihai.skp"
+    img: "assets/images/teePipeModel.png",
+    href: "assets/docs/Tee_Pipe_Istrate_Mihai.skp",
+    download: {
+      english: "Tee_Pipe_Istrate_Mihai.skp",
+      german: "Tee_Rohr_Istrate_Mihai.skp",
+    },
   }
 ];
 
@@ -464,6 +484,15 @@ electronicList     = [
 ];
 
 webDevelopmentList = [
+  {
+    name:    {
+      "english": "Remember Me App",
+      "german": "Erinnerungs-App",
+    },
+    img:     "assets/images/rememberMeApp.png",
+    github:  "https://github.com/istrate-mihai/the-learning-resource-app",
+    website: "https://learning-resource-app-with-vue-js.netlify.app/",
+  },
   {
     name:    {
       "english": "Shopping Cart",
