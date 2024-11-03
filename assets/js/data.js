@@ -486,6 +486,15 @@ electronicList     = [
 webDevelopmentList = [
   {
     name:    {
+      "english": "Chat App",
+      "german": "Chat-App",
+    },
+    img:     "assets/images/chatApp.png",
+    github:  "https://github.com/istrate-mihai/chat-app-express-and-node-js",
+    website: "https://chat-app-euq6.onrender.com/",
+  },
+  {
+    name:    {
       "english": "Remember Me App",
       "german": "Erinnerungs-App",
     },
