@@ -64,14 +64,14 @@ workList             = [
       "english": [
         "- Develop and maintain web services or features for the company's main platforms.",
         "- Contribute to front-end and back-end development processes.",
-        "- Fixing bugs and adding new features to CRM & back office systems for platform statistics.",
+        "- Fixing bugs developing CRM & back office systems for platform statistics.",
         "- Identifying and reporting Issues to the different software products.",
         "- Participating in IT / Marketing meetings to discuss further developments.",
       ],
       "german": [
         "- Entwickeln und pflegen von Webdiensten oder Funktionen für die Hauptplattformen des Unternehmens.",
         "- Mitwirken an Frontend- und Backend-Entwicklungsprozessen.",
-        "- Beheben von Fehlern und Hinzufügen neuer Funktionen zu CRM- und Backoffice-Systemen für Plattformstatistiken.",
+        "- Behebung von Fehlern bei der Entwicklung von CRM- und Backoffice-Systemen für Plattformstatistiken.",
         "- Identifizieren und Melden von Problemen bei den verschiedenen Softwareprodukten.",
         "- Teilnahme an IT-/Marketing-Meetings, um weitere Entwicklungen zu besprechen.",
       ], 
@@ -115,13 +115,13 @@ workList             = [
     taskList: {
       "english": [
         "- Carrying out periodic quality checks.",
-        "- Adjusting the machine as needed for changes, different functions or other requirements of the production process.",
-        "- The use of mechanical processing machinery for the manufacture and change of the shape of Fox Upgrade engine block parts.",
+        "- Modify the CNC machine for operational changes and production requirements.",
+        "- Utilize machinery to manufacture the shape and geometry of Fox Upgrade engine block parts.",
       ],
       "german": [
-        "- Durchführung regelmäßiger Qualitätskontrollen.",
-        "- Anpassung der Maschine bei Bedarf an Änderungen, verschiedene Funktionen oder andere Anforderungen des Produktionsprozesses.",
-        "- Einsatz von mechanischen Bearbeitungsmaschinen zur Herstellung und Formänderung von Fox-Upgrade-Motorblockteilen.",
+        "- Durchführung von regelmäßigen Qualitätsprüfungen.",
+        "- Änderung der CNC-Maschine für betriebliche Änderungen und Produktionsanforderungen.",
+        "- Nutzung von Maschinen zur Herstellung der Form und Geometrie von Fox Upgrade Motorblockteilen.",
       ], 
     },
   },
@@ -156,12 +156,12 @@ workList             = [
     icon:     "fa fa-briefcase",
     taskList: {
       "english": [
-        "- Performing visual quality inspections on parts and components of small sizes of the Fox Classic heat engine such as: water pumps, clutches etc.",
+        "- Conduct inspections on parts of the Fox Classic heat engine, including water pumps and clutches.",
         "- Recording the corresponding data in the IQOS computer program.",
       ],
       "german": [
-        "- Durchführung visueller Qualitätsinspektionen an kleinen Teilen und Komponenten des Fox Classic Wärmemotors, wie z. B. Wasserpumpen, Kupplungen usw.",
-        "- Erfassung der entsprechenden Daten im IQOS-Computerprogramm.",
+        "- Durchführung von Inspektionen an Teilen des Fox Classic Wärmemotors, einschließlich Wasserpumpen und Kupplungen.",
+        "- Aufzeichnung der entsprechenden Daten im IQOS-Computerprogramm.",
       ],
     },
   },
@@ -486,84 +486,66 @@ electronicList     = [
 webDevelopmentList = [
   {
     name:    {
+      "english": "Monster Slayer Game",
+      "german": "Monsterjäger-Spiel",
+    },
+    img:     "assets/images/monster_slayer_game.png",
+    github:  "https://github.com/istrate-mihai/Monster_Slayer_Game",
+    website: "https://monster-slayer-game-area.netlify.app/",
+  },
+  {
+    name:    {
       "english": "Chat App",
       "german": "Chat-App",
     },
-    img:     "assets/images/chatApp.png",
-    github:  "https://github.com/istrate-mihai/chat-app-express-and-node-js",
+    img:     "assets/images/chat_app.png",
+    github:  "https://github.com/istrate-mihai/Chat_App",
     website: "https://chat-app-euq6.onrender.com/",
   },
   {
     name:    {
-      "english": "Remember Me App",
-      "german": "Erinnerungs-App",
+      "english": "Learning Resources",
+      "german": "Lernressourcen",
     },
-    img:     "assets/images/rememberMeApp.png",
-    github:  "https://github.com/istrate-mihai/the-learning-resource-app",
-    website: "https://learning-resource-app-with-vue-js.netlify.app/",
+    img:     "assets/images/learning_resources_manager.png",
+    github:  "https://github.com/istrate-mihai/Learning_Resources_Manager",
+    website: "https://learning-resources-manager.netlify.app/",
   },
   {
     name:    {
       "english": "Shopping Cart",
       "german": "Einkaufswagen",
     },
-    img:     "assets/images/onlineShoppingCartVueJs.png",
-    github:  "https://github.com/istrate-mihai/online-shopping-cart-with-vue-js",
-    website: "https://online-shopping-cart-vue-js.netlify.app/",
-  },
-  {
-    name:    {
-      "english": "Phone Book",
-      "german": "Telefonbuch",
-    },
-    img:     "assets/images/phoneBook.png",
-    github:  "https://github.com/Istrate-Mihai/Phone-Book-ReactJS",
-    website: "https://phone-book-react-app.netlify.app/",
-  },
-  {
-    name:    {
-      "english": "Currency Converter",
-      "german": "Währungsrechner",
-    },
-    img:     "assets/images/currencyConverter.png",
-    github:  "https://github.com/Istrate-Mihai/Currency-Converter",
-    website: "https://currency-converter-react-app.netlify.app/",
-  },
-  {
-    name:    {
-      "english": "Javascript Game Area",
-      "german": "Javascript-Spielbereich",
-    },
-    img:     "assets/images/javascriptGames.png",
-    github:  "https://github.com/Istrate-Mihai/Javascript-Games",
-    website: "https://javascript-game-area.netlify.app/",
-  },
-  {
-    name:    {
-      "english": "Lord of The Rings Area",
-      "german": "Herr der Ringe Bereich",
-    },
-    img:     "assets/images/lordOfTheRingsArea.png",
-    github:  "https://github.com/Istrate-Mihai/Lord-Of-The-Rings-Area",
-    website: "https://lord-of-the-rings-area.netlify.app/",
+    img:     "assets/images/online_shopping_cart.png",
+    github:  "https://github.com/istrate-mihai/Shopping_Cart",
+    website: "https://shopping-cart-area.netlify.app/",
   },
   {
     name:    {
       "english": "Computer History",
       "german": "Computergeschichte",
     },
-    img:     "assets/images/computerHistory.png",
-    github:  "https://github.com/Istrate-Mihai/My-First-Website",
+    img:     "assets/images/computer_history.png",
+    github:  "https://github.com/istrate-mihai/Computer_History",
     website: "https://computer-history.netlify.app/",
   },
   {
     name:    {
-      "english": "Link Academy Portfolio",
-      "german": "Link Akademie Portfolio",
+      "english": "Lord of The Rings Area",
+      "german": "Herr der Ringe Bereich",
     },
-    img:     "assets/images/digitalPortfolio.jpg",
-    github:  "https://github.com/Istrate-Mihai/Link-Academy-Portfolio",
-    website: "assets/cv/Portfolio-Istrate_Mihai_Septimius.7z",
+    img:     "assets/images/lord_of_the_rings_area.png",
+    github:  "https://github.com/Istrate-Mihai/Lord-Of-The-Rings-Area",
+    website: "https://lord-of-the-rings-area.netlify.app/",
+  },
+  {
+    name:    {
+      "english": "Javascript Games",
+      "german": "JavaScript-Spiele",
+    },
+    img:     "assets/images/javascript_game_area.png",
+    github:  "https://github.com/istrate-mihai/Javascript_Games",
+    website: "https://javascript-games-area.netlify.app/",
   },
 ];
 
