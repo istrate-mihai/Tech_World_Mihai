@@ -4,7 +4,8 @@ staticLanguageContentArduino,
 staticLanguageSelectorContent,
 staticLanguageContentRoboSpider,
 staticLanguageContentD2LineFollower,
-staticLanguageContentRoboticsSection;
+staticLanguageContentRoboticsSection,
+staticLanguageContentPortfolioSection;
 
 staticLanguageContentIndex = {
   'english':
@@ -28,11 +29,6 @@ staticLanguageContentIndex = {
       "Awards",
       "Certificates",
       "Skills",
-      "My Portfolio",
-      "CAD / CAM / Technical Drawing",
-      "Electronics Applications",
-      "Web Development",
-      "AI Applications",
       "Hobbys",
       "3D Puzzles / Models",
       "Drawing",
@@ -91,11 +87,6 @@ staticLanguageContentIndex = {
       "Auszeichnungen",
       "Zertifikate",
       "Fähigkeiten",
-      "Mein Portfolio",
-      "CAD / CAM / Technisches Zeichnen",
-      "Elektronikanwendungen",
-      "Webentwicklung",
-      "KI-Anwendungen",
       "Hobbys",
       "3D-Puzzles / Modelle",
       "Zeichnen",
@@ -173,6 +164,7 @@ staticLanguageContentRoboticsSection = {
   "english": [
     "Robotics",
     "Main",
+    "My Portfolio",
     "Robo Spider (Boby)",
     "D2-1 Line Follower",
     "Arduino Robot",
@@ -182,6 +174,7 @@ staticLanguageContentRoboticsSection = {
   "german": [
     "Robotik",
     "Haupt",
+    "Mein Portfolio",
     "Robo-Spinne (Boby)",
     "D2-1 Linienfolger",
     "Arduino-Roboter",
@@ -203,6 +196,27 @@ staticLanguageSelectorContent = {
   ],
 };
 
+staticLanguageContentPortfolioSection = {
+  "english": [
+    "Portfolio",
+    "Main",
+    "My Portfolio",
+    "Web Development",
+    "AI Applications",
+    "CAD / CAM / Technical Drawing",
+    "Electronics Applications",
+  ],
+  "german": [
+    "Portfolio",
+    "Haupt",
+    "Mein Portfolio",
+    "Webentwicklung",
+    "KI-Anwendungen",
+    "CAD / CAM / Technisches Zeichnen",
+    "Elektronikanwendungen",
+  ],
+};
+
 export {
   staticLanguageContentIndex,
   staticLanguageContentArduino,
@@ -210,4 +224,5 @@ export {
   staticLanguageContentRoboSpider,
   staticLanguageContentD2LineFollower,
   staticLanguageContentRoboticsSection,
+  staticLanguageContentPortfolioSection,
 };

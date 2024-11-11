@@ -116,50 +116,7 @@
         </div>
       </section>
 
-      <section class="section sec3" id="portfolio">
-        <div class="main-title">
-          <h2>
-            <span class="language-content"></span>
-          </h2>
-        </div>
-
-        <div class="tab">
-          <div>
-            <a href="#" class="main-btn tablinks" id="tab-designList" data-tab="designList">
-              <span class="btn-text language-content">
-              </span>
-            </a>
-          </div>
-
-         <div>
-           <a href="#" class="main-btn tablinks" id="tab-electronics" data-tab="electronics">
-             <span class="btn-text language-content"></span>
-           </a>
-         </div>
-
-          <div>
-            <a href="#" class="main-btn tablinks" id="tab-webDevelopmentList" data-tab="webDevelopmentList">
-              <span class="btn-text language-content"></span>
-            </a>
-          </div>
-
-         <div>
-           <a href="#" class="main-btn tablinks" id="tab-ai-applications" data-tab="ai-applications">
-             <span class="btn-text language-content"></span>
-           </a>
-         </div>
-        </div>
-
-        <div id="designList" class="portfolios tabcontent"></div>
-
-        <div id="electronics" class="portfolios tabcontent"></div>
-
-        <div id="webDevelopmentList" class="portfolios tabcontent"></div>
-
-        <div id="ai-applications" class="portfolios tabcontent"></div>
-      </section>
-
-      <section class="section sec4" id="hobbys">
+      <section class="section sec3" id="hobbys">
         <div class="hobbys-content">
           <div class="main-title">
             <h2><span class="language-content"></span></h2>
@@ -187,7 +144,7 @@
         <div id="puzzle-gallery-list"></div>
       </section>
 
-      <section class="section sec5" id="blogs">
+      <section class="section sec4" id="blogs">
         <div class="blogs-content">
           <div class="main-title">
             <h2><span class="language-content"></span></h2>
@@ -268,7 +225,7 @@
         </div>
       </section>
 
-      <section class="section sec6" id="contact">
+      <section class="section sec5" id="contact">
         <div class="contact-container">
           <div class="main-title">
             <h2><span class="language-content"></span></h2>
@@ -353,19 +310,25 @@
     </main>
 
     <div class="controlls">
-      <div class="language-content control control-1 active-btn" id="home-control" data-id="home" title="">
+      <div class="language-content control control-js control-1 active-btn" id="home-control" data-id="home" title="">
         <i class="fas fa-home"></i>
       </div>
-      <div class="language-content control control-2" id="about-control" data-id="about" title="">
+
+      <div class="language-content control control-js control-2" id="about-control" data-id="about" title="">
         <i class="fas fa-user"></i>
       </div>
-      <div class="language-content control control-3" id="portfolio-control" data-id="portfolio" title="">
-        <i class="fas fa-briefcase"></i>
-      </div>
-      <div class="language-content control control-4" id="hobbys-control" data-id="hobbys" title="">
+
+      <a id="portfolio-link" href="./pages/portfolio.html">
+        <div class="language-content control control-3" id="portfolio-control" title="">
+            <i class="fas fa-briefcase"></i>
+        </div>
+      </a>      
+
+      <div class="language-content control control-js control-4" id="hobbys-control" data-id="hobbys" title="">
         <i class="fas fa-drafting-compass"></i>
       </div>
-      <div class="language-content control control-6" id="blogs-control" data-id="blogs" title="">
+
+      <div class="language-content control control-js control-6" id="blogs-control" data-id="blogs" title="">
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
@@ -378,17 +341,8 @@
       </div>
     </section>
 
-    <!-- CAD / CAM / Technical Drawing Modal -->
-    <section id="cadCamTechnicalDrawingModal" class="modal isHidden">
-      <div class="modal-content">
-        <button class="btn-close">⨉</button>
-        <img src="#" alt="Modal Photo" />
-      </div>
-    </section>
-
     <div class="overlay isHidden"></div>
 
-    <script type="module" src="/assets/js/app.js"></script>
-    <script src="https://use.fontawesome.com/1cccff0e97.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
   </body>
 </html>

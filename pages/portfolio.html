@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="language-content-arduino"></title>
+    <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/styles/page.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/styles/tab.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/c89d3d412f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body class="main-content">
+    <div class="container">
+      <div class="nav-container">
+        <div class="logo-container"></div>
+
+        <nav>
+          <input type="checkbox" id="check" />
+    
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+    
+          <div>
+            <label class="logo language-content-portfolio-section"></label>
+          </div>
+  
+          <ul>
+            <li><a href="../index.html" class="language-content-portfolio-section"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="section sec3 active" id="portfolio">
+        <div class="main-title">
+          <h2>
+            <span class="language-content-portfolio-section"></span>
+          </h2>
+        </div>
+
+        <div class="tab">
+          <div>
+            <a href="#" class="main-btn tablinks" id="tab-webDevelopmentList" data-tab="webDevelopmentList">
+              <span class="btn-text language-content-portfolio-section"></span>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="main-btn tablinks" id="tab-ai-applications" data-tab="ai-applications">
+              <span class="btn-text language-content-portfolio-section"></span>
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="main-btn tablinks" id="tab-designList" data-tab="designList">
+              <span class="btn-text language-content-portfolio-section">
+              </span>
+            </a>
+          </div>
+
+         <div>
+           <a href="#" class="main-btn tablinks" id="tab-electronics" data-tab="electronics">
+             <span class="btn-text language-content-portfolio-section"></span>
+           </a>
+         </div>
+        </div>
+        
+        <div id="webDevelopmentList" class="portfolios tabcontent"></div>
+
+        <div id="ai-applications" class="portfolios tabcontent"></div>
+
+        <div id="designList" class="portfolios tabcontent"></div>
+
+        <div id="electronics" class="portfolios tabcontent"></div>
+      </section>
+    </div>
+
+    <!-- CAD / CAM / Technical Drawing Modal -->
+    <section id="cadCamTechnicalDrawingModal" class="modal isHidden">
+      <div class="modal-content">
+        <button class="btn-close">⨉</button>
+        <img src="#" alt="Modal Photo" />
+      </div>
+    </section>
+
+    <div class="overlay isHidden"></div>
+
+    <script type="module" src="../assets/js/app.js"></script>
+    <script src="../assets/js/portfolio.js"></script>
+  </body>
+</html>

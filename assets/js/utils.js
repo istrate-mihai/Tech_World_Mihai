@@ -19,11 +19,12 @@ import {
   staticLanguageContentRoboSpider,
   staticLanguageContentD2LineFollower,
   staticLanguageContentRoboticsSection,
+  staticLanguageContentPortfolioSection
 } from "./languages.js";
 
 let sections       = $(".section");
 let sectBtns       = $(".controlls");
-let sectBtn        = $(".control");
+let sectBtn        = $(".control-js");
 let allSections    = $(".main-content");
 let tabLinks       = $(".tablinks");
 let downloadCVLink = $(".download-CV");
@@ -113,17 +114,14 @@ function setTabLinks() {
       $('#puzzle-gallery-list').css("display", "none");
     }
   });
+  $('.tablinks:first').trigger('click');
 };
 
 function setTabLinkOnSectionOpen() {
   let tabPuzzleList      = $("#tab-puzzleList")
   let tabPuzzleTitleList = $(".puzzleTab");
 
-  $('#portfolio-control').on('click', function (event) {
-      $("#tab-designList").click();
-  });
-
-  $('#hobbys-control').on('click', function (event) {
+  $('#hobbys-control').on('click', function () {
     tabPuzzleList.on('click', function () {
       $(".puzzleTab").on('click', function (e) {
         let currentPuzzleTitleLink = $(e.currentTarget);
@@ -165,20 +163,20 @@ function createSectionList() {
       content:  getSectionTemplate('Skill')
     },
     {
-      selector: $("#designList"),
-      content: getSectionTemplate('Design')
-    },
-    {
-      selector: $("#electronics"),
-      content: getSectionTemplate('Electronics')
-    },
-    {
       selector: $("#webDevelopmentList"),
       content:  getSectionTemplate('Web Development')
     },
     {
       selector: $("#ai-applications"),
       content:  getSectionTemplate('AI Applications')
+    },
+    {
+      selector: $("#designList"),
+      content: getSectionTemplate('Design')
+    },
+    {
+      selector: $("#electronics"),
+      content: getSectionTemplate('Electronics')
     },
     {
       selector: $("#puzzleList"),
@@ -573,6 +571,7 @@ function setWebsiteLanguage() {
   let $langPlaceholderListD2LineFollower   = $(".language-content-d2-line-follower");
   let $langPlaceHolderListRoboticsSection  = $(".language-content-robotics-section");
   let $langPlaceHolderListLanguageSelector = $(".language-content-selector");
+  let $langPlaceHolderPortfolioSection     = $(".language-content-portfolio-section");
 
   $langPlaceholderListIndex.each(function(index) {
     if (index < staticLanguageContentIndex[langKey].length) {
@@ -613,6 +612,12 @@ function setWebsiteLanguage() {
   $langPlaceHolderListLanguageSelector.each(function(index) {
     if (index < staticLanguageSelectorContent[langKey].length) {
       $(this).text(staticLanguageSelectorContent[langKey][index]);
+    }
+  });
+
+  $langPlaceHolderPortfolioSection.each(function(index) {
+    if (index < staticLanguageContentPortfolioSection[langKey].length) {
+      $(this).text(staticLanguageContentPortfolioSection[langKey][index]);
     }
   });
 
