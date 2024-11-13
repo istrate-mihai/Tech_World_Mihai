@@ -495,15 +495,6 @@ webDevelopmentList = [
   },
   {
     name:    {
-      "english": "Monster Slayer Game",
-      "german": "Monsterjäger-Spiel",
-    },
-    img:     "../assets/images/monster_slayer_game.png",
-    github:  "https://github.com/istrate-mihai/Monster_Slayer_Game",
-    website: "https://monster-slayer-game-area.netlify.app/",
-  },
-  {
-    name:    {
       "english": "Chat App",
       "german": "Chat-App",
     },
@@ -531,12 +522,21 @@ webDevelopmentList = [
   },
   {
     name:    {
-      "english": "Computer History",
-      "german": "Computergeschichte",
+      "english": "Monster Slayer Game",
+      "german": "Monsterjäger-Spiel",
     },
-    img:     "../assets/images/computer_history.png",
-    github:  "https://github.com/istrate-mihai/Computer_History",
-    website: "https://computer-history.netlify.app/",
+    img:     "../assets/images/monster_slayer_game.png",
+    github:  "https://github.com/istrate-mihai/Monster_Slayer_Game",
+    website: "https://monster-slayer-game-area.netlify.app/",
+  },
+  {
+    name:    {
+      "english": "Javascript Games",
+      "german": "JavaScript-Spiele",
+    },
+    img:     "../assets/images/javascript_game_area.png",
+    github:  "https://github.com/istrate-mihai/Javascript_Games",
+    website: "https://javascript-games-area.netlify.app/",
   },
   {
     name:    {
@@ -549,12 +549,12 @@ webDevelopmentList = [
   },
   {
     name:    {
-      "english": "Javascript Games",
-      "german": "JavaScript-Spiele",
+      "english": "Computer History",
+      "german": "Computergeschichte",
     },
-    img:     "../assets/images/javascript_game_area.png",
-    github:  "https://github.com/istrate-mihai/Javascript_Games",
-    website: "https://javascript-games-area.netlify.app/",
+    img:     "../assets/images/computer_history.png",
+    github:  "https://github.com/istrate-mihai/Computer_History",
+    website: "https://computer-history.netlify.app/",
   },
 ];
 
