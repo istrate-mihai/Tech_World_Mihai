@@ -8,4 +8,4 @@ This is the project for my personal website.
 
 # Project Link:
 
-## https://techworldmihai.com/
+### <a href="https://techworldmihai.com/" target="_blank" title="Project Link">Tech World Mihai</a>
