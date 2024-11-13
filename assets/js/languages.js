@@ -198,6 +198,7 @@ staticLanguageSelectorContent = {
 
 staticLanguageContentPortfolioSection = {
   "english": [
+    "My Portfolio",
     "Portfolio",
     "Main",
     "My Portfolio",
@@ -207,6 +208,7 @@ staticLanguageContentPortfolioSection = {
     "Electronics Applications",
   ],
   "german": [
+    "Mein Portfolio",
     "Portfolio",
     "Haupt",
     "Mein Portfolio",

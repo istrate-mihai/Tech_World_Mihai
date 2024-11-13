@@ -363,7 +363,7 @@ function getSkillTemplate(skillData) {
 function getDesignTemplate(designData) {
   return `
         <div class="portfolio-item design-item">
-          <h2 class="item-header">${designData.name[langKey]}</h2>
+          <h3 class="item-header">${designData.name[langKey]}</h3>
 
           <div class="image">
             <img src="${designData.img}" alt="portfolioImage" />
@@ -383,7 +383,7 @@ function getDesignTemplate(designData) {
 function getElectronicTemplate(electronicData) {
   return  `
             <div class="portfolio-item">
-              <h2 class="item-header">${electronicData.name[langKey]}</h2>
+              <h3 class="item-header">${electronicData.name[langKey]}</h3>
 
               <div class="image">
                 <a href="${electronicData.link}">
@@ -403,7 +403,7 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
 
   return `
         <div class="portfolio-item">
-          <h2 class="item-header">${webDevelopmentData.name[langKey]}</h2>
+          <h3 class="item-header">${webDevelopmentData.name[langKey]}</h3>
 
           <div class="image">
             <img src="${webDevelopmentData.img}" alt="portfolioImage" />
@@ -429,7 +429,7 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
 function getAIApplicationListTemplate(aiApplicationData) {
   return `
           <div class="portfolio-item">
-            <h2 class="item-header">${aiApplicationData.name[langKey]}</h2>
+            <h3 class="item-header">${aiApplicationData.name[langKey]}</h3>
 
             <div class="image">
               <a href="${aiApplicationData.link}" target="_blank">

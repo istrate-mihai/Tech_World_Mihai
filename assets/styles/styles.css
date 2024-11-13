@@ -449,7 +449,7 @@ section {
   position: relative;
   border-radius: 15px;
 }
-.portfolios .portfolio-item h2.item-header {
+.portfolios .portfolio-item h2.item-header, .portfolios .portfolio-item h3.item-header {
   text-align: center;
   color: var(--color-secondary);
 }
@@ -691,7 +691,7 @@ section {
   overflow: hidden;
 }
 .main-btn .btn-text {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);

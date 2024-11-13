@@ -486,6 +486,15 @@ electronicList     = [
 webDevelopmentList = [
   {
     name:    {
+      "english": "AI - Document Summarizer",
+      "german": "KI - Dokumentenzusammenfasser",
+    },
+    img:     "../assets/images/AI_document_summarizer_agent.png",
+    github:  "https://github.com/istrate-mihai/AI_Document_Summarizer_Agent",
+    website: "https://ai-document-summarizer-agent.onrender.com/",
+  },
+  {
+    name:    {
       "english": "Monster Slayer Game",
       "german": "Monsterjäger-Spiel",
     },

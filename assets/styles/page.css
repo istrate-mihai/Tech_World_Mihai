@@ -85,7 +85,7 @@ body {
     right: 0;
   }
 }
-.container h2 {
+.container h2, .container h3 {
   text-align: center;
   margin: 20px auto;
 }
