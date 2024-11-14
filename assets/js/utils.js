@@ -168,7 +168,7 @@ function createSectionList() {
     },
     {
       selector: $("#ai-applications"),
-      content:  getSectionTemplate('AI Applications')
+      content:  getSectionTemplate('Machine Learning')
     },
     {
       selector: $("#designList"),
@@ -245,7 +245,7 @@ function getSectionTemplate(name) {
       }
       break;
 
-    case 'AI Applications':
+    case 'Machine Learning':
       for (let i = 0; i < AIApplicationList.length; i++) {
         sectionTemplate += getAIApplicationListTemplate(AIApplicationList[i]);
       }
