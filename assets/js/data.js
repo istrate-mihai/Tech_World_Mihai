@@ -383,8 +383,8 @@ skillList            = [
   },
   {
     title:      {
-      "english": "AI Applications",
-      "german": "KI-Anwendungen", 
+      "english": "Machine Learning",
+      "german": "Maschinelles Lernen",
     },
     percentage: "5%",
     class:      "aIApplications",
