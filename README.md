@@ -3,7 +3,7 @@
 This is the project for my personal website.
 
 ## Project Cover:
- s
+
 ![Project Cover](assets/images/tech_world_istrate_mihai.png)
 
 ## Project Link: [Tech World Mihai](https://techworldmihai.com/)
