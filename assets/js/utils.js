@@ -366,7 +366,7 @@ function getDesignTemplate(designData) {
           <h3 class="item-header">${designData.name[langKey]}</h3>
 
           <div class="image">
-            <img src="${designData.img}" alt="portfolioImage" />
+            <img src="${designData.img}" alt="portfolioImage" loading="lazy" />
           </div>
 
           <div>
@@ -387,7 +387,7 @@ function getElectronicTemplate(electronicData) {
 
               <div class="image">
                 <a href="${electronicData.link}">
-                  <img src="${electronicData.img}" alt="portfolioImage" />
+                  <img src="${electronicData.img}" alt="portfolioImage" loading="lazy" />
                 </a>
               </div>
             </div>
@@ -406,7 +406,7 @@ function getWebDevelopmentTemplate(webDevelopmentData) {
           <h3 class="item-header">${webDevelopmentData.name[langKey]}</h3>
 
           <div class="image">
-            <img src="${webDevelopmentData.img}" alt="portfolioImage" />
+            <img src="${webDevelopmentData.img}" alt="portfolioImage" loading="lazy" />
           </div>
 
           <div class="hover-items">
@@ -433,7 +433,7 @@ function getAIApplicationListTemplate(aiApplicationData) {
 
             <div class="image">
               <a href="${aiApplicationData.link}" target="_blank">
-                <img src="${aiApplicationData.img}" alt="portfolioImage" />
+                <img src="${aiApplicationData.img}" alt="portfolioImage" loading="lazy" />
               </a>
             </div>
           </div>
@@ -457,7 +457,7 @@ function getDrawingListTemplate(drawingData) {
             <div class="drawingContainer">
               <h3>${drawingData.name[langKey]}</h3>
               <a href="${drawingData.download}" target="_blank" download="${drawingData.name[langKey]}.jpg" title="Download ${drawingData.name}">
-                <img src="${drawingData.img}" />
+                <img src="${drawingData.img}" alt="Drawing Image" loading="lazy" />
               </a>
             </div>
           `;
@@ -498,7 +498,7 @@ function getPuzzleImgList(puzzleId) {
   for (let i = 0; i < imgListLength; i++) {
     content += `
       <div class="puzzle-gallery">
-        <img src="${imgList[i]}" />
+        <img src="${imgList[i]}" alt="Puzzle Image" loading="lazy" />
       </div>
     `;
   }

@@ -2,6 +2,10 @@ body {
   justify-content: flex-start;
 }
 
+video, img {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   /* Create four equal columns that sits next to each other */
