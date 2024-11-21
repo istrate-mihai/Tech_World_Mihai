@@ -513,6 +513,15 @@ webDevelopmentList = [
   },
   {
     name:    {
+      "english": "Currency Converter",
+      "german": "Währungsrechner",
+    },
+    img:     "../assets/images/currency_converter_cover.png",
+    github:  "https://github.com/istrate-mihai/Currency_Converter_Vue_JS",
+    website: "https://currency-converter-vue-js.netlify.app/",
+  },
+  {
+    name:    {
       "english": "Shopping Cart",
       "german": "Einkaufswagen",
     },
