@@ -570,12 +570,20 @@ webDevelopmentList = [
 AIApplicationList  = [
   {
     name: {
+      "english": "Honey Production Linear Regression Example",
+      "german": "Honigproduktion Lineares Regressionsbeispiel",
+    },
+    img:  "../assets/images/honey_production_linear_regression_example.png",
+    link: "https://colab.research.google.com/drive/1ci3GgTlr2UuftT7PbsyKDmTf0DkO95Id?usp=sharing",
+  },
+  {
+    name: {
       "english": "Salary Dataset - Simple Linear Regression",
       "german": "Gehaltsdatensatz - Einfache lineare Regression",
     },
     img:  "../assets/images/salaryDatasetSimpleLinearRegression.png",
-    link: "https://colab.research.google.com/drive/1U8aUVV6pXJ8RsDTTXLfsvFM6DtlyX2i3",
-  }
+    link: "https://colab.research.google.com/drive/1U8aUVV6pXJ8RsDTTXLfsvFM6DtlyX2i3?usp=sharing",
+  },
 ];
 // End Portfolio Page Data --------------------------------------------------------------
 
