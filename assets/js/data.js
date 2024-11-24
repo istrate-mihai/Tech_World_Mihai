@@ -184,6 +184,15 @@ awardList            = [
 
 certificateList      = [
   {
+    date:          "24.11.2024",
+    name:          {
+      "english": "<a href=\"https://www.codecademy.com/profiles/Istrate-Mihai-Septimius/certificates/bfea7580cc9541c58895c50b15feb310\" target=\"_blank\">Machine Learning: Introduction with Regression Course</a>",
+      "german": "<a href=\"https://www.codecademy.com/profiles/Istrate-Mihai-Septimius/certificates/bfea7580cc9541c58895c50b15feb310\" target=\"_blank\">Maschinelles Lernen: Einführung mit Regressionskurs</a>",
+    },
+    icon:          "fas fa-award",
+    provider:      "CodeCademy",
+  },
+  {
     date:          "07.10.2024",
     name:          {
       "english": "<a href=\"https://www.linkedin.com/learning/certificates/89809720a6afccb5b0a8e0964f3fb7b17eca222a0cfc18056b3eb9e88321c738?trk=share_certificate\" target=\"_blank\">Machine Learning with Scikit-Learn</a>",
