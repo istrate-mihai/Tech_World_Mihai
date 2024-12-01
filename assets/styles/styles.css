@@ -999,11 +999,22 @@ section {
   font-size: 1em;
 }
 .modal .btn-close {
-  transform: translate(10px, 40px);
+  transform: translate(0, 40px);
   padding: 0.5rem 0.7rem;
-  background: #eee;
+  background: var(--color-secondary);
   border-radius: 50%;
   float: right;
+}
+.modal .arrow-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -450px;
+}
+.modal .arrow-container .arrow {
+  transform: translate(0, 80px);
+  padding: 0.5rem 0.7rem;
+  background: var(--color-secondary);
+  border-radius: 50%;
 }
 @media only screen and (max-width: 700px) {
   .modal {
@@ -1036,7 +1047,7 @@ section {
 }
 
 #cadCamTechnicalDrawingModal .modal-content {
-  width: 50%;
+  width: 100%;
 }
 #cadCamTechnicalDrawingModal .modal-content img {
   width: 100%;

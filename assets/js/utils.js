@@ -59,16 +59,17 @@ function setMainPhotoPopup() {
 
 function setTechnicalDrawingModal() {
   let designItemList = $(".design-item img");
+  let modal          = $("#cadCamTechnicalDrawingModal");
+  let modalImage     = modal.find('img');
+  let overlay        = $(".overlay");
+  let closeBtn       = $(".btn-close");
 
   designItemList.click(function () {
-    let modal      = $("#cadCamTechnicalDrawingModal");
-    let modalImage = modal.find('img');
-    let overlay    = $(".overlay");
-    let closeBtn = $(".btn-close");
+    let currentImgSrc = $(this).attr('src');
 
     overlay.removeClass("isHidden");
     modal.removeClass("isHidden");
-    modalImage.attr("src", $(this).attr('src'));
+    modalImage.attr("src", currentImgSrc);
     sectBtns.addClass("isHidden");
 
     closeBtn.click(function () {

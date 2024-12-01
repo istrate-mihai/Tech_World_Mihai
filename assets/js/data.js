@@ -405,38 +405,62 @@ skillList            = [
 designList         = [
   {
     name: {
-      "english": "206 Develop Cabinet Model",
-      "german": "206 Schrankmodell entwickeln",
+      "english": "Layer, Plot and Dimensioning",
+      "german": "Ebenen, Plot und Bemaßung",
     },
-    img: "../assets/images/cabinet.png",
-    href: "../assets/docs/Cabinet_Istrate_Mihai.skp",
+    img: "../assets/images/layerPlotAndDimensioning.png",
+    href: "../assets/docs/layerPlotAndDimensioning.dwg",
     download: {
-      english: "Cabinet_Istrate_Mihai.skp",
-      german: "Schrank_Istrate_Mihai.skp",
+      english: "Layer_Plot_and_Dimensioning.dwg",
+      german: "Ebenen_Plot_und_Bemaßung.dwg",
     },
   },
   {
     name: {
-      "english": "305 Develop House Model",
-      "german": "305 Hausmodell entwickeln",
-    },     
-    img: "../assets/images/houseModel.png",
-    href: "../assets/docs/305_Develop_House_Model.skp",
+      "english": "The Apartment Base",
+      "german": "Die Wohnungsgrundlage",
+    },
+    img: "../assets/images/theApartmentBase.png",
+    href: "../assets/docs/theApartmentBase.dwg",
     download: {
-      english: "305_Develop_House_Model.skp",
-      german: "305_Entwickle_Haus_Modell.skp",
+      english: "The_Apartment_Base.dwg",
+      german: "Die_Wohnungsgrundlage.dwg",
     },
   },
   {
     name: {
-      "english": "406 Develop a Wheel Model",
-      "german": "406 Radmodell entwickeln",
+      "english": "Block Creation",
+      "german": "Die Blockerstellung",
     },
-    img: "../assets/images/wheelModel.png",
-    href: "../assets/docs/Wheel_Istrate_Mihai.skp",
+    img: "../assets/images/blockCreation.png",
+    href: "../assets/docs/blockCreation.dwg",
     download: {
-      english: "Wheel_Istrate_Mihai.skp",
-      german: "Rad_Istrate_Mihai.skp",
+      english: "Block_Creation.dwg",
+      german: "Die_Blockerstellung.dwg",
+    },
+  },
+  {
+    name: {
+      "english": "Basic Learned Commands",
+      "german": "Grundlegende Gelernte Befehle",
+    },
+    img: "../assets/images/applyingTheLearnedCommands.png",
+    href: "../assets/docs/applyingTheLearnedCommands.dwg",
+    download: {
+      english: "Basic_Learned_Commands.dwg",
+      german: "Grundlegende_Gelernte_Befehle.dwg",
+    },
+  },
+  {
+    name: {
+      "english": "603 Develop Tee Pipe Model",
+      "german": "603 T-Stück-Modell entwickeln",
+    },
+    img: "../assets/images/teePipeModel.png",
+    href: "../assets/docs/Tee_Pipe_Istrate_Mihai.skp",
+    download: {
+      english: "Tee_Pipe_Istrate_Mihai.skp",
+      german: "Tee_Rohr_Istrate_Mihai.skp",
     },
   },
   {
@@ -453,16 +477,40 @@ designList         = [
   },
   {
     name: {
-      "english": "603 Develop Tee Pipe Model",
-      "german": "603 T-Stück-Modell entwickeln",
+      "english": "406 Develop a Wheel Model",
+      "german": "406 Radmodell entwickeln",
     },
-    img: "../assets/images/teePipeModel.png",
-    href: "../assets/docs/Tee_Pipe_Istrate_Mihai.skp",
+    img: "../assets/images/wheelModel.png",
+    href: "../assets/docs/Wheel_Istrate_Mihai.skp",
     download: {
-      english: "Tee_Pipe_Istrate_Mihai.skp",
-      german: "Tee_Rohr_Istrate_Mihai.skp",
+      english: "Wheel_Istrate_Mihai.skp",
+      german: "Rad_Istrate_Mihai.skp",
     },
-  }
+  },
+  {
+    name: {
+      "english": "305 Develop House Model",
+      "german": "305 Hausmodell entwickeln",
+    },     
+    img: "../assets/images/houseModel.png",
+    href: "../assets/docs/305_Develop_House_Model.skp",
+    download: {
+      english: "305_Develop_House_Model.skp",
+      german: "305_Entwickle_Haus_Modell.skp",
+    },
+  },
+  {
+    name: {
+      "english": "206 Develop Cabinet Model",
+      "german": "206 Schrankmodell entwickeln",
+    },
+    img: "../assets/images/cabinet.png",
+    href: "../assets/docs/Cabinet_Istrate_Mihai.skp",
+    download: {
+      english: "Cabinet_Istrate_Mihai.skp",
+      german: "Schrank_Istrate_Mihai.skp",
+    },
+  },
 ];
 
 electronicList     = [

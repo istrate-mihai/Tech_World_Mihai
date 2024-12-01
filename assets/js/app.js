@@ -1,4 +1,5 @@
 import { utils } from './utils.js';
+import { portfolio } from './portfolio.js';
 
 $(document).ready(function () {
   utils.setWebsiteLanguage();
@@ -12,4 +13,7 @@ $(document).ready(function () {
   utils.setFullTextToggle();
   utils.setDownloadCVLink();
   utils.setLanguageSelector();
+  portfolio.setPortfolioLogo(),
+  portfolio.setDesignListNavigation();
+  portfolio.setModalNavigationByKeyboard();
 });
