@@ -405,6 +405,54 @@ skillList            = [
 designList         = [
   {
     name: {
+      "english": " 3D Model Visualization - 1",
+      "german": "3D-Modellvisualisierung - 1",
+    },
+    img: "../assets/images/3DModelVisualization_1.png",
+    href: "../assets/images/3DModelVisualization_1.png",
+    download: {
+      english: "3D_Model_Visualization_1.png",
+      german: "3D-Modellvisualisierung_1.png",
+    },
+  },
+  {
+    name: {
+      "english": " 3D Model Visualization - 2",
+      "german": "3D-Modellvisualisierung - 2",
+    },
+    img: "../assets/images/3DModelVisualization_2.png",
+    href: "../assets/images/3DModelVisualization_2.png",
+    download: {
+      english: "3D_Model_Visualization_2.png",
+      german: "3D-Modellvisualisierung_2.png",
+    },
+  },
+  {
+    name: {
+      "english": " 3D Model Visualization - 3",
+      "german": "3D-Modellvisualisierung - 3",
+    },
+    img: "../assets/images/3DModelVisualization_3.png",
+    href: "../assets/images/3DModelVisualization_3.png",
+    download: {
+      english: "3D_Model_Visualization_3.png",
+      german: "3D-Modellvisualisierung_3.png",
+    },
+  },
+  {
+    name: {
+      "english": " 3D Model Visualization - 4",
+      "german": "3D-Modellvisualisierung - 4",
+    },
+    img: "../assets/images/3DModelVisualization_4.png",
+    href: "../assets/images/3DModelVisualization_4.png",
+    download: {
+      english: "3D_Model_Visualization_4.png",
+      german: "3D-Modellvisualisierung_4.png",
+    },
+  },
+  {
+    name: {
       "english": "3D Modeling in AutoCAD",
       "german": "3D-Modellierung in AutoCAD",
     },
