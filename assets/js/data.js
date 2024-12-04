@@ -405,6 +405,18 @@ skillList            = [
 designList         = [
   {
     name: {
+      "english": "3D Modeling in AutoCAD",
+      "german": "3D-Modellierung in AutoCAD",
+    },
+    img: "../assets/images/3dModelingInAutoCAD.png",
+    href: "../assets/docs/3dModelingInAutoCAD.dwg",
+    download: {
+      english: "3D_Modeling_in_AutoCAD.dwg",
+      german: "3D-Modellierung_in_AutoCAD.dwg",
+    },
+  },
+  {
+    name: {
       "english": "Layer, Plot and Dimensioning",
       "german": "Ebenen, Plot und Bemaßung",
     },
