@@ -409,10 +409,10 @@ designList         = [
       "german": "Flaschenmodell 1",
     },
     img: "../assets/images/bottleModel_1.png",
-    href: "../assets/images/bottleModel_1.png",
+    href: "../assets/docs/bottleModel.max",
     download: {
-      english: "Bottle_Model_1.png",
-      german: "Flaschenmodell_1.png",
+      english: "Bottle_Model.max",
+      german: "Flaschenmodell.max",
     },
   },
   {
@@ -421,10 +421,10 @@ designList         = [
       "german": "Flaschenmodell 2",
     },
     img: "../assets/images/bottleModel_2.png",
-    href: "../assets/images/bottleModel_2.png",
+    href: "../assets/docs/bottleModel.max",
     download: {
-      english: "Bottle_Model_2.png",
-      german: "Flaschenmodell_2.png",
+      english: "Bottle_Model.max",
+      german: "Flaschenmodell.max",
     },
   },
   {
@@ -433,10 +433,10 @@ designList         = [
       "german": "Flaschenmodell 3",
     },
     img: "../assets/images/bottleModel_3.png",
-    href: "../assets/images/bottleModel_3.png",
+    href: "../assets/docs/bottleModel.max",
     download: {
-      english: "Bottle_Model_3.png",
-      german: "Flaschenmodell_3.png",
+      english: "Bottle_Model.max",
+      german: "Flaschenmodell.max",
     },
   },
   {
