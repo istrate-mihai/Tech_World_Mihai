@@ -405,6 +405,42 @@ skillList            = [
 designList         = [
   {
     name: {
+      "english": "Bottle Model 1",
+      "german": "Flaschenmodell 1",
+    },
+    img: "../assets/images/bottleModel_1.png",
+    href: "../assets/images/bottleModel_1.png",
+    download: {
+      english: "Bottle_Model_1.png",
+      german: "Flaschenmodell_1.png",
+    },
+  },
+  {
+    name: {
+      "english": "Bottle Model 2",
+      "german": "Flaschenmodell 2",
+    },
+    img: "../assets/images/bottleModel_2.png",
+    href: "../assets/images/bottleModel_2.png",
+    download: {
+      english: "Bottle_Model_2.png",
+      german: "Flaschenmodell_2.png",
+    },
+  },
+  {
+    name: {
+      "english": "Bottle Model 3",
+      "german": "Flaschenmodell 3",
+    },
+    img: "../assets/images/bottleModel_3.png",
+    href: "../assets/images/bottleModel_3.png",
+    download: {
+      english: "Bottle_Model_3.png",
+      german: "Flaschenmodell_3.png",
+    },
+  },
+  {
+    name: {
       "english": " 3D Model Visualization - 1",
       "german": "3D-Modellvisualisierung - 1",
     },
