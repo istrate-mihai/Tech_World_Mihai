@@ -444,11 +444,11 @@ designList         = [
       "english": "Bottle Model 1",
       "german": "Flaschenmodell 1",
     },
-    img: "../assets/images/bottleModel_1.png",
-    href: "../assets/docs/bottleModel.max",
+    img: "../assets/images/bottle.png",
+    href: "../assets/images/bottle.png",
     download: {
-      english: "Bottle_Model.max",
-      german: "Flaschenmodell.max",
+      english: "Bottle_Model.png",
+      german: "Flaschenmodell.png",
     },
   },
   {
