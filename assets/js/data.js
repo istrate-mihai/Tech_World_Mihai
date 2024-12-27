@@ -405,6 +405,42 @@ skillList            = [
 designList         = [
   {
     name: {
+      "english": "Couch Model 1",
+      "german": "Sofa Modell 1",
+    },
+    img: "../assets/images/couch_1.png",
+    href: "../assets/images/couch_1.png",
+    download: {
+      english: "Couch_Model.png",
+      german: "Sofa_Modell.png",
+    },
+  },
+  {
+    name: {
+      "english": "Couch Model 2",
+      "german": "Sofa Modell 2",
+    },
+    img: "../assets/images/couch_2.png",
+    href: "../assets/docs/couchModel.max",
+    download: {
+      english: "CouchModel.max",
+      german: "SofaModell.max",
+    },
+  },
+  {
+    name: {
+      "english": "Couch Model 3",
+      "german": "Sofa Modell 3",
+    },
+    img: "../assets/images/couch_3.png",
+    href: "../assets/docs/couchModel.max",
+    download: {
+      english: "CouchModel.max",
+      german: "SofaModell.max",
+    },
+  },
+  {
+    name: {
       "english": "Bottle Model 1",
       "german": "Flaschenmodell 1",
     },
