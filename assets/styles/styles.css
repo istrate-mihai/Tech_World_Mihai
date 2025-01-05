@@ -720,6 +720,9 @@ section {
   transform: translateX(0);
   transition: all 0.4s ease-out;
 }
+.main-btn.active-portfolio-tab-link {
+  background-color: var(--color-secondary);
+}
 
 .main-title {
   text-align: center;

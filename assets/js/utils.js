@@ -109,12 +109,16 @@ function setTabLinks() {
 
     $(".tabcontent").css("display", "none");
     $(".tablinks").css("background-color", "");
+    $(".tablinks").removeClass("active-portfolio-tab-link");
+
     $("#" + tabId).css("display", "grid");
+    $("#tab-" + tabId).addClass("active-portfolio-tab-link");
 
     if (tabId === 'artisticDrawingList') {
       $('#puzzle-gallery-list').css("display", "none");
     }
   });
+
   $('.tablinks:first').trigger('click');
 };
 
