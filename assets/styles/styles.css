@@ -1002,7 +1002,6 @@ section {
   font-size: 1em;
 }
 .modal .btn-close {
-  transform: translate(0, 40px);
   padding: 0.5rem 0.7rem;
   background: var(--color-secondary);
   border-radius: 50%;
@@ -1050,7 +1049,7 @@ section {
 }
 
 #cadCamTechnicalDrawingModal .modal-content {
-  width: 100%;
+  width: 90%;
 }
 #cadCamTechnicalDrawingModal .modal-content img {
   width: 100%;

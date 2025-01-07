@@ -405,39 +405,146 @@ skillList            = [
 designList         = [
   {
     name: {
-      "english": "Couch Model 1",
-      "german": "Sofa Modell 1",
+      "english": "Character Model 1",
+      "german": "Charaktermodell 1",
     },
-    img: "../assets/images/couch_1.png",
-    href: "../assets/images/couch_1.png",
+    video: "../assets/videos/Character Model/characterModelVideo.mp4",
+    href: "../assets/videos/Character Model/characterModelVideo.mp4",
     download: {
-      english: "Couch_Model.png",
-      german: "Sofa_Modell.png",
+      english: "Character Model Video.mp4",
+      german: "Charaktermodell Video.mp4",
     },
+    type: "video",
   },
   {
     name: {
-      "english": "Couch Model 2",
-      "german": "Sofa Modell 2",
+      "english": "Character Model 2",
+      "german": "Charaktermodell 2",
     },
-    img: "../assets/images/couch_2.png",
-    href: "../assets/docs/couchModel.max",
+    img: "../assets/images/characterModel_2.png",
+    href: "../assets/images/characterModel_2.png",
     download: {
-      english: "CouchModel.max",
-      german: "SofaModell.max",
+      english: "CharacterModel.png",
+      german: "Charaktermodell.png",
     },
+    type: "photo",
   },
   {
     name: {
-      "english": "Couch Model 3",
-      "german": "Sofa Modell 3",
+      "english": "Character Model 3",
+      "german": "Charaktermodell 3",
     },
-    img: "../assets/images/couch_3.png",
-    href: "../assets/docs/couchModel.max",
+    img: "../assets/images/characterModel_3.png",
+    href: "../assets/docs/characterModel.max",
     download: {
-      english: "CouchModel.max",
-      german: "SofaModell.max",
+      english: "CharacterModel.max",
+      german: "Charaktermodell.max",
     },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Character Model 4",
+      "german": "Charaktermodell 4",
+    },
+    img: "../assets/images/characterModel_4.png",
+    href: "../assets/docs/characterModel.max",
+    download: {
+      english: "CharacterModel.max",
+      german: "Charaktermodell.max",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Character Model 5",
+      "german": "Charaktermodell 5",
+    },
+    img: "../assets/images/characterModel_5.png",
+    href: "../assets/docs/characterModel.max",
+    download: {
+      english: "CharacterModel.max",
+      german: "Charaktermodell.max",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Couch Model I - 1",
+      "german": "Sofa Modell I - 1",
+    },
+    img: "../assets/images/CouchModel_I_1.png",
+    href: "../assets/images/CouchModel_I_1.png",
+    download: {
+      english: "CouchModel.png",
+      german: "SofaModell.png",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Couch Model I - 2",
+      "german": "Sofa Modell I - 2",
+    },
+    img: "../assets/images/CouchModel_I_2.png",
+    href: "../assets/docs/CouchModel_I.max",
+    download: {
+      english: "CouchModel_I.max",
+      german: "SofaModell_I.max",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Couch Model I - 3",
+      "german": "Sofa Modell I - 3",
+    },
+    img: "../assets/images/CouchModel_I_3.png",
+    href: "../assets/docs/CouchModel_I.max",
+    download: {
+      english: "CouchModel_I.max",
+      german: "SofaModell_I.max",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Couch Model II - 1",
+      "german": "Sofa Modell II - 1",
+    },
+    img: "../assets/images/CouchModel_II_1.png",
+    href: "../assets/images/CouchModel_II_1.png",
+    download: {
+      english: "CouchModel.png",
+      german: "SofaModell.png",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Couch Model II - 2",
+      "german": "Sofa Modell II - 2",
+    },
+    img: "../assets/images/CouchModel_II_2.png",
+    href: "../assets/docs/CouchModel_II.max",
+    download: {
+      english: "CouchModel_II.max",
+      german: "SofaModell_II.max",
+    },
+    type: "photo",
+  },
+  {
+    name: {
+      "english": "Couch Model II - 3",
+      "german": "Sofa Modell II - 3",
+    },
+    img: "../assets/images/CouchModel_II_3.png",
+    href: "../assets/docs/CouchModel_II.max",
+    download: {
+      english: "CouchModel_II.max",
+      german: "SofaModell_II.max",
+    },
+    type: "photo",
   },
   {
     name: {
@@ -450,6 +557,7 @@ designList         = [
       english: "Bottle_Model.png",
       german: "Flaschenmodell.png",
     },
+    type: "photo",
   },
   {
     name: {
@@ -462,6 +570,7 @@ designList         = [
       english: "Bottle_Model.max",
       german: "Flaschenmodell.max",
     },
+    type: "photo",
   },
   {
     name: {
@@ -474,6 +583,7 @@ designList         = [
       english: "Bottle_Model.max",
       german: "Flaschenmodell.max",
     },
+    type: "photo",
   },
   {
     name: {
@@ -486,6 +596,7 @@ designList         = [
       english: "3D_Model_Visualization_1.png",
       german: "3D-Modellvisualisierung_1.png",
     },
+    type: "photo",
   },
   {
     name: {
@@ -498,6 +609,7 @@ designList         = [
       english: "3D_Model_Visualization_2.png",
       german: "3D-Modellvisualisierung_2.png",
     },
+    type: "photo",
   },
   {
     name: {
@@ -510,6 +622,7 @@ designList         = [
       english: "3D_Model_Visualization_3.png",
       german: "3D-Modellvisualisierung_3.png",
     },
+    type: "photo",
   },
   {
     name: {
@@ -522,6 +635,7 @@ designList         = [
       english: "3D_Model_Visualization_4.png",
       german: "3D-Modellvisualisierung_4.png",
     },
+    type: "photo",
   },
   {
     name: {
@@ -534,6 +648,7 @@ designList         = [
       english: "3D_Modeling_in_AutoCAD.dwg",
       german: "3D-Modellierung_in_AutoCAD.dwg",
     },
+    type: "photo",
   },
   {
     name: {
@@ -546,6 +661,7 @@ designList         = [
       english: "Layer_Plot_and_Dimensioning.dwg",
       german: "Ebenen_Plot_und_Bemaßung.dwg",
     },
+    type: "photo",
   },
   {
     name: {
@@ -558,6 +674,7 @@ designList         = [
       english: "The_Apartment_Base.dwg",
       german: "Die_Wohnungsgrundlage.dwg",
     },
+    type: "photo",
   },
   {
     name: {
@@ -570,6 +687,7 @@ designList         = [
       english: "Block_Creation.dwg",
       german: "Die_Blockerstellung.dwg",
     },
+    type: "photo",
   },
   {
     name: {
@@ -582,6 +700,7 @@ designList         = [
       english: "Basic_Learned_Commands.dwg",
       german: "Grundlegende_Gelernte_Befehle.dwg",
     },
+    type: "photo",
   },
   {
     name: {
@@ -594,6 +713,7 @@ designList         = [
       english: "Tee_Pipe_Istrate_Mihai.skp",
       german: "Tee_Rohr_Istrate_Mihai.skp",
     },
+    type: "photo",
   },
   {
     name: {
@@ -606,6 +726,7 @@ designList         = [
       english: "Taipei_101_Istrate_Mihai.skp",
       german: "Taipei_101_Istrate_Mihai.skp",
     },
+    type: "photo",
   },
   {
     name: {
@@ -618,6 +739,7 @@ designList         = [
       english: "Wheel_Istrate_Mihai.skp",
       german: "Rad_Istrate_Mihai.skp",
     },
+    type: "photo",
   },
   {
     name: {
@@ -630,6 +752,7 @@ designList         = [
       english: "305_Develop_House_Model.skp",
       german: "305_Entwickle_Haus_Modell.skp",
     },
+    type: "photo",
   },
   {
     name: {
@@ -642,6 +765,7 @@ designList         = [
       english: "Cabinet_Istrate_Mihai.skp",
       german: "Schrank_Istrate_Mihai.skp",
     },
+    type: "photo",
   },
 ];
 

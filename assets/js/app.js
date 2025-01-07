@@ -16,4 +16,5 @@ $(document).ready(function () {
   portfolio.setPortfolioLogo(),
   portfolio.setDesignListNavigation();
   portfolio.setModalNavigationByKeyboard();
+  portfolio.setDesignListVideo();
 });

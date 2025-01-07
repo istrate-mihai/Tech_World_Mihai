@@ -10,45 +10,104 @@ function setPortfolioLogo() {
 }
 
 function setDesignListNavigation() {
-  let designImgList = designList.map(design => design.img);
-  let lowerNavLimit = 0;
-  let upperNavLimit = designImgList.length - 1;
-  let modalImage    = modal.find('img');
+
+  let designMediaList = designList.map(design => design.img || design.video);
+  let lowerNavLimit   = 0;
+  let upperNavLimit   = designMediaList.length - 1;
+  let modalImage      = modal.find('img');
+  let modalVideo      = modal.find('video');
 
   leftArrow.on('click', function() {
-    let currentImgSrc   = modalImage.attr("src");
-    let currentImgIndex = designImgList.indexOf(currentImgSrc);
-    let prevImgIndex    = undefined;
-    let prevImgSrc      = '';
 
-    if (currentImgIndex == lowerNavLimit) {
-      prevImgIndex = upperNavLimit;
+    let currentImgSrc = modalImage.attr("src");
+    let currentVidSrc = modalVideo.attr("src");
+
+    let currentMediaIndex = -1;
+    if (currentImgSrc != '') {
+      currentMediaIndex = designMediaList.indexOf(currentImgSrc);
     }
 
-    if (currentImgIndex > lowerNavLimit) {
-      prevImgIndex = currentImgIndex - 1;
+    if (currentVidSrc != '') {
+      currentMediaIndex = designMediaList.indexOf(currentVidSrc);
     }
 
-    prevImgSrc = designImgList[prevImgIndex];
-    modalImage.attr('src', prevImgSrc);
+    let prevMediaIndex = undefined;
+    let prevMediaSrc   = '';
+
+    if (currentMediaIndex == lowerNavLimit) {
+      prevMediaIndex = upperNavLimit;
+    }
+
+    if (currentMediaIndex > lowerNavLimit) {
+      prevMediaIndex = currentMediaIndex - 1;
+    }
+
+    prevMediaSrc               = designMediaList[prevMediaIndex];
+    let mediaNameComponentList = prevMediaSrc.split('.');
+    let previousMediaExt       = mediaNameComponentList[mediaNameComponentList.length - 1];
+
+    if (previousMediaExt != 'mp4') {
+      modalImage.attr('src', prevMediaSrc);
+      modalImage.css("display", "inline");
+
+      modalVideo.attr("src", "");
+      modalVideo.css("display", "none");
+    }
+
+    if (previousMediaExt == 'mp4') {
+      modalImage.attr('src', "");
+      modalImage.css("display", "none");
+
+      modalVideo.attr("src", prevMediaSrc);
+      modalVideo.css("display", "inline");
+    }
   });
 
   rightArrow.on('click', function() {
-    let currentImgSrc   = modalImage.attr("src");
-    let currentImgIndex = designImgList.indexOf(currentImgSrc);
-    let nextImgIndex    = undefined;
-    let mextImgSrc      = '';
+    console.log('rightArrow Click');
 
-    if (currentImgIndex == upperNavLimit) {
-      nextImgIndex = lowerNavLimit;
+    let currentImgSrc = modalImage.attr("src");
+    let currentVidSrc = modalVideo.attr("src");
+
+    let currentMediaIndex = -1;
+    if (currentImgSrc != '') {
+      currentMediaIndex = designMediaList.indexOf(currentImgSrc);
     }
 
-    if (currentImgIndex < upperNavLimit) {
-      nextImgIndex = currentImgIndex + 1;
+    if (currentVidSrc != '') {
+      currentMediaIndex = designMediaList.indexOf(currentVidSrc);
     }
 
-    mextImgSrc = designImgList[nextImgIndex];
-    modalImage.attr('src', mextImgSrc);
+    let nextMediaIndex = undefined;
+    let nextMediaSrc   = '';
+
+    if (currentMediaIndex == upperNavLimit) {
+      nextMediaIndex = lowerNavLimit;
+    }
+
+    if (currentMediaIndex < upperNavLimit) {
+      nextMediaIndex = currentMediaIndex + 1;
+    }
+
+    nextMediaSrc               = designMediaList[nextMediaIndex];
+    let mediaNameComponentList = nextMediaSrc.split('.');
+    let nextMediaExt           = mediaNameComponentList[mediaNameComponentList.length - 1];
+
+    if (nextMediaExt != 'mp4') {
+      modalImage.attr('src', nextMediaSrc);
+      modalImage.css("display", "inline");
+
+      modalVideo.attr("src", "");
+      modalVideo.css("display", "none");
+    }
+
+    if (nextMediaExt == 'mp4') {
+      modalImage.attr('src', "");
+      modalImage.css("display", "none");
+
+      modalVideo.attr("src", nextMediaSrc);
+      modalVideo.css("display", "inline");
+    }
   });
 }
 
@@ -70,8 +129,28 @@ function setModalNavigationByKeyboard() {
   });
 }
 
+function setDesignListVideo() {
+
+  let videoList = $('video');
+  let observer  = new IntersectionObserver((entries, self) => {
+    $(entries).each((index, entry) => {
+      if (entry.isIntersecting) {
+        let video = $(entry.target);
+        video.attr('src', video.data('src'));
+        video.removeAttr('data-src');
+        self.unobserve(entry.target);
+      }
+    });
+  });
+
+  videoList.each((index, video) => {
+    observer.observe(video);
+  });
+};
+
 export const portfolio = {
   setPortfolioLogo,
   setDesignListNavigation,
   setModalNavigationByKeyboard,
+  setDesignListVideo,
 };

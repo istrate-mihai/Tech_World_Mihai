@@ -58,21 +58,40 @@ function setMainPhotoPopup() {
 }
 
 function setTechnicalDrawingModal() {
-  let designItemList = $(".design-item img");
+  let designItemList = $(".design-item img, .design-item video");
   let modal          = $("#cadCamTechnicalDrawingModal");
   let modalImage     = modal.find('img');
+  let modalVideo     = modal.find('video');
   let overlay        = $(".overlay");
   let closeBtn       = $(".btn-close");
 
   designItemList.click(function () {
-    let currentImgSrc = $(this).attr('src');
+
+    let currentMediaSrc = $(this).attr('src');
 
     overlay.removeClass("isHidden");
     modal.removeClass("isHidden");
-    modalImage.attr("src", currentImgSrc);
+
+    if ($(this).is('img')) {
+      modalImage.attr("src", currentMediaSrc);
+      modalImage.css("display", "inline");
+
+      modalVideo.attr("src", "");
+      modalVideo.css("display", "none");
+    }
+
+    if ($(this).is('video')) {
+      modalImage.attr("src", "");
+      modalImage.css("display", "none");
+
+      modalVideo.attr("src", currentMediaSrc);
+      modalVideo.css("display", "inline");
+    }
+
     sectBtns.addClass("isHidden");
 
     closeBtn.click(function () {
+      console.log('clicked close button');
       modal.addClass("isHidden");
       overlay.addClass("isHidden");
       sectBtns.removeClass("isHidden");
@@ -366,12 +385,31 @@ function getSkillTemplate(skillData) {
 }
 
 function getDesignTemplate(designData) {
+
+  let templateMedia = "";
+
+  if (designData.type == "photo") {
+    templateMedia = `<img src="${designData.img}" alt="portfolioImage" loading="lazy" />`;
+  }
+
+  if (designData.type == "video") {
+    templateMedia = `
+                      <video
+                        data-src="${designData.video}"
+                        loading="lazy"
+                        type="video/mp4"
+                        controls
+                        loop>
+                      </video>
+                    `;
+  }
+
   return `
         <div class="portfolio-item design-item">
           <h3 class="item-header">${designData.name[langKey]}</h3>
 
           <div class="image">
-            <img src="${designData.img}" alt="portfolioImage" loading="lazy" />
+            ${templateMedia}
           </div>
 
           <div>

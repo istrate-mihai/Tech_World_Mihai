@@ -285,7 +285,6 @@
   }
 
   .btn-close {
-    transform: translate(0, 40px);
     padding: 0.5rem 0.7rem;
     background: var(--color-secondary);
     border-radius: 50%;
@@ -336,7 +335,7 @@
 
 #cadCamTechnicalDrawingModal {
   .modal-content {
-    width: 100%;
+    width: 90%;
 
     img {
       width: 100%;
