@@ -405,6 +405,19 @@ skillList            = [
 designList         = [
   {
     name: {
+      "english": "Ball Motion",
+      "german": "Ballbewegung",
+    },
+    video: "../assets/videos/Motion/ballMotion.mp4",
+    href: "../assets/videos/Motion/ballMotion.mp4",
+    download: {
+      english: "Ball Motion.mp4",
+      german: "Ballbewegung.mp4",
+    },
+    type: "video",
+  },
+  {
+    name: {
       "english": "Character Model 1",
       "german": "Charaktermodell 1",
     },
