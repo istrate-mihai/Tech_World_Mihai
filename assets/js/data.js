@@ -1011,6 +1011,22 @@ puzzleList         = [
 drawingList        = [
   {
     name:     {
+      "english": "Orthographic projections",
+      "german": "Orthogonale Projektionen",
+    },
+    img:      "assets/images/orthogonalProjections.jpg",
+    download: "assets/images/orthogonalProjections.jpg"
+  },
+  {
+    name:     {
+      "english": "Treehouse",
+      "german": "Baumhaus",
+    },
+    img:      "assets/images/treeHouse.jpg",
+    download: "assets/images/treeHouse.jpg"
+  },
+  {
+    name:     {
       "english": "Signs With Basic Shapes",
       "german": "Schilder mit Grundformen", 
     },
@@ -1024,14 +1040,6 @@ drawingList        = [
     },
     img:      "assets/images/applyingValuationAndTexture.jpg",
     download: "assets/images/applyingValuationAndTexture.jpg"
-  },
-  {
-    name:     {
-      "english": "Treehouse",
-      "german": "Baumhaus",
-    },
-    img:      "assets/images/treeHouse.jpg",
-    download: "assets/images/treeHouse.jpg"
   },
 ];
 // End Hobbys Page Data --------------------------------------------------------------
