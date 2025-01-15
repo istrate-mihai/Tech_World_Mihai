@@ -1011,6 +1011,14 @@ puzzleList         = [
 drawingList        = [
   {
     name:     {
+      "english": "Frontal Perspective",
+      "german": "Frontal Perspektive",
+    },
+    img:      "assets/images/frontalPerspective.jpg",
+    download: "assets/images/frontalPerspective.jpg",
+  },
+  {
+    name:     {
       "english": "Orthographic projections",
       "german": "Orthogonale Projektionen",
     },
