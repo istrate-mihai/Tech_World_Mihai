@@ -830,6 +830,15 @@ webDevelopmentList = [
   },
   {
     name:    {
+      "english": "Movie Finder",
+      "german": "Filmfinder",
+    },
+    img:     "../assets/images/filmFinder.png",
+    github:  "https://github.com/istrate-mihai/Film-Finder",
+    website: "https://awesome-film-finder.netlify.app/",
+  },
+  {
+    name:    {
       "english": "Learning Resources",
       "german": "Lernressourcen",
     },
