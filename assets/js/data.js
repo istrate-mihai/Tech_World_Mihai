@@ -462,6 +462,19 @@ skillList = [
 designList = [
   {
     name: {
+      english: 'Dog Drawing',
+      german: 'Hundezeichnung',
+    },
+    img: '../assets/images/dogDrawing.png',
+    href: '../assets/images/dogDrawing.png',
+    download: {
+      english: 'Dog Drawing.png',
+      german: 'Hundezeichnung.png',
+    },
+    type: 'photo',
+  },
+  {
+    name: {
       english: 'Ball Motion',
       german: 'Ballbewegung',
     },
