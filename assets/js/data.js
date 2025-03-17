@@ -462,6 +462,45 @@ skillList = [
 designList = [
   {
     name: {
+      english: 'Clipping Mask 1',
+      german: 'Schnittmaske 1',
+    },
+    img: '../assets/images/clippingMask_1.png',
+    href: '../assets/images/clippingMask_1.png',
+    download: {
+      english: 'Clipping Mask 1.png',
+      german: 'Schnittmaske 1.png',
+    },
+    type: 'photo',
+  },
+  {
+    name: {
+      english: 'Clipping Mask 2',
+      german: 'Schnittmaske 2',
+    },
+    img: '../assets/images/clippingMask_2.png',
+    href: '../assets/images/clippingMask_2.png',
+    download: {
+      english: 'Clipping Mask 2.png',
+      german: 'Schnittmaske 2.png',
+    },
+    type: 'photo',
+  },
+  {
+    name: {
+      english: 'Clipping Mask 3',
+      german: 'Schnittmaske 3',
+    },
+    img: '../assets/images/clippingMask_3.png',
+    href: '../assets/images/clippingMask_3.png',
+    download: {
+      english: 'Clipping Mask 3.png',
+      german: 'Schnittmaske 3.png',
+    },
+    type: 'photo',
+  },
+  {
+    name: {
       english: 'Dog Drawing',
       german: 'Hundezeichnung',
     },
