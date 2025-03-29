@@ -921,24 +921,6 @@ electronicList = [
 webDevelopmentList = [
   {
     name: {
-      english: 'AI - Document Summarizer',
-      german: 'KI - Dokumentenzusammenfasser',
-    },
-    img: '../assets/images/AI_document_summarizer_agent.png',
-    github: 'https://github.com/istrate-mihai/AI_Document_Summarizer_Agent',
-    website: 'https://ai-document-summarizer-agent.onrender.com/',
-  },
-  {
-    name: {
-      english: 'Chat App',
-      german: 'Chat-App',
-    },
-    img: '../assets/images/chat_app.png',
-    github: 'https://github.com/istrate-mihai/Chat_App',
-    website: 'https://chat-app-euq6.onrender.com/',
-  },
-  {
-    name: {
       english: 'Movie Finder',
       german: 'Filmfinder',
     },
@@ -1019,22 +1001,6 @@ AIApplicationList = [
     },
     img: '../assets/images/iris-dataset-classification.png',
     link: 'https://basic-iris-data-set-classification-with-slider-for-features.streamlit.app/',
-  },
-  {
-    name: {
-      english: 'Honey Production Linear Regression Example',
-      german: 'Honigproduktion Lineares Regressionsbeispiel',
-    },
-    img: '../assets/images/honey_production_linear_regression_example.png',
-    link: 'https://colab.research.google.com/drive/1ci3GgTlr2UuftT7PbsyKDmTf0DkO95Id?usp=sharing',
-  },
-  {
-    name: {
-      english: 'Salary Dataset - Simple Linear Regression',
-      german: 'Gehaltsdatensatz - Einfache lineare Regression',
-    },
-    img: '../assets/images/salaryDatasetSimpleLinearRegression.png',
-    link: 'https://colab.research.google.com/drive/1U8aUVV6pXJ8RsDTTXLfsvFM6DtlyX2i3?usp=sharing',
   },
 ];
 // End Portfolio Page Data --------------------------------------------------------------

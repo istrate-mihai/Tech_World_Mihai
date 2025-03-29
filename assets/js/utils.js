@@ -9,8 +9,8 @@ import {
   webDevelopmentList,
   AIApplicationList,
   puzzleList,
-  drawingList
-} from "./data.js";
+  drawingList,
+} from './data.js';
 
 import {
   staticLanguageContentIndex,
@@ -19,82 +19,81 @@ import {
   staticLanguageContentRoboSpider,
   staticLanguageContentD2LineFollower,
   staticLanguageContentRoboticsSection,
-  staticLanguageContentPortfolioSection
-} from "./languages.js";
+  staticLanguageContentPortfolioSection,
+} from './languages.js';
 
-let sections       = $(".section");
-let sectBtns       = $(".controlls");
-let sectBtn        = $(".control-js");
-let allSections    = $(".main-content");
-let tabLinks       = $(".tablinks");
-let downloadCVLink = $(".download-CV");
-let langKey        = "english";
+let sections = $('.section');
+let sectBtns = $('.controlls');
+let sectBtn = $('.control-js');
+let allSections = $('.main-content');
+let tabLinks = $('.tablinks');
+let downloadCVLink = $('.download-CV');
+let langKey = 'english';
 let jsLogicLangArr = {
-  "english": "Responsibilities",
-  "german": "Verantwortlichkeiten"
+  english: 'Responsibilities',
+  german: 'Verantwortlichkeiten',
 };
 let validLanguages = ['en', 'de'];
 
 function setMainPhotoPopup() {
-  let modal = $("#mainPhotoModal");
-  let overlay = $(".overlay");
-  let img = $("#main-photo");
+  let modal = $('#mainPhotoModal');
+  let overlay = $('.overlay');
+  let img = $('#main-photo');
   let modalImg = modal.find('img');
-  let closeBtn = $(".btn-close");
-  let sectBtns = $(".controlls");
+  let closeBtn = $('.btn-close');
+  let sectBtns = $('.controlls');
 
   img.click(function () {
-    overlay.removeClass("isHidden");
-    modal.removeClass("isHidden");
-    modalImg.attr("src", this.src);
-    sectBtns.addClass("isHidden");
+    overlay.removeClass('isHidden');
+    modal.removeClass('isHidden');
+    modalImg.attr('src', this.src);
+    sectBtns.addClass('isHidden');
   });
 
   closeBtn.click(function () {
-    modal.addClass("isHidden");
-    overlay.addClass("isHidden");
-    sectBtns.removeClass("isHidden");
+    modal.addClass('isHidden');
+    overlay.addClass('isHidden');
+    sectBtns.removeClass('isHidden');
   });
 }
 
 function setTechnicalDrawingModal() {
-  let designItemList = $(".design-item img, .design-item video");
-  let modal          = $("#cadCamTechnicalDrawingModal");
-  let modalImage     = modal.find('img');
-  let modalVideo     = modal.find('video');
-  let overlay        = $(".overlay");
-  let closeBtn       = $(".btn-close");
+  let designItemList = $('.design-item img, .design-item video');
+  let modal = $('#cadCamTechnicalDrawingModal');
+  let modalImage = modal.find('img');
+  let modalVideo = modal.find('video');
+  let overlay = $('.overlay');
+  let closeBtn = $('.btn-close');
 
   designItemList.click(function () {
-
     let currentMediaSrc = $(this).attr('src');
 
-    overlay.removeClass("isHidden");
-    modal.removeClass("isHidden");
+    overlay.removeClass('isHidden');
+    modal.removeClass('isHidden');
 
     if ($(this).is('img')) {
-      modalImage.attr("src", currentMediaSrc);
-      modalImage.css("display", "inline");
+      modalImage.attr('src', currentMediaSrc);
+      modalImage.css('display', 'inline');
 
-      modalVideo.attr("src", "");
-      modalVideo.css("display", "none");
+      modalVideo.attr('src', '');
+      modalVideo.css('display', 'none');
     }
 
     if ($(this).is('video')) {
-      modalImage.attr("src", "");
-      modalImage.css("display", "none");
+      modalImage.attr('src', '');
+      modalImage.css('display', 'none');
 
-      modalVideo.attr("src", currentMediaSrc);
-      modalVideo.css("display", "inline");
+      modalVideo.attr('src', currentMediaSrc);
+      modalVideo.css('display', 'inline');
     }
 
-    sectBtns.addClass("isHidden");
+    sectBtns.addClass('isHidden');
 
     closeBtn.click(function () {
       console.log('clicked close button');
-      modal.addClass("isHidden");
-      overlay.addClass("isHidden");
-      sectBtns.removeClass("isHidden");
+      modal.addClass('isHidden');
+      overlay.addClass('isHidden');
+      sectBtns.removeClass('isHidden');
     });
   });
 }
@@ -102,21 +101,21 @@ function setTechnicalDrawingModal() {
 function setPageTransitions() {
   // Button click active class
   sectBtn.click(function () {
-    let currentBtn = $(".active-btn");
-    currentBtn.removeClass("active-btn");
-    $(this).addClass("active-btn");
+    let currentBtn = $('.active-btn');
+    currentBtn.removeClass('active-btn');
+    $(this).addClass('active-btn');
   });
 
   // Sections Active
-  allSections.on("click", (e) => {
-    const id = $(e.target).data("id");
+  allSections.on('click', (e) => {
+    const id = $(e.target).data('id');
     if (id) {
       //remove selected from the other btns
-      sectBtns.removeClass("active");
-      $(e.target).addClass("active");
+      sectBtns.removeClass('active');
+      $(e.target).addClass('active');
       //hide other sections
-      sections.removeClass("active");
-      $("#" + id).addClass("active");
+      sections.removeClass('active');
+      $('#' + id).addClass('active');
     }
   });
 }
@@ -124,35 +123,37 @@ function setPageTransitions() {
 function setTabLinks() {
   tabLinks.on('click', function (event) {
     event.preventDefault();
-    let tabId = $(this).data("tab");
+    let tabId = $(this).data('tab');
 
-    $(".tabcontent").css("display", "none");
-    $(".tablinks").css("background-color", "");
-    $(".tablinks").removeClass("active-portfolio-tab-link");
+    $('.tabcontent').css('display', 'none');
+    $('.tablinks').css('background-color', '');
+    $('.tablinks').removeClass('active-portfolio-tab-link');
 
-    $("#" + tabId).css("display", "grid");
-    $("#tab-" + tabId).addClass("active-portfolio-tab-link");
+    $('#' + tabId).css('display', 'grid');
+    $('#tab-' + tabId).addClass('active-portfolio-tab-link');
 
     if (tabId === 'artisticDrawingList') {
-      $('#puzzle-gallery-list').css("display", "none");
+      $('#puzzle-gallery-list').css('display', 'none');
     }
   });
 
   $('.tablinks:first').trigger('click');
-};
+}
 
 function setTabLinkOnSectionOpen() {
-  let tabPuzzleList      = $("#tab-puzzleList")
-  let tabPuzzleTitleList = $(".puzzleTab");
+  let tabPuzzleList = $('#tab-puzzleList');
+  let tabPuzzleTitleList = $('.puzzleTab');
 
   $('#hobbys-control').on('click', function () {
     tabPuzzleList.on('click', function () {
-      $(".puzzleTab").on('click', function (e) {
+      $('.puzzleTab').on('click', function (e) {
         let currentPuzzleTitleLink = $(e.currentTarget);
-        let puzzleId               = currentPuzzleTitleLink.data('tab');
-        let puzzleGallerySelector  = $('#puzzle-gallery-list');
+        let puzzleId = currentPuzzleTitleLink.data('tab');
+        let puzzleGallerySelector = $('#puzzle-gallery-list');
 
-        tabPuzzleTitleList.removeClass('active-puzzle-tab active-puzzle-tab-light');
+        tabPuzzleTitleList.removeClass(
+          'active-puzzle-tab active-puzzle-tab-light'
+        );
         let puzzleGalleryDisplay = puzzleGallerySelector.css('display');
         if (puzzleGalleryDisplay === 'none') {
           puzzleGallerySelector.css('display', 'grid');
@@ -168,47 +169,47 @@ function createSectionList() {
   let sectionList = [
     {
       selector: $('#educationList'),
-      content:  getSectionTemplate('Education')
+      content: getSectionTemplate('Education'),
     },
     {
-      selector: $("#workList"),
-      content:  getSectionTemplate('Work')
+      selector: $('#workList'),
+      content: getSectionTemplate('Work'),
     },
     {
       selector: $('#awardList'),
-      content:  getSectionTemplate('Award')
+      content: getSectionTemplate('Award'),
     },
     {
       selector: $('#certificateList'),
-      content:  getSectionTemplate('Certificate')
+      content: getSectionTemplate('Certificate'),
     },
     {
-      selector: $("#skillList"),
-      content:  getSectionTemplate('Skill')
+      selector: $('#skillList'),
+      content: getSectionTemplate('Skill'),
     },
     {
-      selector: $("#webDevelopmentList"),
-      content:  getSectionTemplate('Web Development')
+      selector: $('#webDevelopmentList'),
+      content: getSectionTemplate('Web Development'),
     },
     {
-      selector: $("#ai-applications"),
-      content:  getSectionTemplate('Machine Learning')
+      selector: $('#ai-applications'),
+      content: getSectionTemplate('Machine Learning'),
     },
     {
-      selector: $("#designList"),
-      content: getSectionTemplate('Design')
+      selector: $('#designList'),
+      content: getSectionTemplate('Design'),
     },
     {
-      selector: $("#electronics"),
-      content: getSectionTemplate('Electronics')
+      selector: $('#electronics'),
+      content: getSectionTemplate('Electronics'),
     },
     {
-      selector: $("#puzzleList"),
-      content:  getSectionTemplate('Puzzle List')
+      selector: $('#puzzleList'),
+      content: getSectionTemplate('Puzzle List'),
     },
     {
-      selector: $("#artisticDrawingList"),
-      content:  getSectionTemplate('Drawing List')
+      selector: $('#artisticDrawingList'),
+      content: getSectionTemplate('Drawing List'),
     },
   ];
 
@@ -256,7 +257,7 @@ function getSectionTemplate(name) {
         sectionTemplate += getDesignTemplate(designList[i]);
       }
       break;
-      
+
     case 'Electronics':
       for (let i = 0; i < electronicList.length; i++) {
         sectionTemplate += getElectronicTemplate(electronicList[i]);
@@ -343,7 +344,7 @@ function getCertificateTemplate(certificateData) {
 
 function getWorkTemplate(workData) {
   let taskList = '';
-  
+
   for (let i = 0; i < workData.taskList[langKey].length; i++) {
     taskList += `<li>${workData.taskList[langKey][i]}</li>`;
   }
@@ -385,14 +386,13 @@ function getSkillTemplate(skillData) {
 }
 
 function getDesignTemplate(designData) {
+  let templateMedia = '';
 
-  let templateMedia = "";
-
-  if (designData.type == "photo") {
+  if (designData.type == 'photo') {
     templateMedia = `<img src="${designData.img}" alt="portfolioImage" loading="lazy" />`;
   }
 
-  if (designData.type == "video") {
+  if (designData.type == 'video') {
     templateMedia = `
                       <video
                         data-src="${designData.video}"
@@ -424,7 +424,7 @@ function getDesignTemplate(designData) {
 }
 
 function getElectronicTemplate(electronicData) {
-  return  `
+  return `
             <div class="portfolio-item">
               <h3 class="item-header">${electronicData.name[langKey]}</h3>
 
@@ -496,7 +496,7 @@ function getPuzzleListTemplate(puzzleData) {
 }
 
 function getDrawingListTemplate(drawingData) {
-  return   `
+  return `
             <div class="drawingContainer">
               <h3>${drawingData.name[langKey]}</h3>
               <a href="${drawingData.download}" target="_blank" download="${drawingData.name[langKey]}.jpg" title="Download ${drawingData.name}">
@@ -507,25 +507,25 @@ function getDrawingListTemplate(drawingData) {
 }
 
 function setToggleSection() {
-  let toggleSpeed       = 400;
-  let statementToggle   = $("#toggle-statement");
-  let educationToggle   = $("#toggle-education");
-  let workToggle        = $("#toggle-work-experience");
-  let awardToggle       = $("#toggle-award");
-  let certificateToggle = $("#toggle-certificate");
-  let skillToggle       = $("#toggle-skills");
-  let toggleList        = [
-    [statementToggle, $("#statement")],
-    [educationToggle, $("#educationList")],
-    [workToggle, $("#workList")],
-    [awardToggle, $("#awardList")],
-    [certificateToggle, $("#certificateList")],
-    [skillToggle, $("#skillList")]
+  let toggleSpeed = 400;
+  let statementToggle = $('#toggle-statement');
+  let educationToggle = $('#toggle-education');
+  let workToggle = $('#toggle-work-experience');
+  let awardToggle = $('#toggle-award');
+  let certificateToggle = $('#toggle-certificate');
+  let skillToggle = $('#toggle-skills');
+  let toggleList = [
+    [statementToggle, $('#statement')],
+    [educationToggle, $('#educationList')],
+    [workToggle, $('#workList')],
+    [awardToggle, $('#awardList')],
+    [certificateToggle, $('#certificateList')],
+    [skillToggle, $('#skillList')],
   ];
 
   for (let index in toggleList) {
     toggleList[index][0].on('click', function () {
-      toggleList[index][1].slideToggle(toggleSpeed, "linear", function() {
+      toggleList[index][1].slideToggle(toggleSpeed, 'linear', function () {
         toggleList[index][0].find('.toggle-label').toggleClass('isHidden');
       });
     });
@@ -533,9 +533,9 @@ function setToggleSection() {
 }
 
 function getPuzzleImgList(puzzleId) {
-  let currentPuzzle = puzzleList.find(puzzle => puzzle.id === puzzleId);
-  let imgList       = currentPuzzle.imgList;
-  let content       = '';
+  let currentPuzzle = puzzleList.find((puzzle) => puzzle.id === puzzleId);
+  let imgList = currentPuzzle.imgList;
+  let content = '';
   let imgListLength = imgList.length;
 
   for (let i = 0; i < imgListLength; i++) {
@@ -550,24 +550,25 @@ function getPuzzleImgList(puzzleId) {
 }
 
 function setFullTextToggle() {
-  $(".showFullText").on("click", function(ev) {
-    let currentTarget  = $(ev.currentTarget);
-    let textId         = currentTarget.attr("textId");
+  $('.showFullText').on('click', function (ev) {
+    let currentTarget = $(ev.currentTarget);
+    let textId = currentTarget.attr('textId');
     let shortparagraph = currentTarget.parent();
-    let fullParagraph  = $("#fullText" + textId);
-    shortparagraph.toggleClass("isHidden");
-    fullParagraph.toggleClass("isHidden");
+    let fullParagraph = $('#fullText' + textId);
+    shortparagraph.toggleClass('isHidden');
+    fullParagraph.toggleClass('isHidden');
   });
 }
 
 function setDownloadCVLink() {
-  let downloadLink = "assets/cv/Istrate_Mihai_Septimius_Software_Developer_CV.pdf";
+  let downloadLink = 'assets/cv/IstrateMihaiSeptimius - WebDeveloper.pdf';
 
-  if (langKey === "german") {
-    downloadLink = "assets/cv/Istrate_Mihai_Septimius_Softwareentwickler_Lebenslauf.pdf";
+  if (langKey === 'german') {
+    downloadLink =
+      'assets/cv/IstrateMihaiSeptimius - Webentwickler Lebenslauf.pdf';
   }
 
-  downloadCVLink.attr('href', downloadLink)
+  downloadCVLink.attr('href', downloadLink);
 }
 
 function getUrlParameter(name) {
@@ -576,31 +577,31 @@ function getUrlParameter(name) {
 }
 
 function setWebsiteLanguage() {
-  let urlLanguage   = getUrlParameter('lang');
+  let urlLanguage = getUrlParameter('lang');
   let languageToUse = 'en';
 
   if (urlLanguage && validLanguages.includes(urlLanguage)) {
     if (urlLanguage === 'en') {
-      langKey       = "english";
+      langKey = 'english';
       languageToUse = urlLanguage;
     }
-  
+
     if (urlLanguage === 'de') {
-      langKey       = "german";
+      langKey = 'german';
       languageToUse = urlLanguage;
     }
-  }
-  else {
+  } else {
     // Retrieve the saved language from localStorage, or default to 'en'
-    let savedLanguage = localStorage.getItem('selectedLanguage') || languageToUse;
+    let savedLanguage =
+      localStorage.getItem('selectedLanguage') || languageToUse;
 
     if (savedLanguage === 'en') {
-      langKey       = "english";
+      langKey = 'english';
       languageToUse = savedLanguage;
     }
 
     if (savedLanguage === 'de') {
-      langKey       = "german";
+      langKey = 'german';
       languageToUse = savedLanguage;
     }
   }
@@ -608,15 +609,21 @@ function setWebsiteLanguage() {
   localStorage.setItem('selectedLanguage', languageToUse);
   $('#language-select').val(languageToUse);
 
-  let $langPlaceholderListIndex            = $(".language-content");
-  let $langPlaceholderListArduino          = $(".language-content-arduino");
-  let $langPlaceholderListRoboSpider       = $(".language-content-robo-spider");
-  let $langPlaceholderListD2LineFollower   = $(".language-content-d2-line-follower");
-  let $langPlaceHolderListRoboticsSection  = $(".language-content-robotics-section");
-  let $langPlaceHolderListLanguageSelector = $(".language-content-selector");
-  let $langPlaceHolderPortfolioSection     = $(".language-content-portfolio-section");
+  let $langPlaceholderListIndex = $('.language-content');
+  let $langPlaceholderListArduino = $('.language-content-arduino');
+  let $langPlaceholderListRoboSpider = $('.language-content-robo-spider');
+  let $langPlaceholderListD2LineFollower = $(
+    '.language-content-d2-line-follower'
+  );
+  let $langPlaceHolderListRoboticsSection = $(
+    '.language-content-robotics-section'
+  );
+  let $langPlaceHolderListLanguageSelector = $('.language-content-selector');
+  let $langPlaceHolderPortfolioSection = $(
+    '.language-content-portfolio-section'
+  );
 
-  $langPlaceholderListIndex.each(function(index) {
+  $langPlaceholderListIndex.each(function (index) {
     if (index < staticLanguageContentIndex[langKey].length) {
       if ($(this).hasClass('control') || $(this).hasClass('contact-method')) {
         $(this).attr('title', staticLanguageContentIndex[langKey][index]);
@@ -628,37 +635,37 @@ function setWebsiteLanguage() {
     }
   });
 
-  $langPlaceholderListArduino.each(function(index) {
+  $langPlaceholderListArduino.each(function (index) {
     if (index < staticLanguageContentArduino[langKey].length) {
       $(this).text(staticLanguageContentArduino[langKey][index]);
     }
   });
 
-  $langPlaceholderListRoboSpider.each(function(index) {
+  $langPlaceholderListRoboSpider.each(function (index) {
     if (index < staticLanguageContentRoboSpider[langKey].length) {
       $(this).text(staticLanguageContentRoboSpider[langKey][index]);
     }
   });
 
-  $langPlaceholderListD2LineFollower.each(function(index) {
+  $langPlaceholderListD2LineFollower.each(function (index) {
     if (index < staticLanguageContentD2LineFollower[langKey].length) {
       $(this).text(staticLanguageContentD2LineFollower[langKey][index]);
     }
   });
 
-  $langPlaceHolderListRoboticsSection.each(function(index) {
+  $langPlaceHolderListRoboticsSection.each(function (index) {
     if (index < staticLanguageContentRoboticsSection[langKey].length) {
       $(this).text(staticLanguageContentRoboticsSection[langKey][index]);
     }
   });
 
-  $langPlaceHolderListLanguageSelector.each(function(index) {
+  $langPlaceHolderListLanguageSelector.each(function (index) {
     if (index < staticLanguageSelectorContent[langKey].length) {
       $(this).text(staticLanguageSelectorContent[langKey][index]);
     }
   });
 
-  $langPlaceHolderPortfolioSection.each(function(index) {
+  $langPlaceHolderPortfolioSection.each(function (index) {
     if (index < staticLanguageContentPortfolioSection[langKey].length) {
       $(this).text(staticLanguageContentPortfolioSection[langKey][index]);
     }
@@ -671,7 +678,7 @@ function setWebsiteLanguage() {
 }
 
 function setLanguageSelector() {
-  $("#language-select").on("change", function() {
+  $('#language-select').on('change', function () {
     let selectedLanguage = $(this).val();
 
     if (selectedLanguage === 'en') {
