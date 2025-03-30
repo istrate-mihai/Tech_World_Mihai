@@ -996,6 +996,14 @@ webDevelopmentList = [
 AIApplicationList = [
   {
     name: {
+      english: 'Weather Condition Predictor',
+      german: 'Wettervorhersage',
+    },
+    img: '../assets/images/weather-classification.png',
+    link: 'https://istrate-mihai-weather-conditions-prediction-romania-app-30ordz.streamlit.app/',
+  },
+  {
+    name: {
       english: 'Iris Classification With Feature Sliders',
       german: 'Iris-Klassifizierung mit Merkmals-Schiebereglern',
     },
