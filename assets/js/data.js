@@ -1004,8 +1004,8 @@ AIApplicationList = [
   },
   {
     name: {
-      english: 'Iris Classification With Feature Sliders',
-      german: 'Iris-Klassifizierung mit Merkmals-Schiebereglern',
+      english: 'Iris Classification',
+      german: 'Iris-Klassifizierung',
     },
     img: '../assets/images/iris-dataset-classification.png',
     link: 'https://basic-iris-data-set-classification-with-slider-for-features.streamlit.app/',
