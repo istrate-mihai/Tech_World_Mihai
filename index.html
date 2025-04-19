@@ -9,18 +9,44 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/tab.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-B5EJYJ4QY4"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B5EJYJ4QY4');
+  </script>
 
   <body class="main-content">
     <div class="language-selector">
       <select id="language-select">
-          <option value="-" class="language-content-selector"></option>
-          <option value="en" class="language-content-selector"></option>
-          <option value="de" class="language-content-selector"></option>
+        <option value="-" class="language-content-selector"></option>
+        <option value="en" class="language-content-selector"></option>
+        <option value="de" class="language-content-selector"></option>
       </select>
     </div>
 
@@ -29,7 +55,12 @@
         <div class="left-header">
           <div class="h-shape"></div>
           <div class="image">
-            <img id="main-photo" src="assets/images/istrateMihaiSeptimius.jpg" alt="No Main Photo" loading="lazy" />
+            <img
+              id="main-photo"
+              src="assets/images/istrateMihaiSeptimius.jpg"
+              alt="No Main Photo"
+              loading="lazy"
+            />
           </div>
         </div>
 
@@ -42,11 +73,7 @@
 
           <p class="language-content"></p>
 
-          <a
-            href="#"
-            class="main-btn download-CV"
-            download
-          >
+          <a href="#" class="main-btn download-CV" download>
             <span class="btn-text language-content"></span>
             <span class="btn-icon"><i class="fas fa-download"></i></span>
             <span></span>
@@ -65,16 +92,15 @@
 
         <div class="about-container">
           <div class="left-about">
-            <h4 id="toggle-statement" class="toggle-control language-content"></h4>
+            <h4
+              id="toggle-statement"
+              class="toggle-control language-content"
+            ></h4>
 
             <p id="statement" class="language-content"></p>
 
             <div class="btn-con">
-              <a
-                href="#"
-                class="main-btn download-CV"
-                download
-              >
+              <a href="#" class="main-btn download-CV" download>
                 <span class="btn-text language-content"></span>
                 <span class="btn-icon"><i class="fas fa-download"></i></span>
               </a>
@@ -98,20 +124,35 @@
           </div>
         </div>
 
-        <h4 id="toggle-education" class="toggle-control stat-title language-content"></h4>
+        <h4
+          id="toggle-education"
+          class="toggle-control stat-title language-content"
+        ></h4>
         <div id="educationList" class="timeline"></div>
 
-        <h4 id="toggle-work-experience" class="toggle-control stat-title language-content"></h4>
+        <h4
+          id="toggle-work-experience"
+          class="toggle-control stat-title language-content"
+        ></h4>
         <div id="workList" class="timeline"></div>
 
-        <h4 id="toggle-award" class="toggle-control stat-title language-content"></h4>
+        <h4
+          id="toggle-award"
+          class="toggle-control stat-title language-content"
+        ></h4>
         <div id="awardList" class="timeline"></div>
 
-        <h4 id="toggle-certificate" class="toggle-control stat-title language-content"></h4>
+        <h4
+          id="toggle-certificate"
+          class="toggle-control stat-title language-content"
+        ></h4>
         <div id="certificateList" class="timeline"></div>
 
         <div class="about-stats">
-          <h4 id="toggle-skills"  class="toggle-control stat-title language-content"></h4>
+          <h4
+            id="toggle-skills"
+            class="toggle-control stat-title language-content"
+          ></h4>
           <div id="skillList" class="progress-bars"></div>
         </div>
       </section>
@@ -124,14 +165,24 @@
 
           <div class="tab">
             <div>
-              <a href="#" class="main-btn tablinks" id="tab-puzzleList" data-tab="puzzleList">
+              <a
+                href="#"
+                class="main-btn tablinks"
+                id="tab-puzzleList"
+                data-tab="puzzleList"
+              >
                 <span class="btn-text language-content"></span>
               </a>
             </div>
 
             <div>
-              <a href="#" class="main-btn tablinks" id="tab-artisticDrawingList" data-tab="artisticDrawingList">
-              <span class="btn-text language-content"></span>
+              <a
+                href="#"
+                class="main-btn tablinks"
+                id="tab-artisticDrawingList"
+                data-tab="artisticDrawingList"
+              >
+                <span class="btn-text language-content"></span>
               </a>
             </div>
           </div>
@@ -173,7 +224,13 @@
                   </div>
 
                   <p>
-                    <span><a href="mailto:i.mihai9960@gmail.com?Subject=Contact" target="_blank" class="language-content"></a></span>
+                    <span
+                      ><a
+                        href="mailto:i.mihai9960@gmail.com?Subject=Contact"
+                        target="_blank"
+                        class="language-content"
+                      ></a
+                    ></span>
                   </p>
                 </div>
 
@@ -207,15 +264,30 @@
 
               <div class="contact-icons">
                 <div class="contact-icon">
-                  <a href="https://www.facebook.com/i.mihai9960/" target="_blank" class="language-content contact-method" title="">
+                  <a
+                    href="https://www.facebook.com/i.mihai9960/"
+                    target="_blank"
+                    class="language-content contact-method"
+                    title=""
+                  >
                     <i class="fab fa-facebook-f"></i>
                   </a>
 
-                  <a href="https://github.com/Istrate-Mihai" target="_blank" class="language-content contact-method" title="">
+                  <a
+                    href="https://github.com/Istrate-Mihai"
+                    target="_blank"
+                    class="language-content contact-method"
+                    title=""
+                  >
                     <i class="fab fa-github"></i>
                   </a>
 
-                  <a href="https://www.linkedin.com/in/mihai-septimius-istrate" target="_blank" class="language-content contact-method" title="">
+                  <a
+                    href="https://www.linkedin.com/in/mihai-septimius-istrate"
+                    target="_blank"
+                    class="language-content contact-method"
+                    title=""
+                  >
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
@@ -252,7 +324,13 @@
                   </div>
 
                   <p>
-                    <span><a href="mailto:i.mihai9960@gmail.com?Subject=Contact" target="_blank">i.mihai9960@gmail.com</a></span>
+                    <span
+                      ><a
+                        href="mailto:i.mihai9960@gmail.com?Subject=Contact"
+                        target="_blank"
+                        >i.mihai9960@gmail.com</a
+                      ></span
+                    >
                   </p>
                 </div>
 
@@ -290,15 +368,30 @@
 
               <div class="contact-icons">
                 <div class="contact-icon">
-                  <a href="https://www.facebook.com/i.mihai9960/" target="_blank" class="language-content contact-method" title="">
+                  <a
+                    href="https://www.facebook.com/i.mihai9960/"
+                    target="_blank"
+                    class="language-content contact-method"
+                    title=""
+                  >
                     <i class="fab fa-facebook-f"></i>
                   </a>
 
-                  <a href="https://github.com/Istrate-Mihai" target="_blank" class="language-content contact-method" title="">
+                  <a
+                    href="https://github.com/Istrate-Mihai"
+                    target="_blank"
+                    class="language-content contact-method"
+                    title=""
+                  >
                     <i class="fab fa-github"></i>
                   </a>
 
-                  <a href="https://www.linkedin.com/in/mihai-septimius-istrate" target="_blank" class="language-content contact-method" title="">
+                  <a
+                    href="https://www.linkedin.com/in/mihai-septimius-istrate"
+                    target="_blank"
+                    class="language-content contact-method"
+                    title=""
+                  >
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
@@ -310,25 +403,49 @@
     </main>
 
     <div class="controlls">
-      <div class="language-content control control-js control-1 active-btn" id="home-control" data-id="home" title="">
+      <div
+        class="language-content control control-js control-1 active-btn"
+        id="home-control"
+        data-id="home"
+        title=""
+      >
         <i class="fas fa-home"></i>
       </div>
 
-      <div class="language-content control control-js control-2" id="about-control" data-id="about" title="">
+      <div
+        class="language-content control control-js control-2"
+        id="about-control"
+        data-id="about"
+        title=""
+      >
         <i class="fas fa-user"></i>
       </div>
 
       <a id="portfolio-link" href="./pages/portfolio.html">
-        <div class="language-content control control-3" id="portfolio-control" title="">
-            <i class="fas fa-briefcase"></i>
+        <div
+          class="language-content control control-3"
+          id="portfolio-control"
+          title=""
+        >
+          <i class="fas fa-briefcase"></i>
         </div>
-      </a>      
+      </a>
 
-      <div class="language-content control control-js control-4" id="hobbys-control" data-id="hobbys" title="">
+      <div
+        class="language-content control control-js control-4"
+        id="hobbys-control"
+        data-id="hobbys"
+        title=""
+      >
         <i class="fas fa-drafting-compass"></i>
       </div>
 
-      <div class="language-content control control-js control-6" id="blogs-control" data-id="blogs" title="">
+      <div
+        class="language-content control control-js control-6"
+        id="blogs-control"
+        data-id="blogs"
+        title=""
+      >
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
