@@ -42,18 +42,21 @@ function setMainPhotoPopup() {
   let modalImg = modal.find('img');
   let closeBtn = $('.btn-close');
   let sectBtns = $('.controlls');
+  let languageSelector = $('#language-select');
 
   img.click(function () {
     overlay.removeClass('isHidden');
     modal.removeClass('isHidden');
     modalImg.attr('src', this.src);
     sectBtns.addClass('isHidden');
+    languageSelector.addClass('isHidden');
   });
 
   closeBtn.click(function () {
     modal.addClass('isHidden');
     overlay.addClass('isHidden');
     sectBtns.removeClass('isHidden');
+    languageSelector.removeClass('isHidden');
   });
 }
 

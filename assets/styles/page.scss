@@ -2,8 +2,9 @@ body {
   justify-content: flex-start;
 }
 
-video, img {
-  width: 100%
+video,
+img {
+  width: 100%;
 }
 
 .container {
@@ -23,9 +24,9 @@ video, img {
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  
+
   .logo-container {
     width: 200px;
     height: 100px;
@@ -55,25 +56,25 @@ video, img {
       }
     }
   }
-  
+
   .checkbtn {
     font-size: 30px;
     color: white;
     cursor: pointer;
     display: none;
   }
-  
+
   #check {
     display: none;
   }
-  
+
   @media (max-width: 600px) {
     .checkbtn {
       display: block;
       order: 1;
       margin-right: 20px;
     }
-  
+
     ul {
       position: fixed;
       top: 80px;
@@ -101,7 +102,8 @@ video, img {
     }
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     text-align: center;
     margin: 20px auto;
   }
@@ -161,6 +163,14 @@ video, img {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
+    }
+  }
+}
+
+.nav-container {
+  ul {
+    .language-content-portfolio-section {
+      font-size: 1.2rem;
     }
   }
 }

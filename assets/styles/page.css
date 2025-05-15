@@ -2,7 +2,8 @@ body {
   justify-content: flex-start;
 }
 
-video, img {
+video,
+img {
   width: 100%;
 }
 
@@ -24,7 +25,7 @@ video, img {
   padding: 10px 20px;
 }
 .container .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .container .logo-container {
   width: 200px;
@@ -89,7 +90,8 @@ video, img {
     right: 0;
   }
 }
-.container h2, .container h3 {
+.container h2,
+.container h3 {
   text-align: center;
   margin: 20px auto;
 }
@@ -130,4 +132,8 @@ video, img {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.nav-container ul .language-content-portfolio-section {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=page.css.map */

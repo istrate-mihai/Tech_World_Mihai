@@ -40,7 +40,7 @@
 
 body {
   background-color: var(--color-primary);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   color: var(--color-black);
   transition: all 0.4s ease-in-out;
@@ -255,7 +255,7 @@ section {
           color: var(--color-black);
           letter-spacing: 2px;
           &::before {
-            content: "";
+            content: '';
             position: absolute;
             left: 0;
             top: 15px;
@@ -355,7 +355,7 @@ section {
   padding: 3.5rem 0;
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     top: 0;
@@ -452,7 +452,8 @@ section {
     position: relative;
     border-radius: 15px;
 
-    h2, h3 {
+    h2,
+    h3 {
       &.item-header {
         text-align: center;
         color: var(--color-secondary);
@@ -727,7 +728,7 @@ section {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -766,7 +767,8 @@ section {
   }
 }
 
-.toggle-control, .design-item {
+.toggle-control,
+.design-item {
   cursor: pointer;
 }
 
@@ -774,7 +776,8 @@ section {
   font-size: small;
 }
 
-.showFullText, .truncateText {
+.showFullText,
+.truncateText {
   color: chocolate;
 
   &:hover {
@@ -783,7 +786,7 @@ section {
   }
 }
 
-@import "./media";
+@import './media';
 
 .language-selector {
   margin: 2px;
@@ -793,7 +796,8 @@ section {
   right: 0;
   z-index: 10;
 
-  #language-select, option {
+  #language-select,
+  option {
     display: block;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -804,5 +808,11 @@ section {
     border: 1px solid #ced4da;
     border-radius: 1rem; /* Adjust this value for rounder edges */
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-   }
+  }
+
+  #language-select {
+    &.isHidden {
+      display: none;
+    }
+  }
 }

@@ -33,7 +33,6 @@
   }
 
   .controlls {
-    top: auto;
     bottom: 0;
     justify-content: center;
     width: 10%;
@@ -252,19 +251,18 @@
 }
 
 .modal {
+  top: -10%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 1.3rem;
   min-height: 500px;
   position: absolute;
-  top: 20%;
   border-radius: 15px;
   z-index: 2;
 
   .modal-content {
     align-self: center;
-    width: 50%;
   }
 
   button {
@@ -305,7 +303,6 @@
   }
 
   @media only screen and (max-width: 700px) {
-    top: 50%;
     .modal-content {
       width: inherit;
 
